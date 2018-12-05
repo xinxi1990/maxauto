@@ -1,0 +1,8 @@
+[2018-12-05 23:00:58,033] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:30] 获取app名称异常!global name 'apkpath' is not defined
+[2018-12-05 23:01:24,558] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:30] 获取app名称异常!GetBasic instance has no attribute 'apkpath'
+[2018-12-05 23:02:12,436] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:30] 获取app信息异常!GetBasic instance has no attribute 'apkpath'
+[2018-12-05 23:11:39,532] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:11:39,533] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:12:51,687] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:151] 获取所有activity异常!write_file() takes at least 2 arguments (1 given)
+[2018-12-05 23:13:19,369] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log文件完成
+[2018-12-05 23:30:03,832] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log文件完成
