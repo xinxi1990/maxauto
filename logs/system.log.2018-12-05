@@ -1,0 +1,438 @@
+[2018-12-05 21:32:34,510] [INFO] [xinxideMacBook-Pro.local][config.py - line:17] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:32:42,130] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:33:01,406] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:33:03,107] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:33:03,107] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:35:36,123] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:35:36,124] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:35:44,210] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:35:44,210] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:35:44,238] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:34] 清除数据缓存异常:LanuchApp instance has no attribute 'pck_name'
+[2018-12-05 21:35:44,238] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:61] 启动时间计算异常!:LanuchApp instance has no attribute 'pck_name'
+[2018-12-05 21:35:44,238] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-05 21:36:42,215] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:36:42,216] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:36:42,546] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:33] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.luojilab.player
+[2018-12-05 21:36:42,547] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:62] 启动时间计算异常!:LanuchApp instance has no attribute 'lanuch_activity'
+[2018-12-05 21:36:42,547] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-05 21:37:24,562] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:37:24,563] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:37:24,844] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.luojilab.player
+[2018-12-05 21:37:39,530] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-05 21:42:32,978] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:42:32,979] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:43:06,184] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:43:06,186] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:43:06,246] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:38] 卸载app命令:adb -s 192.168.56.101:5555 uninstall /Users/xinxi/Downloads/app_simul_5.3.0_20181205105759.apk
+[2018-12-05 21:43:06,251] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:41] 安装app命令:adb -s 192.168.56.101:5555 install 
+[2018-12-05 21:43:06,532] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:06,782] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:07,019] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:07,280] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:07,528] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:07,785] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:08,020] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:08,279] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:08,523] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:08,784] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:09,040] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:09,319] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:09,565] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:58] app安装中!
+[2018-12-05 21:43:09,782] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-05 21:43:49,361] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:43:49,361] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:43:49,397] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:38] 卸载app命令:adb -s 192.168.56.101:5555 uninstall 
+[2018-12-05 21:43:49,399] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:41] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/app_simul_5.3.0_20181205105759.apk
+[2018-12-05 21:43:49,655] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:51] app安装成功!
+[2018-12-05 21:43:49,656] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:55] app安装耗时:1s
+[2018-12-05 21:43:49,656] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-05 21:43:49,919] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear 
+[2018-12-05 21:43:51,150] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W /
+[2018-12-05 21:43:51,151] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:57] 本次冷启动时间:943
+[2018-12-05 21:43:54,156] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:82] 均值为:943.0
+[2018-12-05 21:43:54,156] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-05 21:44:40,472] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:44:40,473] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:44:40,509] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall 
+[2018-12-05 21:44:40,512] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/app_simul_5.3.0_20181205105759.apk
+[2018-12-05 21:44:40,811] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:50] app安装成功!
+[2018-12-05 21:44:40,811] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:54] app安装耗时:0s
+[2018-12-05 21:44:40,811] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-05 21:45:45,702] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:45:45,703] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:45:45,861] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.luojilab.player
+[2018-12-05 21:45:45,869] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk
+[2018-12-05 21:45:46,507] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:47,159] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:47,643] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:48,016] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:48,254] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:48,519] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:48,777] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:49,068] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:49,423] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:49,699] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:50,228] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:50,495] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:50,770] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:51,223] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:51,483] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:51,747] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:52,055] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:52,457] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:52,722] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:52,968] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:53,298] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:53,554] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:53,798] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:54,035] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:54,310] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:45:54,656] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:50] app安装成功!
+[2018-12-05 21:45:54,656] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:54] app安装耗时:9s
+[2018-12-05 21:45:54,657] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-05 21:46:48,066] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:46:48,067] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 21:46:48,186] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.luojilab.player
+[2018-12-05 21:46:48,190] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk
+[2018-12-05 21:46:48,783] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:49,320] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:49,645] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:49,992] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:50,276] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:50,560] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:50,814] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:51,146] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:51,432] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:51,714] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:52,024] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:52,362] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:52,619] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:52,878] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:53,286] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:53,550] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:53,798] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:54,046] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:54,314] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:54,610] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:54,894] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:55,138] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:55,402] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:57] app安装中!
+[2018-12-05 21:46:55,734] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:50] app安装成功!
+[2018-12-05 21:46:55,734] [INFO] [xinxideMacBook-Pro.local][installapp.py - line:54] app安装耗时:8s
+[2018-12-05 21:46:55,735] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-05 21:46:55,999] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.luojilab.player
+[2018-12-05 21:46:58,071] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.luojilab.player/com.luojilab.business.welcome.SplashActivity
+[2018-12-05 21:46:58,071] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:57] 本次冷启动时间:1745
+[2018-12-05 21:47:01,077] [INFO] [xinxideMacBook-Pro.local][lanuchapp.py - line:82] 均值为:1745.0
+[2018-12-05 21:47:01,078] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-05 22:03:23,318] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:03:23,319] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:03:23,357] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:119] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:03:23,444] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:03:23,486] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:03:23,532] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:03:23,623] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:03:23,627] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:251] 清除logcat日志
+[2018-12-05 22:03:23,687] [INFO] [xinxideMacBook-Pro.local][common.py - line:57] 结束:logcat,进程号:34993
+[2018-12-05 22:03:23,688] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 60 --throttle 500 > log/monkey.log
+[2018-12-05 22:03:26,732] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4042
+[2018-12-05 22:03:26,732] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:03:28,445] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:206] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:03:31,527] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4042
+[2018-12-05 22:03:31,528] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:03:33,614] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:206] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:03:36,647] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4042
+[2018-12-05 22:03:36,647] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:03:37,309] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:206] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:03:40,376] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4042
+[2018-12-05 22:03:40,377] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:03:42,024] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:206] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:03:45,115] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4042
+[2018-12-05 22:03:45,116] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:03:46,984] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:206] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:03:50,021] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4042
+[2018-12-05 22:03:50,023] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:03:53,099] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:206] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:07:10,304] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:07:10,305] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:07:10,343] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:119] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:07:10,442] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:07:10,484] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:07:10,524] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:07:10,614] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:07:10,618] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:249] 清除logcat日志
+[2018-12-05 22:07:10,677] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:07:10,677] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 60 --throttle 500 > log/monkey.log
+[2018-12-05 22:07:13,713] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4344
+[2018-12-05 22:07:13,713] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:07:14,350] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:204] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:07:17,375] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:174] 当前monkey进程pid:4344
+[2018-12-05 22:07:17,375] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:07:18,106] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:204] 页面展示写入失败!global name 'page_path' is not defined
+[2018-12-05 22:10:47,643] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:10:47,644] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:10:47,675] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:118] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:10:47,726] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:10:47,748] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:10:47,777] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:10:47,855] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:10:47,858] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:232] 清除logcat日志
+[2018-12-05 22:10:47,930] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:10:47,931] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 60 --throttle 500 > log/monkey.log
+[2018-12-05 22:10:50,974] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4451
+[2018-12-05 22:10:50,974] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:10:54,652] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4451
+[2018-12-05 22:10:54,652] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:12:42,310] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:12:42,311] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:12:42,348] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:118] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:12:42,446] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:12:42,473] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:12:42,502] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:12:42,596] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:12:42,599] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:232] 清除logcat日志
+[2018-12-05 22:12:42,662] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:12:42,662] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 60 --throttle 500 > log/monkey.log
+[2018-12-05 22:12:45,698] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:12:45,698] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:12:49,411] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:12:49,412] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:12:53,157] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:12:53,157] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:12:57,326] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:12:57,326] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:13:01,117] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:13:01,117] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:13:04,887] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:13:04,888] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:13:08,657] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:13:08,658] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:13:12,722] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4538
+[2018-12-05 22:13:12,722] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:14:43,980] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:14:43,981] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:14:44,016] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:118] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:14:44,088] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:14:44,109] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:14:44,140] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:14:44,209] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:14:44,212] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:232] 清除logcat日志
+[2018-12-05 22:14:44,293] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:14:44,293] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 60 --throttle 500 > log/monkey.log
+[2018-12-05 22:14:47,337] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:14:47,337] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:14:51,266] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:14:51,266] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:14:55,185] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:14:55,186] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:00,320] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:00,320] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:03,983] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:03,984] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:07,933] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:07,933] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:12,520] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:12,521] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:16,487] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:16,487] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:20,141] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:20,141] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:23,752] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:23,752] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:27,369] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:27,370] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:31,032] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:31,032] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:34,662] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:34,663] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:38,616] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:38,616] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:42,276] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:42,277] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:46,230] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:46,230] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:50,076] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:50,076] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:53,731] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:53,732] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:15:57,832] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:15:57,832] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:01,482] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:01,482] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:05,092] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:05,093] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:08,706] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:08,706] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:12,399] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:12,399] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:16,315] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:16,315] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:19,931] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:19,931] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:23,548] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:23,549] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:27,156] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:27,157] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:30,767] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:30,767] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:34,784] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:34,785] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:38,803] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:38,803] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:42,730] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:42,731] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:46,844] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:46,846] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:50,764] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:50,764] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:54,690] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:54,691] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:16:58,749] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:16:58,749] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:02,521] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:17:02,521] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:06,330] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:17:06,331] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:10,338] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:17:10,339] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:14,311] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:4931
+[2018-12-05 22:17:14,312] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:37,454] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:17:37,455] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:17:37,496] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:118] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:17:37,569] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:17:37,590] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:17:37,620] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:17:37,686] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:17:37,689] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:232] 清除logcat日志
+[2018-12-05 22:17:37,741] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:17:37,741] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > log/monkey.log
+[2018-12-05 22:17:40,776] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:17:40,776] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:44,351] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:17:44,352] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:48,197] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:17:48,198] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:52,376] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:17:52,378] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:17:55,981] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:17:55,982] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:00,682] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:00,683] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:05,046] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:05,046] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:10,032] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:10,033] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:14,100] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:14,100] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:17,641] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:17,641] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:21,645] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:21,646] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:25,322] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:25,322] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:28,853] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:28,853] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:32,417] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:32,417] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:36,143] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:36,144] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:39,761] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:173] 当前monkey进程pid:5869
+[2018-12-05 22:18:39,761] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-05 22:18:43,469] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:169] 当前monkey进程不存在
+[2018-12-05 22:18:43,470] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:76] ==========Monkey运行结束!==========
+[2018-12-05 22:18:43,473] [INFO] [xinxideMacBook-Pro.local][common.py - line:107] 写/Users/xinxi/PycharmProjects/maxauto/monkey/out/acts.log文件完成
+[2018-12-05 22:18:43,473] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log log/crash.log
+[2018-12-05 22:18:45,960] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:211] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-05 22:18:45,960] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:215] 崩溃图片路径:./data/media/0/Crash_20181205091746
+
+[2018-12-05 22:18:45,961] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181205091746
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-05 22:18:48,993] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:264] 压缩图片成功!
+[2018-12-05 22:25:24,475] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:25:24,475] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:25:24,520] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:88] monkey运行异常!global name 'log_path' is not defined
+[2018-12-05 22:26:00,992] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:26:00,993] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 22:26:01,033] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:115] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-05 22:26:01,122] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-05 22:26:01,172] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-05 22:26:01,217] [INFO] [xinxideMacBook-Pro.local][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-05 22:26:01,283] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:26:01,285] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:229] 清除logcat日志
+[2018-12-05 22:26:01,328] [INFO] [xinxideMacBook-Pro.local][common.py - line:53] 未查询到pid
+[2018-12-05 22:26:01,328] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:62] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-05 22:26:04,357] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:04,357] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:08,020] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:08,020] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:12,063] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:12,065] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:16,123] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:16,123] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:19,718] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:19,719] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:24,185] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:24,185] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:27,775] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:27,775] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:31,438] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:31,438] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:35,451] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:35,451] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:39,655] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:39,656] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:44,303] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:44,304] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:48,436] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:48,436] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:52,566] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:52,568] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:26:57,008] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:26:57,009] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:27:01,248] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:27:01,249] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:27:04,824] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:170] 当前monkey进程pid:6511
+[2018-12-05 22:27:04,825] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-05 22:27:08,489] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:166] 当前monkey进程不存在
+[2018-12-05 22:27:08,490] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:73] ==========Monkey运行结束!==========
+[2018-12-05 22:27:08,492] [INFO] [xinxideMacBook-Pro.local][common.py - line:107] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-05 22:27:08,492] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-05 22:27:11,491] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:208] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-05 22:27:11,491] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:212] 崩溃图片路径:./data/media/0/Crash_20181205092612
+
+[2018-12-05 22:27:11,492] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181205092612
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-05 22:27:14,518] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:261] 压缩图片成功!
+[2018-12-05 23:56:32,796] [INFO] [xinxideMacBook-Pro.local][run.py - line:22] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:56:32,797] [INFO] [xinxideMacBook-Pro.local][run.py - line:24] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:56:45,703] [INFO] [xinxideMacBook-Pro.local][run.py - line:22] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:56:45,703] [INFO] [xinxideMacBook-Pro.local][run.py - line:24] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:56:46,037] [INFO] [xinxideMacBook-Pro.local][run.py - line:14] 启动gunicorn服务!
+[2018-12-05 23:56:48,041] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
+[2018-12-05 23:56:48,056] [ERROR] [xinxideMacBook-Pro.local][client.py - line:45] 报告获取失败!
+HTTPConnectionPool(host='127.0.0.1', port=7777): Max retries exceeded with url: /report (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1038924d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+[2018-12-05 23:57:14,191] [INFO] [xinxideMacBook-Pro.local][run.py - line:22] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:57:14,191] [INFO] [xinxideMacBook-Pro.local][run.py - line:24] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:57:14,441] [INFO] [xinxideMacBook-Pro.local][run.py - line:14] 启动gunicorn服务!
+[2018-12-05 23:57:16,443] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
+[2018-12-05 23:57:16,455] [ERROR] [xinxideMacBook-Pro.local][client.py - line:45] 报告获取失败!
+HTTPConnectionPool(host='127.0.0.1', port=7777): Max retries exceeded with url: /getreport (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1106444d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+[2018-12-05 23:57:50,049] [INFO] [xinxideMacBook-Pro.local][run.py - line:22] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:57:50,049] [INFO] [xinxideMacBook-Pro.local][run.py - line:24] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:57:50,310] [INFO] [xinxideMacBook-Pro.local][run.py - line:14] 启动gunicorn服务!
+[2018-12-05 23:57:52,316] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
+[2018-12-05 23:57:52,329] [ERROR] [xinxideMacBook-Pro.local][client.py - line:45] 报告获取失败!
+HTTPConnectionPool(host='127.0.0.1', port=3031): Max retries exceeded with url: /getreport (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10e5854d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+[2018-12-05 23:59:00,334] [INFO] [xinxideMacBook-Pro.local][run.py - line:22] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:59:00,334] [INFO] [xinxideMacBook-Pro.local][run.py - line:24] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:59:00,639] [INFO] [xinxideMacBook-Pro.local][run.py - line:14] 启动gunicorn服务!
+[2018-12-05 23:59:03,645] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
+[2018-12-05 23:59:03,664] [ERROR] [xinxideMacBook-Pro.local][client.py - line:45] 报告获取失败!
+HTTPConnectionPool(host='127.0.0.1', port=3031): Max retries exceeded with url: /getreport (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103d5b4d0>: Failed to establish a new connection: [Errno 61] Connection refused',))
+[2018-12-05 23:59:22,949] [INFO] [xinxideMacBook-Pro.local][run.py - line:24] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:59:22,949] [INFO] [xinxideMacBook-Pro.local][run.py - line:26] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-05 23:59:26,222] [INFO] [xinxideMacBook-Pro.local][run.py - line:16] 启动gunicorn服务!
+[2018-12-05 23:59:26,223] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
+[2018-12-05 23:59:26,241] [ERROR] [xinxideMacBook-Pro.local][client.py - line:45] 报告获取失败!
+HTTPConnectionPool(host='127.0.0.1', port=3031): Max retries exceeded with url: /getreport (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109b904d0>: Failed to establish a new connection: [Errno 61] Connection refused',))

@@ -1,0 +1,17 @@
+[2018-12-06 00:03:40,154] [ERROR] [xinxideMacBook-Pro.local][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 55, in html
+    data = read_mem()
+  File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 41, in read_mem
+    with open(mem_path, 'r') as f:
+IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log'

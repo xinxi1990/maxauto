@@ -9,7 +9,7 @@
 
 import os,re,time,subprocess,sys
 sys.path.append('..')
-from loggers import JFMlogging
+from tools.loggers import JFMlogging
 logger = JFMlogging().getloger()
 from flask import Flask, request
 from flask import render_template

@@ -3,7 +3,7 @@
 
 import os,time,sys,smtplib,re
 sys.path.append('..')
-from loggers import JFMlogging
+from tools.loggers import JFMlogging
 logger = JFMlogging().getloger()
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart

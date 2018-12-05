@@ -142,7 +142,7 @@ class GetData():
             not_coverage_percent = 100 - round(coverage * 100,1)
             return coverage_percent,not_coverage_percent
         except Exception as e:
-            logger.error('计算自动化遍历覆盖率异常!{}'.format(e))
+            logger.error('计算遍历覆盖率异常!{}'.format(e))
             return '0','100'
 
 
@@ -218,7 +218,7 @@ class GetData():
                     if re.findall("Events injected: ",line):
                         clickcount = line.split("Events injected: ")[1]
         except Exception as e:
-            logger.error("获取monkey点击次数异常!{}".format(e))
+            logger.error("获取Monkey点击次数异常!{}".format(e))
         finally:
             return clickcount
 

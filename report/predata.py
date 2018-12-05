@@ -10,7 +10,7 @@
 
 import os,re,time,subprocess,sys
 sys.path.append('..')
-from loggers import JFMlogging
+from tools.loggers import JFMlogging
 logger = JFMlogging().getloger()
 from config import *
 

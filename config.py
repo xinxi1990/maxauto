@@ -28,7 +28,8 @@ monkey_jar = os.path.join(project_path,"monkey/libs/monkey.jar")
 framework_jar = os.path.join(project_path, "monkey/libs/framework.jar")
 device_crash_path = '/sdcard/crash-dump.log'
 get_performance_path = os.path.join(project_path, "monkey/getper.sh")
-performanc_out = os.path.join(project_path, "report/tmp/")
+report = os.path.join(project_path, "report")
+performance_out = os.path.join(project_path, "report/tmp/")
 performance_folder = os.path.join(project_path, "report/tmp/")
 max_path = os.path.join(os.getcwd(),"monkey/config/max.config")
 device_crash_image = '/sdcard/Crash_*'
@@ -45,8 +46,10 @@ throttle = 500
 sleep_time = 3
 
 
-host = '0.0.0.0'
-port = 7777
-api = 'http://{}:{}/report'.format(host, port)
+gunicorn_port = '3031'
+gunicorn_address = '127.0.0.1' + ':' + gunicorn_port
+host = '127.0.0.1'
+port = '7777'
+api = 'http://{}:{}/getreport'.format(host, gunicorn_port)
 report_folder = os.path.join(project_path,'report')
 report_path = os.path.join(report_folder,"report_{}.html".format(time.strftime("%Y%m%d%H%M%S")))

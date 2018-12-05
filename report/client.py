@@ -30,9 +30,7 @@ def get_html(apk_path,device_name,mail_list):
     try:
         logger.info("开始获取报告!")
         make_env()
-        data = {'apk_path': apk_path,
-                'device_name': device_name,
-                }
+        data = {'apk_path': apk_path,'device_name': device_name}
         r = requests.post(api,data=data)
         logger.info("服务端状态码:{}".format(r.status_code))
         if r.status_code == 200:
@@ -41,6 +39,8 @@ def get_html(apk_path,device_name,mail_list):
             logger.info('报告路径:{}'.format(report_path))
             # SendMail(mail_list, report_path).send_mail()
             # logger.info('发送完成报告!')
+        else:
+            logger.info('报告获取失败!服务端状态码{}'.format(r.status_code))
     except Exception as e:
         logger.error('报告获取失败!' + '\n' + str(e))
 
