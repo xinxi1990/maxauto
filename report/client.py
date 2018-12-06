@@ -31,7 +31,8 @@ def get_html(apk_path,device_name,mail_list):
         logger.info("开始获取报告!")
         make_env()
         data = {'apk_path': apk_path,'device_name': device_name}
-        r = requests.post(api,data=data)
+        print api
+        r = requests.post(api,json=data,timeout=3)
         logger.info("服务端状态码:{}".format(r.status_code))
         if r.status_code == 200:
             with open(report_path, 'wb+') as f:
@@ -44,3 +45,6 @@ def get_html(apk_path,device_name,mail_list):
     except Exception as e:
         logger.error('报告获取失败!' + '\n' + str(e))
 
+
+if __name__ == '__main__':
+    get_html('/Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk','192.168.56.101:5555','xxx')

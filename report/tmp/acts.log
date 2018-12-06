@@ -1,0 +1,6 @@
+com.luojilab.business.user.ui.PhoneInputActivity
+com.luojilab.business.webview.WebViewActivity
+com.luojilab.business.user.ui.PhonePwdInputActivity
+com.luojilab.business.packageweb.CommonPackageWebActivity
+com.luojilab.component.saybook.activity.SaybookDetailNewActivity
+com.luojilab.share.ShareDialogActivity

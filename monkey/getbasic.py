@@ -74,7 +74,7 @@ class GetBasic():
         try:
             for line in self.appinfo:
                 if re.findall('package: name=',line):
-                    appversion =  line.split('versionName=')[-1].replace("'",'').replace("\n",'')
+                    appversion =  line.split('versionName=')[-1].replace("'",'').replace("\n",'').split()[0]
         except Exception as e:
             logger.error("获取app版本号异常!{}".format(e))
         finally:

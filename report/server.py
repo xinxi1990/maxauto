@@ -7,7 +7,7 @@
 @describe: 创建报告
 """
 
-import os,re,time,subprocess,sys
+import os,re,time,subprocess,sys,json
 sys.path.append('..')
 from tools.loggers import JFMlogging
 logger = JFMlogging().getloger()
@@ -28,9 +28,9 @@ def run_server():
     启动Flask
     :return:
     '''
-    stop_server()
+    # stop_server()
     logger.info("启动服务...")
-    app.run(host=host, port=port, debug=False, threaded=False)
+    app.run(host=host, port=port, debug=True, threaded=False)
 
 
 def stop_server():
@@ -92,22 +92,22 @@ def html():
     except Exception as e:
         logger.error(e)
     tuples2 = tuples2 + tuple(n)
-
-    apkpath = request.form['apk_path']
-    device_name = request.form['device_name']
+    params = json.loads(request.get_data())
+    apkpath = params['apk_path']
+    device_name = params['device_name']
     gd = GetData()
     gb = GetBasic(apkpath,device_name)
-    calculate_coverage = gd.calculate_coverage()
+    calculate_coverage = gd.get_calculate_coverage()
     return render_template("report_template.html",
                            appname=gb.get_app_name(),
                            appversion=gb.get_app_version(),
-                           appsize=gb.get_app_version(),
+                           appsize=gb.get_app_size(),
                            devicesmodel=gb.get_devices_model(),
                            devicesversion=gb.get_devices_version(),
                            installtime=gd.get_install_time(),
                            coldtime=gd.get_lanuch_time(),
-                           alreadycov=gd.get_calculate_coverage[0],
-                           notcov=gd.get_calculate_coverage[1],
+                           alreadycov=calculate_coverage[0],
+                           notcov=calculate_coverage[1],
                            crashcount=gd.get_crash_count(),
                            data=tuples, memtime=data[0], meminfo=data[1], memactivity=data[2],
                            data1=tuples1, cputime=data1[0], cpuinfo=data1[1], cpuactivity=data1[2],
@@ -122,7 +122,8 @@ def html():
                            )
 
 
-
+if __name__ == '__main__':
+    run_server()
 
 
 

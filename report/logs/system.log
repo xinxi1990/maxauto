@@ -15,3 +15,450 @@ Traceback (most recent call last):
   File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 41, in read_mem
     with open(mem_path, 'r') as f:
 IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log'
+[2018-12-06 13:44:23,704] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:44:23,714] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:7777/ (Press CTRL+C to quit)
+[2018-12-06 13:45:19,205] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:45:19,246] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:45:19,268] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 100, in html
+    calculate_coverage = gd.calculate_coverage()
+AttributeError: GetData instance has no attribute 'calculate_coverage'
+[2018-12-06 13:45:19,273] [INFO] [bogon][client.py - line:35] 服务端状态码:500
+[2018-12-06 13:45:19,274] [INFO] [bogon][client.py - line:43] 报告获取失败!服务端状态码500
+[2018-12-06 13:46:17,947] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:46:17] "GET / HTTP/1.1" 404 -
+[2018-12-06 13:46:18,055] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:46:18] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-12-06 13:46:46,634] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:46:46,650] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:46:46,669] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 100, in html
+    calculate_coverage = gd.calculate_coverage()
+AttributeError: GetData instance has no attribute 'calculate_coverage'
+[2018-12-06 13:46:46,673] [INFO] [bogon][client.py - line:35] 服务端状态码:500
+[2018-12-06 13:46:46,673] [INFO] [bogon][client.py - line:43] 报告获取失败!服务端状态码500
+[2018-12-06 13:48:12,404] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:48:12,422] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:48:12,461] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 100, in html
+    calculate_coverage = gd.calculate_coverage()
+AttributeError: GetData instance has no attribute 'calculate_coverage'
+[2018-12-06 13:48:12,464] [ERROR] [bogon][client.py - line:46] 报告获取失败!
+'Response' object has no attribute 'h'
+[2018-12-06 13:48:17,087] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:48:17,095] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:48:17,108] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 100, in html
+    calculate_coverage = gd.calculate_coverage()
+AttributeError: GetData instance has no attribute 'calculate_coverage'
+[2018-12-06 13:48:17,110] [INFO] [bogon][client.py - line:35] 服务端状态码:500
+[2018-12-06 13:48:17,110] [INFO] [bogon][client.py - line:43] 报告获取失败!服务端状态码500
+[2018-12-06 13:48:37,315] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:48:37,322] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:48:37,364] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 100, in html
+    calculate_coverage = gd.calculate_coverage()
+AttributeError: GetData instance has no attribute 'calculate_coverage'
+[2018-12-06 13:48:37,366] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-06 13:48:37,366] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-06 13:49:52,297] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:49:52] "POST /%20getreport HTTP/1.1" 404 -
+[2018-12-06 13:50:32,631] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:50:32] "POST /%20getreport HTTP/1.1" 404 -
+[2018-12-06 13:50:48,310] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:50:48] "POST /getreport HTTP/1.1" 400 -
+[2018-12-06 13:51:05,558] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:51:05,576] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:7777/ (Press CTRL+C to quit)
+[2018-12-06 13:51:05,579] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:51:05,930] [INFO] [bogon][server.py - line:45] 结束服务进程
+[2018-12-06 13:51:05,951] [INFO] [bogon][server.py - line:45] 结束服务进程
+[2018-12-06 13:51:17,650] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:51:17,666] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:7777/ (Press CTRL+C to quit)
+[2018-12-06 13:51:17,667] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:51:17,878] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:51:17,885] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:51:17,912] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:51:21,205] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:51:21] "POST /getreport HTTP/1.1" 500 -
+[2018-12-06 13:52:16,775] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/server.py', reloading
+[2018-12-06 13:52:16,822] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:52:17,158] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:52:17,169] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:52:17,185] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:52:22,599] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:52:22] "POST /getreport HTTP/1.1" 500 -
+[2018-12-06 13:52:32,387] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/server.py', reloading
+[2018-12-06 13:52:32,425] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:52:32,755] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:52:32,777] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:52:32,805] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:52:32,861] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:52:32] "POST /getreport HTTP/1.1" 500 -
+[2018-12-06 13:52:55,107] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:52:55] "POST /getreport HTTP/1.1" 500 -
+[2018-12-06 13:52:55,111] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/server.py', reloading
+[2018-12-06 13:52:55,163] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:52:55,542] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:52:55,553] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:52:55,572] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:53:06,254] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:53:06,255] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-06 13:53:06,306] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常!global name 'install_log' is not defined
+[2018-12-06 13:53:06,307] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-06 13:53:06,314] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:53:06] "POST /getreport HTTP/1.1" 500 -
+[2018-12-06 13:53:40,848] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:53:40,863] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:7777/ (Press CTRL+C to quit)
+[2018-12-06 13:53:40,864] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:53:41,087] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:53:41,094] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:53:41,124] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:53:44,416] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:53:44,417] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-06 13:53:44,470] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常!global name 'install_log' is not defined
+[2018-12-06 13:53:44,470] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-06 13:53:44,470] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 13:53:44,470] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:53:44,470] [ERROR] [bogon][getdata.py - line:204] 获取monkey运行时间异常!global name 'monkey_path' is not defined
+[2018-12-06 13:53:44,470] [ERROR] [bogon][getdata.py - line:221] 获取Monkey点击次数异常!global name 'monkey_path' is not defined
+[2018-12-06 13:53:44,471] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 13:53:44,471] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 13:53:44,496] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:53:44] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 13:53:55,763] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:53:55,778] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:53:55,794] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 100, in html
+    calculate_coverage = gd.get_calculate_coverage()
+AttributeError: GetData instance has no attribute 'calculate_coverage'
+[2018-12-06 13:53:55,798] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-06 13:53:55,798] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-06 13:54:19,813] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:54:19,821] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:54:19,860] [INFO] [bogon][client.py - line:36] 服务端状态码:400
+[2018-12-06 13:54:19,860] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码400
+[2018-12-06 13:54:54,358] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:54:54,367] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:54:54,368] [INFO] [bogon][client.py - line:36] 服务端状态码:400
+[2018-12-06 13:54:54,368] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码400
+[2018-12-06 13:55:05,641] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:55:05,647] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常!global name 'page_path' is not defined
+[2018-12-06 13:55:05,648] [INFO] [bogon][client.py - line:36] 服务端状态码:400
+[2018-12-06 13:55:05,649] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码400
+[2018-12-06 13:55:19,417] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/config.py', reloading
+[2018-12-06 13:55:19,467] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:55:19,797] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:55:19,810] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:55:19,826] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:55:21,694] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:55:41,157] [INFO] [bogon][server.py - line:45] 结束服务进程
+[2018-12-06 13:55:41,163] [INFO] [bogon][server.py - line:45] 结束服务进程
+[2018-12-06 13:55:41,168] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:55:41,185] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:3031/ (Press CTRL+C to quit)
+[2018-12-06 13:55:41,186] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:55:41,451] [INFO] [bogon][server.py - line:45] 结束服务进程
+[2018-12-06 13:55:41,457] [INFO] [bogon][server.py - line:45] 结束服务进程
+[2018-12-06 13:55:50,696] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:55:50,709] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:3031/ (Press CTRL+C to quit)
+[2018-12-06 13:55:50,710] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:55:50,904] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:55:50,912] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:55:50,930] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:55:54,223] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:55:54,271] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:55:54,271] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-06 13:55:54,317] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常!global name 'install_log' is not defined
+[2018-12-06 13:55:54,318] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-06 13:55:54,318] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 13:55:54,318] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:55:54,318] [ERROR] [bogon][getdata.py - line:204] 获取monkey运行时间异常!global name 'monkey_path' is not defined
+[2018-12-06 13:55:54,318] [ERROR] [bogon][getdata.py - line:221] 获取Monkey点击次数异常!global name 'monkey_path' is not defined
+[2018-12-06 13:55:54,318] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 13:55:54,319] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 13:55:54,346] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:55:54] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 13:55:54,348] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 13:55:54,349] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206135554.html
+[2018-12-06 13:58:06,712] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/server.py', reloading
+[2018-12-06 13:58:06,762] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:58:07,107] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:58:07,119] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:58:07,135] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:58:09,164] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:58:09,211] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:58:09,211] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常!global name 'install_log' is not defined
+[2018-12-06 13:58:09,267] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:204] 获取monkey运行时间异常!global name 'monkey_path' is not defined
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:221] 获取Monkey点击次数异常!global name 'monkey_path' is not defined
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 13:58:09,267] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 13:58:09,286] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:58:09] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 13:58:09,287] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 13:58:09,288] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206135809.html
+[2018-12-06 13:58:51,309] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:58:51,355] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:58:51,356] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-06 13:58:51,406] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常!global name 'install_log' is not defined
+[2018-12-06 13:58:51,407] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-06 13:58:51,407] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 13:58:51,407] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:58:51,407] [ERROR] [bogon][getdata.py - line:204] 获取monkey运行时间异常!global name 'monkey_path' is not defined
+[2018-12-06 13:58:51,407] [ERROR] [bogon][getdata.py - line:221] 获取Monkey点击次数异常!global name 'monkey_path' is not defined
+[2018-12-06 13:58:51,407] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 13:58:51,407] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 13:58:51,410] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:58:51] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 13:58:51,411] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 13:58:51,412] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206135851.html
+[2018-12-06 13:58:51,732] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/monkey/getbasic.py', reloading
+[2018-12-06 13:58:51,768] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:58:52,031] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:58:52,045] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:58:52,099] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:59:02,106] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:59:02,114] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:3031/ (Press CTRL+C to quit)
+[2018-12-06 13:59:02,116] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 13:59:02,335] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 13:59:02,342] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 13:59:02,355] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 13:59:03,810] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 13:59:03,829] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:59:03,829] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-06 13:59:03,881] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常!global name 'install_log' is not defined
+[2018-12-06 13:59:03,882] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-06 13:59:03,882] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 13:59:03,882] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-06 13:59:03,882] [ERROR] [bogon][getdata.py - line:204] 获取monkey运行时间异常!global name 'monkey_path' is not defined
+[2018-12-06 13:59:03,882] [ERROR] [bogon][getdata.py - line:221] 获取Monkey点击次数异常!global name 'monkey_path' is not defined
+[2018-12-06 13:59:03,883] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 13:59:03,883] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 13:59:03,903] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 13:59:03] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 13:59:03,904] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 13:59:03,904] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206135903.html
+[2018-12-06 14:00:50,776] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:00:50,905] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:00:51,278] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:00:51,291] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:00:51,310] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:02:56,953] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:02:56,999] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:02:57,358] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:02:57,372] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:02:57,390] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:02:58,048] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:02:58,158] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log'
+[2018-12-06 14:02:58,158] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 14:02:58,165] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 14:02:58,165] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 14:02:58,192] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:02:58] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:02:58,193] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:02:58,194] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206140257.html
+[2018-12-06 14:07:15,255] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:07:15,362] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常!global name 'crash_path' is not defined
+[2018-12-06 14:07:15,364] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常!global name 'crash_images' is not defined
+[2018-12-06 14:07:15,365] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log'
+[2018-12-06 14:07:15,368] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:07:15] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:07:15,369] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:07:15,369] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206140715.html
+[2018-12-06 14:07:15,767] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/config.py', reloading
+[2018-12-06 14:07:15,803] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:07:16,256] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:07:16,275] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:07:16,300] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:10:47,575] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:10:47,694] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:10:47,695] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:10:47,720] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:10:47] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:10:47,722] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:10:47,723] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206141047.html
+[2018-12-06 14:14:54,232] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:14:54,277] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:14:54,684] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:14:54,702] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:14:54,725] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:14:59,467] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:14:59,580] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:14:59,581] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:14:59,582] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:14:59,606] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:14:59] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:14:59,608] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:14:59,609] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206141459.html
+[2018-12-06 14:16:18,829] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/monkey/getbasic.py', reloading
+[2018-12-06 14:16:18,879] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:16:19,264] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:16:19,276] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:16:19,292] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:16:20,700] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:16:20,804] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:16:20,804] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:16:20,806] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:16:20,825] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:16:20] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:16:20,828] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:16:20,828] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206141620.html
+[2018-12-06 14:17:45,918] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:17:46,021] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:17:46,022] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:17:46,024] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:17:46,027] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:17:46] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:17:46,029] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:17:46,029] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206141745.html
+[2018-12-06 14:17:46,443] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:17:46,488] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:17:46,885] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:17:46,904] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:17:46,923] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:22:04,393] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:22:04,440] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:22:04,864] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:22:04,877] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:22:04,893] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:22:05,998] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:22:06,005] [INFO] [bogon][_internal.py - line:88]  * Running on http://127.0.0.1:3031/ (Press CTRL+C to quit)
+[2018-12-06 14:22:06,006] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:22:06,222] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:22:06,230] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:22:06,246] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:22:07,821] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:22:07,921] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:22:07,921] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:22:07,922] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:22:07,941] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:22:07] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:22:07,942] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:22:07,943] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142207.html
+[2018-12-06 14:23:16,608] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:23:16,708] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:23:16,709] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:23:16,710] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:23:16,714] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:23:16] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:23:16,715] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:23:16,715] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142316.html
+[2018-12-06 14:23:17,195] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:23:17,239] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:23:17,625] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:23:17,640] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:23:17,658] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:23:58,220] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:23:58,265] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:23:58,339] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:23:58,537] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:23:58,551] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:23:58,567] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:23:58,656] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:23:58,656] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:23:58,658] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:23:58,681] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:23:58] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:23:58,682] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:23:58,683] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142358.html
+[2018-12-06 14:24:12,766] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:24:12,787] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:24:13,067] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:24:13,080] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:24:13,096] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:24:15,426] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:24:15,502] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:24:15,502] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:24:15,503] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:24:15,522] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:24:15] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:24:15,524] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:24:15,525] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142415.html
+[2018-12-06 14:25:02,523] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:25:02,630] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:25:02,631] [ERROR] [bogon][getdata.py - line:187] 获取遍历的页面列表异常!an integer is required
+[2018-12-06 14:25:02,632] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:25:02,636] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:25:02] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:25:02,637] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:25:02,637] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142502.html
+[2018-12-06 14:25:02,797] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:25:02,835] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:25:03,099] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:25:03,114] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:25:03,130] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:25:30,491] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:25:30,517] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:25:30,535] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:25:30,792] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:25:30,809] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:25:30,824] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:25:30,920] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:25:30,922] [ERROR] [bogon][getdata.py - line:243] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:25:30,940] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:25:30] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:25:30,941] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:25:30,942] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142530.html
+[2018-12-06 14:26:23,516] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/report/getdata.py', reloading
+[2018-12-06 14:26:23,570] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:26:23,730] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:26:23,858] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:26:23,873] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:26:23,888] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539
+[2018-12-06 14:26:23,995] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:26:23,997] [ERROR] [bogon][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:26:24,015] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:26:24] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:26:24,016] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:26:24,017] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/report_20181206142623.html
+[2018-12-06 14:27:28,562] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-06 14:27:28,679] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-06 14:27:28,681] [ERROR] [bogon][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: 'images'
+[2018-12-06 14:27:28,685] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [06/Dec/2018 14:27:28] "POST /getreport HTTP/1.1" 200 -
+[2018-12-06 14:27:28,686] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-06 14:27:28,686] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181206142728.html
+[2018-12-06 14:27:28,740] [INFO] [bogon][_internal.py - line:88]  * Detected change in '/Users/xinxi/PycharmProjects/maxauto/config.py', reloading
+[2018-12-06 14:27:28,783] [INFO] [bogon][_internal.py - line:88]  * Restarting with stat
+[2018-12-06 14:27:29,067] [INFO] [bogon][server.py - line:32] 启动服务...
+[2018-12-06 14:27:29,079] [WARNING] [bogon][_internal.py - line:88]  * Debugger is active!
+[2018-12-06 14:27:29,100] [INFO] [bogon][_internal.py - line:88]  * Debugger PIN: 120-762-539

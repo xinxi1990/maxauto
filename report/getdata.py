@@ -39,7 +39,7 @@ class GetData():
         '''
         result = "0"
         try:
-            with open(install_log) as f:
+            with open(install_app_log) as f:
                 result = f.readlines()[0].replace('\n','')
         except Exception as e:
             logger.error("获取安装耗时数据异常!{}".format(e))
@@ -85,7 +85,7 @@ class GetData():
         '''
         crash_count = 0
         try:
-            with open(crash_path,"r") as f_r:
+            with open(crash_savepath,"r") as f_r:
                 for line in f_r.readlines():
                     if re.findall("end",line):
                         crash_count+=1
@@ -129,6 +129,7 @@ class GetData():
         finally:
             return actlist, len(actlist)
 
+
     def get_calculate_coverage(self):
         '''
         计算自动化遍历覆盖率
@@ -152,36 +153,19 @@ class GetData():
         :return:
         '''
         try:
-            run_count = self.get_run_activitys()[0]
-            all_count = self.get_all_activitys()[0]
-            doneinfo=''
-            noinfo=''
-            done_num = 0
-            nonum = 0
-            for index,act in  enumerate(all_count):
-                if act in run_count:
-                    done_num+=1
+            with open(acts_path, "r") as f_r:
+                activitylist = f_r.readlines()
+            doneinfo = ''
+            for index,act in  enumerate(activitylist):
                     tr = """
                         <tr>
                         <td align="center">{}</td>
                         <td align="center">{}</td>
                         <td align="center"><font color="blue">{}</font></td>
                         </tr>
-                        """.format(done_num,act, "已遍历")
+                        """.format(index,act, "已遍历")
                     doneinfo +=tr
-
-            for index, act in enumerate(all_count):
-                if act not in run_count:
-                    done_num+=1
-                    tr = """
-                        <tr>
-                        <td align="center">{}</td>
-                        <td align="center">{}</td>
-                        <td align="center"><font color="red">{}</font></td>
-                        </tr>
-                        """.format(done_num,act, "未遍历")
-                    noinfo += tr
-            return doneinfo + noinfo
+            return doneinfo
         except Exception as e:
             logger.error("获取遍历的页面列表异常!{}".format(e))
             return ""
@@ -194,14 +178,13 @@ class GetData():
         '''
         runtime = 0
         try:
-            with open(monkey_path) as f_r:
+            with open(monkey_log) as f_r:
                 for line in  f_r.readlines():
                     if re.findall("elapsed time= ",line):
                         runtime = line.split("elapsed time= ")[1].split(" ms")[0]
                         runtime = round(float(runtime) / 1000,1)
         except Exception as e:
             logger.error("获取monkey运行时间异常!{}".format(e))
-
         finally:
             return "{}秒".format(runtime)
 
@@ -213,7 +196,7 @@ class GetData():
         '''
         clickcount = 0
         try:
-            with open(monkey_path) as f_r:
+            with open(monkey_log) as f_r:
                 for line in  f_r.readlines():
                     if re.findall("Events injected: ",line):
                         clickcount = line.split("Events injected: ")[1]
@@ -231,10 +214,10 @@ class GetData():
         crash_image = "暂无图片"
         total_image = ''
         try:
-            folder = os.listdir(crash_images)
+            folder = os.listdir(local_image_folder)
             if len(folder) != 0:
                 for image_path in folder:
-                    image_path = os.path.join(crash_images, image_path)
+                    image_path = os.path.join(local_image_folder, image_path)
                     with open(image_path, "rb") as image_file:
                         encoded_string = base64.b64encode(image_file.read())
                     crash_image = '<img src="data:image/png;base64,{}" alt="image" height="400" width="200"/>'.format(encoded_string)
@@ -273,8 +256,4 @@ class GetData():
             logger.error("获取页面响应时间列表异常!{}".format(e))
 
 
-
-
-if __name__ == '__main__':
-    print GetData().get_all_activitys()
 

@@ -15,3 +15,392 @@ HTTPConnectionPool(host='127.0.0.1', port=3031): Max retries exceeded with url: 
 [2018-12-06 00:03:40,133] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
 [2018-12-06 00:03:40,163] [INFO] [xinxideMacBook-Pro.local][client.py - line:35] 服务端状态码:500
 [2018-12-06 00:03:40,163] [INFO] [xinxideMacBook-Pro.local][client.py - line:43] 报告获取失败!服务端状态码500
+[2018-12-06 13:00:10,254] [INFO] [bogon][run.py - line:38] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:00:10,255] [INFO] [bogon][run.py - line:40] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:00:10,396] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.luojilab.player
+[2018-12-06 13:00:10,400] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk
+[2018-12-06 13:00:11,276] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:11,824] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:12,129] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:12,400] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:12,628] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:12,857] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:13,084] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:13,319] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:13,576] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:13,834] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:14,073] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:14,333] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:14,604] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:14,840] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:15,085] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:15,483] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:15,732] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:15,989] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:16,260] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:16,508] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:16,777] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:17,028] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:17,308] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:17,704] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:18,009] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:00:18,273] [INFO] [bogon][installapp.py - line:50] app安装成功!
+[2018-12-06 13:00:18,273] [INFO] [bogon][installapp.py - line:54] app安装耗时:8s
+[2018-12-06 13:00:18,274] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-06 13:00:18,509] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.luojilab.player
+[2018-12-06 13:00:21,053] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.luojilab.player/com.luojilab.business.welcome.SplashActivity
+[2018-12-06 13:00:21,054] [INFO] [bogon][lanuchapp.py - line:57] 本次冷启动时间:2246
+[2018-12-06 13:00:24,057] [INFO] [bogon][lanuchapp.py - line:82] 均值为:2246.0
+[2018-12-06 13:00:24,057] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-06 13:00:24,058] [ERROR] [bogon][monkey.py - line:92] Monkey运行异常!global name 'performanc_out' is not defined
+[2018-12-06 13:14:11,939] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:14:11,940] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:14:12,073] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.luojilab.player
+[2018-12-06 13:14:12,078] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk
+[2018-12-06 13:14:12,761] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:13,484] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:13,942] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:14,276] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:14,514] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:14,749] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:14,997] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:15,225] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:15,535] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:15,896] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:16,136] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:16,372] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:16,612] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:16,847] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:17,108] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:17,331] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:17,556] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:17,804] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:18,036] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:18,284] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:18,524] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:18,748] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:18,980] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:19,224] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-06 13:14:19,494] [INFO] [bogon][installapp.py - line:50] app安装成功!
+[2018-12-06 13:14:19,494] [INFO] [bogon][installapp.py - line:54] app安装耗时:7s
+[2018-12-06 13:14:19,495] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-06 13:14:19,749] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.luojilab.player
+[2018-12-06 13:14:21,649] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.luojilab.player/com.luojilab.business.welcome.SplashActivity
+[2018-12-06 13:14:21,650] [INFO] [bogon][lanuchapp.py - line:57] 本次冷启动时间:1628
+[2018-12-06 13:14:24,654] [INFO] [bogon][lanuchapp.py - line:82] 均值为:1628.0
+[2018-12-06 13:14:24,656] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-06 13:14:24,712] [INFO] [bogon][logintest.py - line:53] appium pid is null
+[2018-12-06 13:14:24,712] [INFO] [bogon][logintest.py - line:151] 登录测试异常:'AppiumDriver' object has no attribute 'device'
+[2018-12-06 13:14:24,752] [INFO] [bogon][logintest.py - line:53] appium pid is null
+[2018-12-06 13:14:24,753] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log文件完成
+[2018-12-06 13:14:24,754] [INFO] [bogon][monkey.py - line:139] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:14:24,807] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:14:24,828] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:14:24,857] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:14:24,956] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:14:24,959] [INFO] [bogon][monkey.py - line:253] 清除logcat日志
+[2018-12-06 13:14:25,022] [INFO] [bogon][common.py - line:57] 结束:logcat,进程号:2472
+[2018-12-06 13:14:25,022] [INFO] [bogon][monkey.py - line:69] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:14:28,061] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:3428
+[2018-12-06 13:14:28,061] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:15:23,380] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:15:23,380] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:15:23,465] [INFO] [bogon][logintest.py - line:53] appium pid is null
+[2018-12-06 13:15:23,465] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a  127.0.0.1 -p 4725
+[2018-12-06 13:15:28,082] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-06 13:15:28,082] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-06 13:15:37,606] [INFO] [bogon][logintest.py - line:138] 启动app中.....
+[2018-12-06 13:16:01,119] [INFO] [bogon][logintest.py - line:149] 登录成功
+[2018-12-06 13:16:01,252] [INFO] [bogon][logintest.py - line:57] kill appium
+[2018-12-06 13:16:01,252] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log文件完成
+[2018-12-06 13:16:01,254] [INFO] [bogon][monkey.py - line:139] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:16:01,364] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:16:01,387] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:16:01,415] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:16:01,486] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:16:01,489] [INFO] [bogon][monkey.py - line:253] 清除logcat日志
+[2018-12-06 13:16:01,544] [INFO] [bogon][common.py - line:57] 结束:logcat,进程号:6288
+[2018-12-06 13:16:01,544] [INFO] [bogon][monkey.py - line:69] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:16:04,582] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:04,584] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:08,265] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:08,266] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:12,106] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:12,107] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:16,875] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:16,875] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:21,359] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:21,360] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:25,537] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:25,538] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:29,365] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:29,365] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:33,142] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:33,142] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:36,757] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:36,757] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:40,564] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:40,565] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:44,669] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:44,669] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:48,280] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:48,280] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:52,062] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:52,063] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:16:57,404] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:16:57,404] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:17:01,488] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:17:01,489] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:17:05,344] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4022
+[2018-12-06 13:17:05,345] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:17:09,048] [INFO] [bogon][monkey.py - line:190] 当前monkey进程不存在
+[2018-12-06 13:17:09,049] [INFO] [bogon][monkey.py - line:80] ==========Monkey运行结束!==========
+[2018-12-06 13:17:09,051] [INFO] [bogon][common.py - line:107] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-06 13:17:09,051] [INFO] [bogon][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-06 13:22:52,992] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:22:52,992] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:22:53,032] [INFO] [bogon][monkey.py - line:139] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:22:53,080] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:22:53,102] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:22:53,135] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:22:53,203] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:22:53,206] [INFO] [bogon][monkey.py - line:253] 清除logcat日志
+[2018-12-06 13:22:53,267] [INFO] [bogon][common.py - line:57] 结束:logcat,进程号:8577
+[2018-12-06 13:22:53,268] [INFO] [bogon][monkey.py - line:69] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:22:56,302] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:4456
+[2018-12-06 13:22:56,303] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:30:09,172] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:30:09,172] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:30:09,253] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-06 13:30:09,253] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a  127.0.0.1 -p 4725
+[2018-12-06 13:30:13,675] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-06 13:30:13,675] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-06 13:30:20,251] [INFO] [bogon][logintest.py - line:137] 启动app中.....
+[2018-12-06 13:30:42,113] [INFO] [bogon][logintest.py - line:148] 登录成功
+[2018-12-06 13:30:42,236] [INFO] [bogon][logintest.py - line:57] 停止appium进程:10203
+[2018-12-06 13:30:42,237] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log文件完成
+[2018-12-06 13:31:20,313] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:31:20,314] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:31:20,392] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-06 13:31:20,393] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-06 13:31:24,380] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-06 13:31:24,381] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-06 13:31:30,478] [INFO] [bogon][logintest.py - line:137] 启动app中.....
+[2018-12-06 13:31:53,240] [INFO] [bogon][logintest.py - line:148] 登录成功
+[2018-12-06 13:31:53,350] [INFO] [bogon][logintest.py - line:57] 停止appium进程:10492
+[2018-12-06 13:31:53,350] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log文件完成
+[2018-12-06 13:31:53,353] [INFO] [bogon][monkey.py - line:139] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:31:53,411] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:31:53,438] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:31:53,475] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:31:53,560] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:31:53,564] [INFO] [bogon][monkey.py - line:253] 清除logcat日志
+[2018-12-06 13:31:53,616] [INFO] [bogon][common.py - line:57] 结束:logcat,进程号:10233
+[2018-12-06 13:31:53,616] [INFO] [bogon][monkey.py - line:69] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:31:56,650] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:5491
+[2018-12-06 13:31:56,650] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:32:00,456] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:5491
+[2018-12-06 13:32:00,456] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:32:04,080] [INFO] [bogon][monkey.py - line:194] 当前monkey进程pid:5491
+[2018-12-06 13:32:04,080] [INFO] [bogon][monkey.py - line:75] ==========Monkey运行中...==========
+[2018-12-06 13:35:47,408] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:35:47,408] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:35:47,499] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-06 13:35:47,499] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-06 13:35:51,859] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-06 13:35:51,859] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-06 13:35:59,752] [INFO] [bogon][logintest.py - line:137] 启动app中.....
+[2018-12-06 13:36:22,343] [INFO] [bogon][logintest.py - line:148] 登录成功
+[2018-12-06 13:36:22,450] [INFO] [bogon][logintest.py - line:57] 停止appium进程:11595
+[2018-12-06 13:36:22,450] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/logintest_app.log文件完成
+[2018-12-06 13:36:22,451] [INFO] [bogon][monkey.py - line:133] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:36:22,545] [INFO] [bogon][monkey.py - line:247] 清除logcat日志
+[2018-12-06 13:36:22,546] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:36:22,573] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:36:22,608] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:36:22,680] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:36:22,731] [INFO] [bogon][common.py - line:57] 结束:logcat,进程号:10520
+[2018-12-06 13:36:22,731] [INFO] [bogon][monkey.py - line:62] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:36:25,768] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:25,768] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:26,476] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:36:29,506] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:29,506] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:30,144] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:36:33,274] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:33,274] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:35,145] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:36:38,174] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:38,174] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:39,142] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:36:42,257] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:42,258] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:44,083] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:36:47,282] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:47,283] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:50,597] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:36:53,669] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:6079
+[2018-12-06 13:36:53,669] [INFO] [bogon][monkey.py - line:68] ==========Monkey运行中...==========
+[2018-12-06 13:36:54,933] [ERROR] [bogon][monkey.py - line:123] 页面展示写入失败!global name 'pagelog' is not defined
+[2018-12-06 13:37:55,182] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:37:55,182] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:38:16,116] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:38:16,116] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:38:16,156] [INFO] [bogon][monkey.py - line:132] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:38:16,211] [INFO] [bogon][monkey.py - line:246] 清除logcat日志
+[2018-12-06 13:38:16,212] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:38:16,238] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:38:16,289] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:38:16,382] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:38:16,442] [INFO] [bogon][common.py - line:57] 结束:logcat,进程号:11625
+[2018-12-06 13:38:16,443] [INFO] [bogon][monkey.py - line:61] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:38:19,477] [INFO] [bogon][monkey.py - line:187] 当前monkey进程pid:6318
+[2018-12-06 13:38:19,477] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:38:20,073] [INFO] [bogon][monkey.py - line:120] 页面展示写入完成!
+[2018-12-06 13:38:23,100] [INFO] [bogon][monkey.py - line:187] 当前monkey进程pid:6318
+[2018-12-06 13:38:23,100] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:38:24,002] [INFO] [bogon][monkey.py - line:120] 页面展示写入完成!
+[2018-12-06 13:38:27,066] [INFO] [bogon][monkey.py - line:187] 当前monkey进程pid:6318
+[2018-12-06 13:38:27,066] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:38:28,625] [INFO] [bogon][monkey.py - line:120] 页面展示写入完成!
+[2018-12-06 13:38:31,675] [INFO] [bogon][monkey.py - line:187] 当前monkey进程pid:6318
+[2018-12-06 13:38:31,675] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:38:34,747] [INFO] [bogon][monkey.py - line:120] 页面展示写入完成!
+[2018-12-06 13:38:37,788] [INFO] [bogon][monkey.py - line:187] 当前monkey进程pid:6318
+[2018-12-06 13:38:37,788] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:38:38,476] [INFO] [bogon][monkey.py - line:120] 页面展示写入完成!
+[2018-12-06 13:38:41,560] [INFO] [bogon][monkey.py - line:187] 当前monkey进程pid:6318
+[2018-12-06 13:38:41,560] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:38:42,885] [INFO] [bogon][monkey.py - line:120] 页面展示写入完成!
+[2018-12-06 13:39:14,758] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:39:14,758] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:39:14,795] [INFO] [bogon][monkey.py - line:130] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:39:14,913] [INFO] [bogon][monkey.py - line:244] 清除logcat日志
+[2018-12-06 13:39:14,913] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:39:14,941] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:39:14,980] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:39:15,064] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:39:15,114] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:39:15,114] [INFO] [bogon][monkey.py - line:61] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:39:18,149] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:18,151] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:18,979] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:22,011] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:22,011] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:22,658] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:25,691] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:25,691] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:26,601] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:30,074] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:30,074] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:31,943] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:34,984] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:34,985] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:36,160] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:39,190] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:39,191] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:40,025] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:43,078] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:43,079] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:44,421] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:47,474] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:47,474] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:49,297] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:52,324] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:52,324] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:53,113] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:56,144] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:56,144] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:39:56,782] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:39:59,813] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:39:59,813] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:40:00,507] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:40:03,537] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:40:03,538] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:40:04,192] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:40:07,240] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:40:07,240] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:40:07,892] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:40:10,926] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:40:10,926] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:40:11,526] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:40:14,555] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:40:14,555] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:40:15,168] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:40:18,201] [INFO] [bogon][monkey.py - line:185] 当前monkey进程pid:6477
+[2018-12-06 13:40:18,201] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:40:18,950] [INFO] [bogon][monkey.py - line:118] 页面展示写入完成!
+[2018-12-06 13:40:21,980] [INFO] [bogon][monkey.py - line:181] 当前monkey进程不存在
+[2018-12-06 13:40:21,980] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行结束!==========
+[2018-12-06 13:40:21,982] [INFO] [bogon][common.py - line:107] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-06 13:40:21,982] [INFO] [bogon][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-06 13:41:04,467] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:41:04,468] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:41:04,499] [INFO] [bogon][monkey.py - line:131] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:41:04,557] [INFO] [bogon][monkey.py - line:245] 清除logcat日志
+[2018-12-06 13:41:04,557] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:41:04,587] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:41:04,619] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:41:04,690] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:41:04,754] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:41:04,754] [INFO] [bogon][monkey.py - line:61] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:41:07,788] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:07,789] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:11,534] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:11,534] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:15,146] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:15,147] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:18,993] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:18,993] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:23,003] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:23,003] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:27,084] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:27,084] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:30,998] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:30,998] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:35,302] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6765
+[2018-12-06 13:41:35,303] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:40,321] [INFO] [bogon][run.py - line:39] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:41:40,321] [INFO] [bogon][run.py - line:41] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-06 13:41:40,361] [INFO] [bogon][monkey.py - line:131] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-06 13:41:40,446] [INFO] [bogon][monkey.py - line:245] 清除logcat日志
+[2018-12-06 13:41:40,446] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-06 13:41:40,471] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-06 13:41:40,503] [INFO] [bogon][common.py - line:38] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-06 13:41:40,577] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:41:40,628] [INFO] [bogon][common.py - line:53] 未查询到pid
+[2018-12-06 13:41:40,628] [INFO] [bogon][monkey.py - line:61] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.luojilab.player --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-06 13:41:43,667] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:41:43,667] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:47,317] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:41:47,317] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:50,983] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:41:50,983] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:54,848] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:41:54,848] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:41:58,907] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:41:58,908] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:02,953] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:02,953] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:08,718] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:08,719] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:12,709] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:12,710] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:17,532] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:17,533] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:21,421] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:21,421] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:25,510] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:25,512] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:30,332] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:30,332] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:34,347] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:34,350] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:39,189] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:39,189] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:43,672] [INFO] [bogon][monkey.py - line:186] 当前monkey进程pid:6935
+[2018-12-06 13:42:43,673] [INFO] [bogon][monkey.py - line:67] ==========Monkey运行中...==========
+[2018-12-06 13:42:47,797] [INFO] [bogon][monkey.py - line:182] 当前monkey进程不存在
+[2018-12-06 13:42:47,798] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行结束!==========
+[2018-12-06 13:42:47,800] [INFO] [bogon][common.py - line:107] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-06 13:42:47,801] [INFO] [bogon][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log

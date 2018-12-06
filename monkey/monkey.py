@@ -29,7 +29,6 @@ class Monkey():
         self.frameworkjar = framework_jar
         self.crash_savepath = crash_savepath
         self.monkeylog = monkey_log
-        self.pagelog = page_log
         self.device_crash_path = device_crash_path
         self.sleep_time = sleep_time
 
@@ -38,20 +37,13 @@ class Monkey():
         初始化环境
         :return:
         '''
-        if os.path.exists(performanc_out):
-            shutil.rmtree(performanc_out)
-        os.mkdir(performanc_out)
-        if os.path.exists(local_images_path):
-           shutil.rmtree(local_images_path)
-        if os.path.exists(images_zip):
-            os.remove(images_zip)
         self.del_crash_log()
         self.del_crash_images()
+        self.del_logcat()
         common.push_file(self.device, self.monkeyjar, sdcard_path)
         common.push_file(self.device, self.frameworkjar, sdcard_path)
         common.push_file(self.device, max_path,sdcard_path)
         common.kill_pid("Maxim")
-        self.del_logcat()
         common.kill_pid("logcat")
 
 
@@ -74,6 +66,7 @@ class Monkey():
                 if self.find_monkey() != 1:
                     logger.info("="*10 + "Monkey运行中..." + "="*10)
                     self.call_performance()
+                    self.write_page()
                     time.sleep(self.sleep_time)
                 else:
                     runing = False
@@ -86,8 +79,6 @@ class Monkey():
                 if image_path != '':
                     common.pull_file(self.device,image_path,local_images_path)
                     self.rename_image()
-                    zip_path = self.zip_image()
-                    print zip_path
         except Exception as e:
             logger.error('Monkey运行异常!{}'.format(e))
 
@@ -111,22 +102,20 @@ class Monkey():
             logger.info('{}设备中查询崩溃异常:{}'.format(self.device,e))
             return 0
 
-
-
     def write_page(self):
         '''
-        调用页面展示性能脚本
+        页面加载时间
         :return:
         '''
         try:
-            cmd = 'adb -s logcat -d | grep -i activitymanager.*Displayed'.format(self.device)
+            cmd = 'adb -s {} logcat -d | grep -i activitymanager.*Displayed'.format(self.device)
             result = subprocess.Popen(cmd, shell=True,stdout=subprocess.PIPE).stdout.read()
             if result != None or result != '':
-                with open(pagelog,'a') as f:
+                with open(page_path,'a') as f:
                     f.write(result)
-                logger.info('页面展示写入完成!')
+                # logger.info('页面加载时间写入完成!')
         except Exception as e:
-            logger.error("页面展示写入失败!{}".format(e))
+            logger.error("页面加载时间写入失败!{}".format(e))
 
 
     def del_crash_log(self):
