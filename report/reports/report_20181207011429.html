@@ -1,0 +1,567 @@
+<html>
+<meta charset="UTF-8">
+<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <h1 align="center">Android稳定性测试报告 2018-12-07 01:14:29</h1>
+    <hr>
+    <div class="panel">
+        <div class="panel_title">
+            <h4>应用信息</h4>
+        </div>
+        <div class="panel_main" id="appInfoDiv">
+            <table class="app_base_info" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+                <colgroup>
+                    <col style="width:92px;">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td rowspan="2">
+                    <img src="https://img-blog.csdn.net/20180312105203250" height="80" width="80" alt="" style="width:100%">
+                    </td>
+                    <th>应用名称</th>
+                    <td align="center"><span class="cut">com.luojilab.player</span></td>
+                    <th>应用版本</th>
+                    <td align="center"><span class="cut">5.2.0</span></td>
+                    <th>应用大小</th>
+                    <td align="center"><span class="cut">47.71MB</span></td>
+                    <th>遍历时间</th>
+                    <td align="center"><span class="cut">60.6秒</span></td>
+                    <th>环境</th>
+                    <td align="center"><span class="cut">测试</span></td>
+                </tr>
+                <tr>
+                    <th>测试设备</th>
+                    <td align="center">Google</td>
+                    <th>系统版本</th>
+                    <td align="center">Android7.0</td>
+                    <th>安装耗时</th>
+                    <td align="center"><span class="cut">10s秒</span></td>
+                    <th>元素点击</th>
+                    <td align="center"><span class="cut">222
+次</span></td>
+                    <th>登录</th>
+                    <td align="center"><span class="cut">sucess</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>启动时间</h4>
+    <div id="start_time" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历占比统计</h4>
+    <div id="coverage_percent" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历结果列表</h4>
+    <div id="coverage_runpages" style="min-width:500px;">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+          <thead>
+          <tr>
+            <th>序号</th>
+            <th>页面名称</th>
+            <th>是否遍历</th>
+          </tr>
+          </thead>
+          
+                        <tr>
+                        <td align="center">0</td>
+                        <td align="center">com.luojilab.business.myself.setting.AboutActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">1</td>
+                        <td align="center">com.luojilab.business.webview.WebViewActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">2</td>
+                        <td align="center">com.luojilab.business.myself.setting.SettingActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">3</td>
+                        <td align="center">com.luojilab.business.HomeTabActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">4</td>
+                        <td align="center">com.luojilab.business.packageweb.CommonPackageWebActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">5</td>
+                        <td align="center">com.luojilab.business.goods.ui.RNEbookDetailActivity1
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">6</td>
+                        <td align="center">com.luojilab.component.course.list.CourseListActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">7</td>
+                        <td align="center">com.luojilab.business.user.ui.PhoneInputActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">8</td>
+                        <td align="center">com.luojilab.business.user.ui.PhonePwdInputActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+          </tbody>
+        </table>
+    </div>
+
+    <h4>CPU使用率走势图</h4>
+    <div id="cpuchart" style="min-width:1500px;height:400px"></div>
+    <h4>内存使用率走势图</h4>
+    <div id="memchart" style="min-width:1500px;height:400px"></div>
+    <h4>页面加载使用率走势图</h4>
+    <div id="pagechart" style="min-width:1500px;height:400px"></div>
+
+    <div class="task-result" style="clear:both;">
+        <h3 class="task-result-header">
+            <span class="task-result-title">崩溃信息: 1 次</span>
+        </h3>
+        <textarea rows="50" cols="200">
+        暂无数据!
+crash:
+// CRASH: com.luojilab.player (pid 2262) (dump time: 2018-12-06 06:03:46)
+// Build Label: Android/vbox86p/vbox86p:7.0/NRD90M/26:userdebug/test-keys
+// Build Time: 1518803417000
+// Long Msg: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.SEND typ=message/rfc882 flg=0x1 clip={message/rfc882 T:请编辑邮件内容。} (has extras) }
+// at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1809)
+// at android.app.Instrumentation.execStartActivity(Instrumentation.java:1523)
+// at android.app.Activity.startActivityForResult(Activity.java:4224)
+// at android.support.v4.app.BaseFragmentActivityApi16.startActivityForResult(SourceFile:54)
+// at android.support.v4.app.FragmentActivity.startActivityForResult(SourceFile:67)
+// at android.app.Activity.startActivityForResult(Activity.java:4183)
+// at android.support.v4.app.FragmentActivity.startActivityForResult(SourceFile:720)
+// at android.app.Activity.startActivity(Activity.java:4507)
+// at android.app.Activity.startActivity(Activity.java:4475)
+// at com.luojilab.business.myself.setting.AboutActivity.onClick(SourceFile:66)
+// at android.view.View.performClick(View.java:5609)
+// at android.view.View$PerformClick.run(View.java:22259)
+// at android.os.Handler.handleCallback(Handler.java:751)
+// at android.os.Handler.dispatchMessage(Handler.java:95)
+// at android.os.Looper.loop(Looper.java:154)
+// at android.app.ActivityThread.main(ActivityThread.java:6077)
+// at java.lang.reflect.Method.invoke(Native Method)
+// at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+// at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)
+// 
+crashend
+
+
+        </textarea>
+    </div>
+       <div class="crash-image" style="clear:both;">
+        <h3 class="crash-image-header">
+            <span class="crash-image-title">崩溃回溯:</span>
+        </h3>
+         
+    </div>
+
+    <script>
+
+        var chart = null;
+		var memtime = ["2018-12-06 13:41:43", "2018-12-06 13:41:47", "2018-12-06 13:41:50", "2018-12-06 13:41:54", "2018-12-06 13:41:58", "2018-12-06 13:42:02", "2018-12-06 13:42:08", "2018-12-06 13:42:12", "2018-12-06 13:42:17", "2018-12-06 13:42:21", "2018-12-06 13:42:25", "2018-12-06 13:42:30", "2018-12-06 13:42:34", "2018-12-06 13:42:39", "2018-12-06 13:42:43"]
+		var meminfo = ["250.88", "250.82", "250.77", "250.94", "250.96", "260.76", "261.42", "249.21", "244.98", "245.00", "258.74", "253.91", "254.35", "251.74", "250.35"]
+		var memactivity = ["com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhonePwdInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.share.ShareDialogActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity"]
+		var data= [["2018-12-06 13:41:43", 250.88], ["2018-12-06 13:41:47", 250.82], ["2018-12-06 13:41:50", 250.77], ["2018-12-06 13:41:54", 250.94], ["2018-12-06 13:41:58", 250.96], ["2018-12-06 13:42:02", 260.76], ["2018-12-06 13:42:08", 261.42], ["2018-12-06 13:42:12", 249.21], ["2018-12-06 13:42:17", 244.98], ["2018-12-06 13:42:21", 245.0], ["2018-12-06 13:42:25", 258.74], ["2018-12-06 13:42:30", 253.91], ["2018-12-06 13:42:34", 254.35], ["2018-12-06 13:42:39", 251.74], ["2018-12-06 13:42:43", 250.35]]
+		//内存数据
+
+		var cputime = ["2018-12-06 13:41:43", "2018-12-06 13:41:47", "2018-12-06 13:41:50", "2018-12-06 13:41:54", "2018-12-06 13:41:58", "2018-12-06 13:42:02", "2018-12-06 13:42:08", "2018-12-06 13:42:12", "2018-12-06 13:42:17", "2018-12-06 13:42:21", "2018-12-06 13:42:25", "2018-12-06 13:42:30", "2018-12-06 13:42:34", "2018-12-06 13:42:39", "2018-12-06 13:42:43"]
+		var cpuinfo = ["4.4", "1.1", "1.1", "0.2", "0.2", "2.8", "14", "14", "3.5", "3.5", "0.3", "0.3", "13", "13", "4"]
+		var cpuactivity = ["com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhonePwdInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.share.ShareDialogActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity"]
+		var data1= [["2018-12-06 13:41:43", 4.4], ["2018-12-06 13:41:47", 1.1], ["2018-12-06 13:41:50", 1.1], ["2018-12-06 13:41:54", 0.2], ["2018-12-06 13:41:58", 0.2], ["2018-12-06 13:42:02", 2.8], ["2018-12-06 13:42:08", 14.0], ["2018-12-06 13:42:12", 14.0], ["2018-12-06 13:42:17", 3.5], ["2018-12-06 13:42:21", 3.5], ["2018-12-06 13:42:25", 0.3], ["2018-12-06 13:42:30", 0.3], ["2018-12-06 13:42:34", 13.0], ["2018-12-06 13:42:39", 13.0], ["2018-12-06 13:42:43", 4.0]]
+		//cpu数据
+
+        var pagetime = ["12-06 06:03:48.781", "12-06 06:03:54.284", "12-06 06:04:07.364", "12-06 06:03:57.204", "12-06 06:04:03.706", "12-06 06:04:01.187", "12-06 06:04:17.075", "12-06 06:03:29.522", "12-06 06:03:39.820", "12-06 06:04:17.690", "12-06 06:03:52.144"]
+		var pageinfo = [2231, "513", "185", "216", "663", "367", "378", "901", 1623, "210", "918"]
+		var pageactivity = ["com.luojilab.business.HomeTabActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.goods.ui.RNEbookDetailActivity1", "com.luojilab.component.course.list.CourseListActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity", "com.luojilab.business.user.ui.PhonePwdInputActivity", "com.luojilab.business.webview.WebViewActivity", "com.luojilab.business.myself.setting.AboutActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity"]
+		var data2= [["12-06 06:03:48.781", 2231.0], ["12-06 06:03:54.284", 513.0], ["12-06 06:04:07.364", 185.0], ["12-06 06:03:57.204", 216.0], ["12-06 06:04:03.706", 663.0], ["12-06 06:04:01.187", 367.0], ["12-06 06:04:17.075", 378.0], ["12-06 06:03:29.522", 901.0], ["12-06 06:03:39.820", 1623.0], ["12-06 06:04:17.690", 210.0], ["12-06 06:03:52.144", 918.0]]
+		//cpu数据
+
+
+		//自己编写的js方法
+		function getActivity(yInfo, mInfo, info){
+			var i = yInfo.indexOf(info);
+			return mInfo[i];
+		}
+
+        $(function () {
+           $('#memchart').highcharts({
+	        chart: {
+	            zoomType: 'x'
+	        },
+	        title: {
+	            text: '内存使用率'
+	        },
+	        xAxis: {
+	            type: 'datetime',
+	            crosshair: true,
+	            type: "datetime",
+	            categories: memtime
+	        },
+           //设置滚动条
+            scrollbar: {
+                enabled: true
+            },
+	        tooltip: {
+	            dateTimeLabelFormats: {
+	                millisecond: '%H:%M:%S.%L',
+	                second: '%H:%M:%S',
+	                minute: '%H:%M',
+	                hour: '%H:%M',
+	                day: '%Y-%m-%d',
+	                week: '%m-%d',
+	                month: '%Y-%m',
+	                year: '%Y'
+	            },formatter: function () {
+	            			var mInfo = ["com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhonePwdInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.share.ShareDialogActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity"];
+		                	var yInfo = ["2018-12-06 13:41:43", "2018-12-06 13:41:47", "2018-12-06 13:41:50", "2018-12-06 13:41:54", "2018-12-06 13:41:58", "2018-12-06 13:42:02", "2018-12-06 13:42:08", "2018-12-06 13:42:12", "2018-12-06 13:42:17", "2018-12-06 13:42:21", "2018-12-06 13:42:25", "2018-12-06 13:42:30", "2018-12-06 13:42:34", "2018-12-06 13:42:39", "2018-12-06 13:42:43"];
+		                	var point = this.points[0];
+							return '<b>' + "内存: </b>" + point.y + '<br/>' +
+								   '<b>' + "Time: </b>" + point.x + '<br/>' +
+								   '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+	            },
+	            shared: true
+
+	        },
+	        yAxis: {
+	            min:0,
+	            title: {
+	                text: 'MB'
+	            }
+	        },
+	        legend: {
+	            enabled: false
+	        },
+	        plotOptions: {
+	            area: {
+	                fillColor: {
+	                    linearGradient: {
+	                        x1: 0,
+	                        y1: 0,
+	                        x2: 0,
+	                        y2: 1
+	                    },
+	                    stops: [
+	                        [0, Highcharts.getOptions().colors[0]],
+	                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                    ]
+	                },
+	                marker: {
+	                    radius: 2
+	                },
+	                lineWidth: 1,
+	                states: {
+	                    hover: {
+	                        lineWidth: 1
+	                    }
+	                },
+	                threshold: null
+	            }
+	        },
+	        series: [{
+	            type: 'area',
+	            name: '内存使用率',
+	            data: data,
+                turboThreshold: 5000
+	        }]
+	    });
+            $('#cpuchart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'CPU使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: cputime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = ["com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhonePwdInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.share.ShareDialogActivity", "com.luojilab.component.saybook.activity.SaybookDetailNewActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity"];
+                                var yInfo = ["2018-12-06 13:41:43", "2018-12-06 13:41:47", "2018-12-06 13:41:50", "2018-12-06 13:41:54", "2018-12-06 13:41:58", "2018-12-06 13:42:02", "2018-12-06 13:42:08", "2018-12-06 13:42:12", "2018-12-06 13:42:17", "2018-12-06 13:42:21", "2018-12-06 13:42:25", "2018-12-06 13:42:30", "2018-12-06 13:42:34", "2018-12-06 13:42:39", "2018-12-06 13:42:43"];
+                                var point = this.points[0];
+                                return '<b>' + "CPU: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    max:100,
+                    title: {
+                        text: '%'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'CPU使用率',
+                    data: data1,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+            $('#pagechart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: '页面加载使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: pagetime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = ["com.luojilab.business.HomeTabActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.goods.ui.RNEbookDetailActivity1", "com.luojilab.component.course.list.CourseListActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity", "com.luojilab.business.user.ui.PhonePwdInputActivity", "com.luojilab.business.webview.WebViewActivity", "com.luojilab.business.myself.setting.AboutActivity", "com.luojilab.business.user.ui.PhoneInputActivity", "com.luojilab.business.packageweb.CommonPackageWebActivity"];
+                                var yInfo = ["12-06 06:03:48.781", "12-06 06:03:54.284", "12-06 06:04:07.364", "12-06 06:03:57.204", "12-06 06:04:03.706", "12-06 06:04:01.187", "12-06 06:04:17.075", "12-06 06:03:29.522", "12-06 06:03:39.820", "12-06 06:04:17.690", "12-06 06:03:52.144"];
+                                var point = this.points[0];
+                                return '<b>' + "耗时: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'ms'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: '页面加载耗时',
+                    data: data2,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+
+            $('#coverage_percent').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                        text: '自动化遍历占比'
+                },
+                tooltip: {
+                        headerFormat: '{series.name}<br>',
+                        pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                        pie: {
+						allowPointSelect: true,
+						cursor: 'pointer',
+						dataLabels: {
+								enabled: true,
+								format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+								style: {
+										color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+								}
+						},
+						states: {
+								hover: {
+										enabled: false
+								}
+						},
+						slicedOffset: 20,// 突出间距
+						point: {
+						    // 每个扇区是数据点对象，所以事件应该写在 point 下面
+								events: {
+										// 鼠标滑过是，突出当前扇区
+										mouseOver: function() {
+												this.slice();
+										},
+										// 鼠标移出时，收回突出显示
+										mouseOut: function() {
+												this.slice();
+										},
+										// 默认是点击突出，这里屏蔽掉
+										click: function() {
+												return false;
+										}}
+						}}},
+                series: [{
+                        type: 'pie',
+                        name: '自动化遍历页面占比',
+                        data: [
+                                ['未遍历',50.0],
+                                {
+                                name: '已遍历',
+                                y: 50.0,
+                                sliced: true, // 突出显示这个点（扇区），用于强调。
+                                },
+                        ]}]
+                    });
+
+            $('#start_time').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                credits: {
+                    enabled:false
+                },
+                title: {
+                    text: 'App启动时间'
+                },
+                xAxis: {
+                    categories: [
+                        '冷启动'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '秒'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="font-size:10px;color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0;font-size:10px;">{point.y:.1f} 秒</td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: '启动时间',
+                    data: [1.75]
+                }]
+            });
+        })
+    </script>
+    <style type="text/css">
+    </style>
+</body>
+</html>
+

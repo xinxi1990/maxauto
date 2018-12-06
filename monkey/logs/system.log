@@ -1,8 +1,90 @@
-[2018-12-05 23:00:58,033] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:30] 获取app名称异常!global name 'apkpath' is not defined
-[2018-12-05 23:01:24,558] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:30] 获取app名称异常!GetBasic instance has no attribute 'apkpath'
-[2018-12-05 23:02:12,436] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:30] 获取app信息异常!GetBasic instance has no attribute 'apkpath'
-[2018-12-05 23:11:39,532] [INFO] [xinxideMacBook-Pro.local][config.py - line:14] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
-[2018-12-05 23:11:39,533] [INFO] [xinxideMacBook-Pro.local][config.py - line:16] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
-[2018-12-05 23:12:51,687] [ERROR] [xinxideMacBook-Pro.local][getbasic.py - line:151] 获取所有activity异常!write_file() takes at least 2 arguments (1 given)
-[2018-12-05 23:13:19,369] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:36] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log文件完成
-[2018-12-05 23:30:03,832] [INFO] [xinxideMacBook-Pro.local][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log文件完成
+[2018-12-07 00:47:52,706] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:48:28,327] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:48:31,647] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:48:31,647] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:48:31,647] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 00:48:58,071] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:49:00,953] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:49:00,953] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:49:00,953] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 00:50:56,195] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:50:58,283] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:50:58,284] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:50:58,284] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 00:51:37,410] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:51:39,534] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:51:39,534] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:51:39,534] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 00:51:52,774] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:51:54,767] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:51:54,767] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:51:54,767] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 00:53:18,482] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:53:19,754] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:53:19,754] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:53:19,754] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 00:55:53,303] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:55:56,162] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:55:56,162] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:55:56,163] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-07 00:58:21,776] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:58:24,540] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:58:24,541] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 00:58:24,541] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-07 00:58:50,113] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 00:58:53,245] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 00:58:53,246] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:00:06,189] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 01:00:09,488] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 01:00:09,488] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:00:09,489] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-07 01:00:53,446] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 01:00:56,165] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 01:00:56,165] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:00:56,165] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 01:03:20,962] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 01:03:23,467] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 01:03:23,467] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:03:23,467] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/report/tmp/images
+[2018-12-07 01:05:07,762] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 01:05:10,633] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 01:05:10,634] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:05:10,634] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-07 01:05:43,953] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 01:05:46,818] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 01:05:46,818] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:05:46,818] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images
+[2018-12-07 01:05:49,860] [ERROR] [xinxideMacBook-Pro.local][monkey.py - line:259] 重命名文件失败![Errno 66] Directory not empty
+[2018-12-07 01:06:44,431] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 01:06:47,470] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:222] adb -s 192.168.56.101:5555 shell find ./ -name *Crash_*
+[2018-12-07 01:06:47,470] [INFO] [xinxideMacBook-Pro.local][monkey.py - line:226] 崩溃图片路径:./data/media/0/Crash_20181206060346
+
+[2018-12-07 01:06:47,471] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
+ /Users/xinxi/PycharmProjects/maxauto/monkey/images

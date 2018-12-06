@@ -37,6 +37,10 @@ class Monkey():
         初始化环境
         :return:
         '''
+        if os.path.exists(local_images_path):
+            shutil.rmtree(local_images_path)
+        if os.path.exists(images_zip):
+            os.remove(images_zip)
         self.del_crash_log()
         self.del_crash_images()
         self.del_logcat()
@@ -61,11 +65,11 @@ class Monkey():
             logger.info("Monkey执行命令:{}".format(cmd))
             subprocess.Popen(cmd,shell=True)
             runing = True
-            time.sleep(3)
+            time.sleep(self.sleep_time)
             while runing:
                 if self.find_monkey() != 1:
                     logger.info("="*10 + "Monkey运行中..." + "="*10)
-                    self.call_performance()
+                    self.get_performance()
                     self.write_page()
                     time.sleep(self.sleep_time)
                 else:
@@ -101,6 +105,7 @@ class Monkey():
         except Exception as e:
             logger.info('{}设备中查询崩溃异常:{}'.format(self.device,e))
             return 0
+
 
     def write_page(self):
         '''
@@ -186,16 +191,17 @@ class Monkey():
             logger.error("当前monkey进程查询异常!{}".format(e))
             return 1
 
-    def call_performance(self):
+    def get_performance(self):
         '''
-        调用采集性能脚本
+        采集性能
         :return:
         '''
         try:
             cmd = "sh {} {} {}".format(get_performance_path, self.device,performance_folder)
             subprocess.call(cmd, shell=True)
         except Exception as e:
-            logger.error("性能脚本调用失败!{}".format(e))
+            logger.error("获取性能异常!{}".format(e))
+
 
     def del_crash_images(self):
         '''
@@ -226,7 +232,6 @@ class Monkey():
                     break
         except Exception as e:
             logger.error('删除图片异常!{}'.format(e))
-
         finally:
             return image_path
 
@@ -237,7 +242,7 @@ class Monkey():
         :return:
         '''
         try:
-            cmd = 'adb logcat -c'
+            cmd = 'adb -s {} logcat -c'.format(self.device)
             result = subprocess.Popen(cmd, shell=True)
             logger.info('清除logcat日志')
         except Exception as e:
@@ -250,13 +255,12 @@ class Monkey():
         :return:
         '''
         try:
-            time.sleep(3)
-            for file_name in os.listdir(os.getcwd()):
+            class_path = os.path.abspath(os.path.dirname(__file__))
+            for file_name in os.listdir(class_path):
                 if 'Crash_' in file_name:
                     os.rename(file_name, local_image_folder)
         except Exception as e:
             logger.error('重命名文件失败!{}'.format(e))
-
 
 
     def zip_image(self):
@@ -277,3 +281,14 @@ class Monkey():
             logger.error('压缩图片失败!{}'.format(e))
         finally:
             return zip_path
+
+
+if __name__ == '__main__':
+    device = "192.168.56.101:5555"
+    common.pull_file(device, device_crash_path,crash_savepath)
+    crash_detail = common.read_file(crash_savepath)
+    if crash_detail != '':
+        image_path = Monkey(device,1,1).get_crash_images()
+        if image_path != '':
+            common.pull_file(device, image_path, local_images_path)
+            Monkey(device, 1, 1).rename_image()

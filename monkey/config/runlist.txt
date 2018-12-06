@@ -1,6 +1,0 @@
-支付,com.luojilab.business.myself.jiecao.JieCaoListActivity,run,1
-搜索,com.luojilab.business.search.ui.SearchActivity,run,1
-卡券中心,com.luojilab.business.myself.passcode.PasscodesActivity,run,1
-登录首页,com.luojilab.business.user.ui.LoginInitActivity,run,1
-设置,com.luojilab.business.myself.setting.SettingActivity,run,1
-资料编辑,com.luojilab.business.myself.profile.EditProfileActivity,run,1

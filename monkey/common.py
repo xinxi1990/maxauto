@@ -23,7 +23,8 @@ def pull_file(device, remotefile, localfile):
     try:
         cmd = 'adb -s {} pull {} {}'.format(device, remotefile, localfile)
         logger.info('拉取文件命令:{}'.format(cmd))
-        subprocess.call(cmd, shell=True)
+        os.system(cmd)
+        # subprocess.Popen(cmd, shell=True)
     except Exception as e:
         logger.info('拉取文件异常:{}'.format(e))
 
@@ -132,7 +133,6 @@ def format_time(time_str):
     :return:
     '''
     try:
-      # logger.info('未格式化前:{}'.format(time_str))
       if re.findall('total',time_str):
           time_str = time_str.replace('ms','')
           time_str = time_str.split('(')[0].strip()

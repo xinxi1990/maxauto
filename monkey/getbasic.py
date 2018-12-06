@@ -23,6 +23,10 @@ class GetBasic():
 
 
     def get_app_info(self):
+        '''
+        获取app信息
+        :return:
+        '''
         appinfo = ''
         try:
             cmd = 'aapt dupm badging {}'.format(self.apkpath)
@@ -58,7 +62,7 @@ class GetBasic():
         try:
             for line in self.appinfo:
                 if re.findall('launchable-activity: name',line):
-                    appactivity =  line.split('launchable-activity: name=')[1].split()[0].replace("'",'')
+                    appactivity = line.split('launchable-activity: name=')[1].split()[0].replace("'",'')
         except Exception as e:
             logger.error("获取app启动类异常!{}".format(e))
         finally:
@@ -81,7 +85,6 @@ class GetBasic():
             return appversion
 
 
-
     def get_app_size(self):
         '''
         获取apk文件大小
@@ -96,7 +99,6 @@ class GetBasic():
             logger.error( "获取获取apk文件大小异常:{}".format(e))
         finally:
             return appsize
-
 
 
     def get_devices_model(self):
@@ -125,7 +127,8 @@ class GetBasic():
             devices_version = os.popen(cmd).readlines()[0].replace('\n', '')
         except Exception as e:
             logger.error('获取设备版本号异常!{}'.format(e))
-        return devices_version
+        finally:
+            return devices_version
 
 
     def get_all_activitys(self):
@@ -144,7 +147,6 @@ class GetBasic():
             write_file(all_activity_path,activity_list)
         except Exception as e:
             logger.error('获取所有activity异常!{}'.format(e))
-
 
 
     def get_devices_mem(self):
@@ -169,8 +171,3 @@ class GetBasic():
             logger.error('获取设备内存异常!{}'.format(e))
         finally:
             return mem
-
-if __name__ == '__main__':
-    apk_path = "/Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk"
-    device_name = "192.168.56.101:5555"
-    GetBasic(apk_path,device_name).get_all_activitys()

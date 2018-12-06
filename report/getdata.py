@@ -214,10 +214,10 @@ class GetData():
         crash_image = "暂无图片"
         total_image = ''
         try:
-            folder = os.listdir(local_image_folder)
+            folder = os.listdir(local_images_path)
             if len(folder) != 0:
                 for image_path in folder:
-                    image_path = os.path.join(local_image_folder, image_path)
+                    image_path = os.path.join(local_images_path, image_path)
                     with open(image_path, "rb") as image_file:
                         encoded_string = base64.b64encode(image_file.read())
                     crash_image = '<img src="data:image/png;base64,{}" alt="image" height="400" width="200"/>'.format(encoded_string)

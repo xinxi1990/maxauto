@@ -42,7 +42,7 @@ def make_env():
 
 
 def run(apk_path,device_name,runtime,mail_list):
-    make_env()
+    # make_env()
     gb = GetBasic(apk_path,device_name)
     lanuch_activity = gb.get_app_activity()
     app_name = gb.get_app_name()
@@ -50,9 +50,9 @@ def run(apk_path,device_name,runtime,mail_list):
     # InstallApp(device_name,app_name,apk_path,install_app_log,uninstall_app_log).install_app()
     # LanuchApp(device_name,app_name,lanuch_activity,lanuch_app_log).lanuch_app()
     # LoginApp(device_name, app_name, lanuch_activity).test_login()
-    Monkey(device_name,runtime,app_name).start_monkey()
-    # start_gunicorn()
-    # get_html(apk_path,device_name,mail_list)
+    #Monkey(device_name,runtime,app_name).start_monkey()
+    start_gunicorn()
+    get_html(apk_path,device_name,mail_list)
 
 
 

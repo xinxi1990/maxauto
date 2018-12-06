@@ -34,10 +34,10 @@ class SendMail():
             else:
                 crashtxt = '本次运行未发现崩溃'
             send_time = time.strftime("%Y-%m-%d %H:%M:%S")
-            content = ' {} \n {} \n {} \n {}'.format(send_time,'具体Android自动化专项测试报告详见附件','如附件.html格式丢失,请手动改成.html格式!',crashtxt)
+            content = ' {} \n {} \n {} \n {}'.format(send_time,'具体Android稳定性测试报告详见附件','如附件.html格式丢失,请手动改成.html格式!',crashtxt)
             return content
         except Exception as e:
-            logger.error('拼接邮件中content失败:{}'.format(e))
+            logger.error('邮件内容拼接失败:{}!'.format(e))
             return ''
 
     def _format_receivers(self,receivers, message):
