@@ -121,7 +121,7 @@ class GetData():
         '''
         actlist = []
         try:
-            with open(acts_path,"r") as f_r:
+            with open(run_activity_path,"r") as f_r:
                for line in  f_r.readlines():
                    actlist.append(line.replace("\n",""))
         except Exception as e:
@@ -153,7 +153,7 @@ class GetData():
         :return:
         '''
         try:
-            with open(acts_path, "r") as f_r:
+            with open(run_activity_path, "r") as f_r:
                 activitylist = f_r.readlines()
             doneinfo = ''
             for index,act in  enumerate(activitylist):

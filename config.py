@@ -18,7 +18,6 @@ logintest_app_log= os.path.join(project_path,'report/tmp/login_app.log')
 uninstall_app_log= os.path.join(project_path,'report/tmp/uninstall_app.log')
 # aappium的log日志
 appium_log= os.path.join(project_path,'report/tmp/appium_log')
-
 sdcard_path = "/sdcard/"
 crash_savepath = os.path.join(project_path,"report/tmp/crash.log")
 monkey_log = os.path.join(project_path,"report/tmp/monkey.log")
@@ -34,13 +33,15 @@ device_crash_image = '/sdcard/Crash_*'
 image_key = '*Crash_*'
 local_images_path = os.path.join(project_path,"monkey/images")
 images_zip = os.path.join(project_path,"monkey/images.zip")
-acts_path = os.path.join(project_path,"report/tmp/acts.log")
+run_activity_path = os.path.join(project_path,"report/tmp/runactivity.log")
+run_activity_path_back = os.path.join(project_path,"report/tmp/runactivity_back.log")
 cpu_path = os.path.join(project_path,'report/tmp/cpu.log')
 mem_path = os.path.join(project_path,'report/tmp/mem.log')
 page_path = os.path.join(project_path,"report/tmp/page.log")
+network_path = os.path.join(project_path,"report/tmp/network.log")
 all_activity_path = os.path.join(project_path,'report/tmp/allactivity.log')
 run_model = "uiautomatordfs" #uiautomatormix
-throttle = 500
+throttle = 200
 sleep_time = 3
 gunicorn_port = '3031'
 gunicorn_address = '127.0.0.1' + ':' + gunicorn_port

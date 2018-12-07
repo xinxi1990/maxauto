@@ -136,17 +136,23 @@ class LoginApp():
             self.driver = self.appium_driver.start_appium()
             self.driver.implicitly_wait(5)
             logger.info("启动app中.....")
-            flag = True
-            while flag:
-                if self.driver.find_elements(By.XPATH,self.allow):
-                    self.driver.find_element(By.XPATH,self.allow).click()
-                elif self.driver.find_elements(By.XPATH,self.allow_zn):
-                    self.driver.find_element(By.XPATH,self.allow_zn).click()
-                elif self.driver.find_elements(By.XPATH,self.sure):
-                    self.driver.find_element(By.XPATH,self.sure).click()
-                else:
-                    flag = False
-                    break
+            if self.driver.find_elements(By.XPATH,self.allow):
+                self.driver.find_element(By.XPATH,self.allow).click()
+            elif self.driver.find_elements(By.XPATH,self.allow_zn):
+                self.driver.find_element(By.XPATH,self.allow_zn).click()
+            elif self.driver.find_elements(By.XPATH,self.sure):
+                self.driver.find_element(By.XPATH,self.sure).click()
+            # flag = True
+            # while flag:
+            #     if self.driver.find_elements(By.XPATH,self.allow):
+            #         self.driver.find_element(By.XPATH,self.allow).click()
+            #     elif self.driver.find_elements(By.XPATH,self.allow_zn):
+            #         self.driver.find_element(By.XPATH,self.allow_zn).click()
+            #     elif self.driver.find_elements(By.XPATH,self.sure):
+            #         self.driver.find_element(By.XPATH,self.sure).click()
+            #     else:
+            #         flag = False
+            #         break
             login_result = 'success'
             logger.info('登录成功')
         except Exception as e:

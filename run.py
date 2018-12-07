@@ -48,17 +48,25 @@ def run(apk_path,device_name,runtime,mail_list):
     lanuch_activity = gb.get_app_activity()
     app_name = gb.get_app_name()
     app_version = gb.get_app_version()
-    # InstallApp(device_name,app_name,apk_path,install_app_log,uninstall_app_log).install_app()
-    # LanuchApp(device_name,app_name,lanuch_activity,lanuch_app_log).lanuch_app()
-    # LoginApp(device_name, app_name, lanuch_activity).test_login()
+    gb.get_all_activitys()
+    InstallApp(device_name,app_name,apk_path,install_app_log,uninstall_app_log).install_app()
+    LanuchApp(device_name,app_name,lanuch_activity,lanuch_app_log).lanuch_app()
+    LoginApp(device_name, app_name, lanuch_activity).test_login()
     Monkey(device_name,runtime,app_name).start_monkey()
     start_gunicorn()
     get_html(apk_path,device_name,mail_list)
 
 if __name__ == '__main__':
-    apk_path = "/Users/xinxi/Downloads/QQMusic72282.apk"
+    # apk_path = sys.argv[1]
+    # device_name = sys.argv[2]
+    # mailist = sys.argv[3]
+    # params = (apk_path + '\n' +
+    #           device_name + '\n' +
+    #           mailist)
+    # logger.info('参数:' + '\n' + '{}'.format(params))
+    apk_path = "/Users/xinxi/Downloads/TencentNews_63_v5710.apk"
     device_name = "192.168.56.101:5555"
-    run_time = 1
+    run_time = 3
     mail_list = 'xxxx'
     run(apk_path,device_name,run_time,mail_list)
 

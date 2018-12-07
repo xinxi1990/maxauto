@@ -1,0 +1,475 @@
+<html>
+<meta charset="UTF-8">
+<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <h1 align="center">Android稳定性测试报告 2018-12-07 17:30:36</h1>
+    <hr>
+    <div class="panel">
+        <div class="panel_title">
+            <h4>应用信息</h4>
+        </div>
+        <div class="panel_main" id="appInfoDiv">
+            <table class="app_base_info" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+                <colgroup>
+                    <col style="width:92px;">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td rowspan="2">
+                    <img src="https://img-blog.csdn.net/20180312105203250" height="80" width="80" alt="" style="width:100%">
+                    </td>
+                    <th>应用名称</th>
+                    <td align="center"><span class="cut">com.tencent.qqmusic</span></td>
+                    <th>应用版本</th>
+                    <td align="center"><span class="cut">8.9.0.10</span></td>
+                    <th>应用大小</th>
+                    <td align="center"><span class="cut">56.45MB</span></td>
+                    <th>遍历时间</th>
+                    <td align="center"><span class="cut">0秒</span></td>
+                    <th>环境</th>
+                    <td align="center"><span class="cut">测试</span></td>
+                </tr>
+                <tr>
+                    <th>测试设备</th>
+                    <td align="center">Google</td>
+                    <th>系统版本</th>
+                    <td align="center">Android7.0</td>
+                    <th>安装耗时</th>
+                    <td align="center"><span class="cut">14秒</span></td>
+                    <th>元素点击</th>
+                    <td align="center"><span class="cut">0次</span></td>
+                    <th>登录</th>
+                    <td align="center"><span class="cut">success</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>启动时间</h4>
+    <div id="start_time" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历占比统计</h4>
+    <div id="coverage_percent" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历结果列表</h4>
+    <div id="coverage_runpages" style="min-width:500px;">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+          <thead>
+          <tr>
+            <th>序号</th>
+            <th>页面名称</th>
+            <th>是否遍历</th>
+          </tr>
+          </thead>
+          
+          </tbody>
+        </table>
+    </div>
+
+    <h4>CPU使用率走势图</h4>
+    <div id="cpuchart" style="min-width:1500px;height:400px"></div>
+    <h4>内存使用率走势图</h4>
+    <div id="memchart" style="min-width:1500px;height:400px"></div>
+    <h4>页面加载使用率走势图</h4>
+    <div id="pagechart" style="min-width:1500px;height:400px"></div>
+
+    <div class="task-result" style="clear:both;">
+        <h3 class="task-result-header">
+            <span class="task-result-title">崩溃信息: 0 次</span>
+        </h3>
+        <textarea rows="50" cols="200">
+        暂无数据!
+        </textarea>
+    </div>
+       <div class="crash-image" style="clear:both;">
+        <h3 class="crash-image-header">
+            <span class="crash-image-title">崩溃回溯:</span>
+        </h3>
+         
+    </div>
+
+    <script>
+
+        var chart = null;
+		var memtime = ["2018-12-07 17:30:32"]
+		var meminfo = ["42.66"]
+		var memactivity = [".activity.LoginActivity"]
+		var data= [["2018-12-07 17:30:32", 42.66]]
+		//内存数据
+
+		var cputime = ["2018-12-07 17:30:32"]
+		var cpuinfo = ["0.5"]
+		var cpuactivity = [".activity.LoginActivity"]
+		var data1= [["2018-12-07 17:30:32", 0.5]]
+		//cpu数据
+
+        var pagetime = []
+		var pageinfo = []
+		var pageactivity = []
+		var data2= []
+		//cpu数据
+
+
+		//自己编写的js方法
+		function getActivity(yInfo, mInfo, info){
+			var i = yInfo.indexOf(info);
+			return mInfo[i];
+		}
+
+        $(function () {
+           $('#memchart').highcharts({
+	        chart: {
+	            zoomType: 'x'
+	        },
+	        title: {
+	            text: '内存使用率'
+	        },
+	        xAxis: {
+	            type: 'datetime',
+	            crosshair: true,
+	            type: "datetime",
+	            categories: memtime
+	        },
+           //设置滚动条
+            scrollbar: {
+                enabled: true
+            },
+	        tooltip: {
+	            dateTimeLabelFormats: {
+	                millisecond: '%H:%M:%S.%L',
+	                second: '%H:%M:%S',
+	                minute: '%H:%M',
+	                hour: '%H:%M',
+	                day: '%Y-%m-%d',
+	                week: '%m-%d',
+	                month: '%Y-%m',
+	                year: '%Y'
+	            },formatter: function () {
+	            			var mInfo = [".activity.LoginActivity"];
+		                	var yInfo = ["2018-12-07 17:30:32"];
+		                	var point = this.points[0];
+							return '<b>' + "内存: </b>" + point.y + '<br/>' +
+								   '<b>' + "Time: </b>" + point.x + '<br/>' +
+								   '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+	            },
+	            shared: true
+
+	        },
+	        yAxis: {
+	            min:0,
+	            title: {
+	                text: 'MB'
+	            }
+	        },
+	        legend: {
+	            enabled: false
+	        },
+	        plotOptions: {
+	            area: {
+	                fillColor: {
+	                    linearGradient: {
+	                        x1: 0,
+	                        y1: 0,
+	                        x2: 0,
+	                        y2: 1
+	                    },
+	                    stops: [
+	                        [0, Highcharts.getOptions().colors[0]],
+	                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                    ]
+	                },
+	                marker: {
+	                    radius: 2
+	                },
+	                lineWidth: 1,
+	                states: {
+	                    hover: {
+	                        lineWidth: 1
+	                    }
+	                },
+	                threshold: null
+	            }
+	        },
+	        series: [{
+	            type: 'area',
+	            name: '内存使用率',
+	            data: data,
+                turboThreshold: 5000
+	        }]
+	    });
+            $('#cpuchart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'CPU使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: cputime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = [".activity.LoginActivity"];
+                                var yInfo = ["2018-12-07 17:30:32"];
+                                var point = this.points[0];
+                                return '<b>' + "CPU: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    max:100,
+                    title: {
+                        text: '%'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'CPU使用率',
+                    data: data1,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+            $('#pagechart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: '页面加载使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: pagetime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = [];
+                                var yInfo = [];
+                                var point = this.points[0];
+                                return '<b>' + "耗时: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'ms'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: '页面加载耗时',
+                    data: data2,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+
+            $('#coverage_percent').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                        text: '自动化遍历占比'
+                },
+                tooltip: {
+                        headerFormat: '{series.name}<br>',
+                        pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                        pie: {
+						allowPointSelect: true,
+						cursor: 'pointer',
+						dataLabels: {
+								enabled: true,
+								format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+								style: {
+										color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+								}
+						},
+						states: {
+								hover: {
+										enabled: false
+								}
+						},
+						slicedOffset: 20,// 突出间距
+						point: {
+						    // 每个扇区是数据点对象，所以事件应该写在 point 下面
+								events: {
+										// 鼠标滑过是，突出当前扇区
+										mouseOver: function() {
+												this.slice();
+										},
+										// 鼠标移出时，收回突出显示
+										mouseOut: function() {
+												this.slice();
+										},
+										// 默认是点击突出，这里屏蔽掉
+										click: function() {
+												return false;
+										}}
+						}}},
+                series: [{
+                        type: 'pie',
+                        name: '自动化遍历页面占比',
+                        data: [
+                                ['未遍历',100.0],
+                                {
+                                name: '已遍历',
+                                y: 0.0,
+                                sliced: true, // 突出显示这个点（扇区），用于强调。
+                                },
+                        ]}]
+                    });
+
+            $('#start_time').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                credits: {
+                    enabled:false
+                },
+                title: {
+                    text: 'App启动时间'
+                },
+                xAxis: {
+                    categories: [
+                        '冷启动'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '秒'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="font-size:10px;color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0;font-size:10px;">{point.y:.1f} 秒</td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: '启动时间',
+                    data: [0.77]
+                }]
+            });
+        })
+    </script>
+    <style type="text/css">
+    </style>
+</body>
+</html>
+

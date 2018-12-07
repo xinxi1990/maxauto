@@ -1,0 +1,14 @@
+com.tencent.news.ui.GuideActivity
+com.tencent.news.activity.SplashActivity
+com.tencent.news.webview.CustomWebBrowserForItemActivity
+com.tencent.news.ui.NewsDetailActivity
+com.tencent.news.ui.imagedetail.GalleryDetailPreViewActivity
+com.tencent.news.ui.read24hours.Read24HoursActivity
+com.tencent.news.audio.tingting.TingTingActivity
+com.tencent.news.share.sina.SinaShareActivity
+com.sina.weibo.sdk.share.WbShareTransActivity
+com.sina.weibo.sdk.web.WeiboSdkWebActivity
+com.tencent.news.map.LocationMapActivity
+com.tencent.news.module.comment.ReplyContentListActivity
+com.tencent.news.ui.LoginActivity
+oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity

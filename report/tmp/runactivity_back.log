@@ -1,0 +1,9 @@
+.ui.GuideActivity
+.activity.SplashActivity
+.ui.NewsDetailActivity
+.audio.tingting.TingTingActivity
+com.sina.weibo.sdk.web.WeiboSdkWebActivity
+.map.LocationMapActivity
+.module.comment.ReplyContentListActivity
+oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity
+.ui.LoginActivity

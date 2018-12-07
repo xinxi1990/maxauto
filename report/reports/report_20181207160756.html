@@ -1,0 +1,525 @@
+<html>
+<meta charset="UTF-8">
+<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <h1 align="center">Android稳定性测试报告 2018-12-07 16:19:58</h1>
+    <hr>
+    <div class="panel">
+        <div class="panel_title">
+            <h4>应用信息</h4>
+        </div>
+        <div class="panel_main" id="appInfoDiv">
+            <table class="app_base_info" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+                <colgroup>
+                    <col style="width:92px;">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td rowspan="2">
+                    <img src="https://img-blog.csdn.net/20180312105203250" height="80" width="80" alt="" style="width:100%">
+                    </td>
+                    <th>应用名称</th>
+                    <td align="center"><span class="cut">com.tencent.qqmusic</span></td>
+                    <th>应用版本</th>
+                    <td align="center"><span class="cut">8.9.0.10</span></td>
+                    <th>应用大小</th>
+                    <td align="center"><span class="cut">56.45MB</span></td>
+                    <th>遍历时间</th>
+                    <td align="center"><span class="cut">600.3秒</span></td>
+                    <th>环境</th>
+                    <td align="center"><span class="cut">测试</span></td>
+                </tr>
+                <tr>
+                    <th>测试设备</th>
+                    <td align="center">Google</td>
+                    <th>系统版本</th>
+                    <td align="center">Android7.0</td>
+                    <th>安装耗时</th>
+                    <td align="center"><span class="cut">16秒</span></td>
+                    <th>元素点击</th>
+                    <td align="center"><span class="cut">1801
+次</span></td>
+                    <th>登录</th>
+                    <td align="center"><span class="cut">success</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>启动时间</h4>
+    <div id="start_time" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历占比统计</h4>
+    <div id="coverage_percent" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历结果列表</h4>
+    <div id="coverage_runpages" style="min-width:500px;">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+          <thead>
+          <tr>
+            <th>序号</th>
+            <th>页面名称</th>
+            <th>是否遍历</th>
+          </tr>
+          </thead>
+          
+                        <tr>
+                        <td align="center">0</td>
+                        <td align="center">com.tencent.qqmusic.activity.LoginActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">1</td>
+                        <td align="center">com.tencent.qqmusic.activity.WebViewActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">2</td>
+                        <td align="center">com.tencent.qqmusic.activity.AppStarterActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">3</td>
+                        <td align="center">com.tencent.qqmusic.activity.ShareActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">4</td>
+                        <td align="center">oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">5</td>
+                        <td align="center">com.tencent.qqmusic.activity.MVPlayerActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">6</td>
+                        <td align="center">com.tencent.qqmusic.activity.EditSongListActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+          </tbody>
+        </table>
+    </div>
+
+    <h4>CPU使用率走势图</h4>
+    <div id="cpuchart" style="min-width:1500px;height:400px"></div>
+    <h4>内存使用率走势图</h4>
+    <div id="memchart" style="min-width:1500px;height:400px"></div>
+    <h4>页面加载使用率走势图</h4>
+    <div id="pagechart" style="min-width:1500px;height:400px"></div>
+
+    <div class="task-result" style="clear:both;">
+        <h3 class="task-result-header">
+            <span class="task-result-title">崩溃信息: 0 次</span>
+        </h3>
+        <textarea rows="50" cols="200">
+        暂无数据!
+        </textarea>
+    </div>
+       <div class="crash-image" style="clear:both;">
+        <h3 class="crash-image-header">
+            <span class="crash-image-title">崩溃回溯:</span>
+        </h3>
+         
+    </div>
+
+    <script>
+
+        var chart = null;
+		var memtime = ["2018-12-07 16:09:15", "2018-12-07 16:09:18", "2018-12-07 16:09:22", "2018-12-07 16:09:26", "2018-12-07 16:09:29", "2018-12-07 16:09:32", "2018-12-07 16:09:36", "2018-12-07 16:09:39", "2018-12-07 16:09:42", "2018-12-07 16:09:46", "2018-12-07 16:09:49", "2018-12-07 16:09:52", "2018-12-07 16:09:56", "2018-12-07 16:09:59", "2018-12-07 16:10:02", "2018-12-07 16:10:06", "2018-12-07 16:10:09", "2018-12-07 16:10:12", "2018-12-07 16:10:15", "2018-12-07 16:10:19", "2018-12-07 16:10:22", "2018-12-07 16:10:26", "2018-12-07 16:10:30", "2018-12-07 16:10:34", "2018-12-07 16:10:38", "2018-12-07 16:10:42", "2018-12-07 16:10:46", "2018-12-07 16:10:51", "2018-12-07 16:10:56", "2018-12-07 16:11:00", "2018-12-07 16:11:04", "2018-12-07 16:11:09", "2018-12-07 16:11:13", "2018-12-07 16:11:17", "2018-12-07 16:11:21", "2018-12-07 16:11:25", "2018-12-07 16:11:28", "2018-12-07 16:11:32", "2018-12-07 16:11:36", "2018-12-07 16:11:39", "2018-12-07 16:11:43", "2018-12-07 16:11:48", "2018-12-07 16:11:52", "2018-12-07 16:11:55", "2018-12-07 16:11:59", "2018-12-07 16:12:03", "2018-12-07 16:12:07", "2018-12-07 16:12:11", "2018-12-07 16:12:15", "2018-12-07 16:12:18", "2018-12-07 16:12:22", "2018-12-07 16:12:26", "2018-12-07 16:12:29", "2018-12-07 16:12:33", "2018-12-07 16:12:38", "2018-12-07 16:12:41", "2018-12-07 16:12:45", "2018-12-07 16:12:49", "2018-12-07 16:12:52", "2018-12-07 16:12:56", "2018-12-07 16:13:00", "2018-12-07 16:13:04", "2018-12-07 16:13:08", "2018-12-07 16:13:12", "2018-12-07 16:13:17", "2018-12-07 16:13:21", "2018-12-07 16:13:25", "2018-12-07 16:13:29", "2018-12-07 16:13:34", "2018-12-07 16:13:39", "2018-12-07 16:13:42", "2018-12-07 16:13:46", "2018-12-07 16:13:50", "2018-12-07 16:13:54", "2018-12-07 16:14:00", "2018-12-07 16:14:05", "2018-12-07 16:14:09", "2018-12-07 16:14:14", "2018-12-07 16:14:18", "2018-12-07 16:14:23", "2018-12-07 16:14:28", "2018-12-07 16:14:34", "2018-12-07 16:14:39", "2018-12-07 16:14:43", "2018-12-07 16:14:50", "2018-12-07 16:14:55", "2018-12-07 16:14:59", "2018-12-07 16:15:03", "2018-12-07 16:15:07", "2018-12-07 16:15:11", "2018-12-07 16:15:15", "2018-12-07 16:15:19", "2018-12-07 16:15:23", "2018-12-07 16:15:26", "2018-12-07 16:15:30", "2018-12-07 16:15:34", "2018-12-07 16:15:39", "2018-12-07 16:15:42", "2018-12-07 16:15:46", "2018-12-07 16:15:50", "2018-12-07 16:15:54", "2018-12-07 16:15:58", "2018-12-07 16:16:01", "2018-12-07 16:16:05", "2018-12-07 16:16:09", "2018-12-07 16:16:13", "2018-12-07 16:16:17", "2018-12-07 16:16:21", "2018-12-07 16:16:25", "2018-12-07 16:16:29", "2018-12-07 16:16:33", "2018-12-07 16:16:38", "2018-12-07 16:16:42", "2018-12-07 16:16:46", "2018-12-07 16:16:50", "2018-12-07 16:16:54", "2018-12-07 16:16:58", "2018-12-07 16:17:02", "2018-12-07 16:17:06", "2018-12-07 16:17:11", "2018-12-07 16:17:15", "2018-12-07 16:17:19", "2018-12-07 16:17:23", "2018-12-07 16:17:27", "2018-12-07 16:17:32", "2018-12-07 16:17:36", "2018-12-07 16:17:40", "2018-12-07 16:17:43", "2018-12-07 16:17:47", "2018-12-07 16:17:51", "2018-12-07 16:17:55", "2018-12-07 16:18:00", "2018-12-07 16:18:04", "2018-12-07 16:18:08", "2018-12-07 16:18:12", "2018-12-07 16:18:16", "2018-12-07 16:18:20", "2018-12-07 16:18:24", "2018-12-07 16:18:28", "2018-12-07 16:18:32", "2018-12-07 16:18:37", "2018-12-07 16:18:41", "2018-12-07 16:18:45", "2018-12-07 16:18:49", "2018-12-07 16:18:53", "2018-12-07 16:18:57", "2018-12-07 16:19:01", "2018-12-07 16:19:05", "2018-12-07 16:19:09", "2018-12-07 16:19:13", "2018-12-07 16:19:18", "2018-12-07 16:19:23", "2018-12-07 16:19:27", "2018-12-07 16:19:32", "2018-12-07 16:19:36", "2018-12-07 16:19:41", "2018-12-07 16:19:46", "2018-12-07 16:19:50"]
+		var meminfo = ["40.38", "37.04", "35.27", "38.71", "46.32", "44.97", "36.42", "36.46", "36.34", "36.36", "36.34", "36.5", "36.34", "36.41", "36.32", "36.32", "36.29", "36.3", "36.27", "37.74", "37.04", "38.82", "40.95", "39.77", "43.41", "46.45", "41.74", "103.14", "50.34", "58.47", "55.84", "66.63", "56.68", "56.69", "57.21", "58.32", "56.41", "56.4", "56.33", "56.34", "58.02", "58.77", "56.29", "56.32", "56.29", "56.3", "56.3", "56.4", "56.29", "56.32", "56.28", "56.29", "56.29", "56.3", "56.27", "56.3", "56.28", "56.29", "56.28", "58.65", "58.93", "58.45", "57.34", "62.11", "59.33", "59.61", "57.54", "58.02", "8.95", "28.2", "33.36", "40.19", "42.82", "41.56", "45.66", "46.57", "50.2", "50.28", "48.84", "51.16", "55.11", "55.74", "65.63", "63.75", "73.45", "60.01", "57.95", "57.95", "67.08", "67.05", "66.74", "66.76", "66.7", "66.72", "67.42", "66.73", "66.68", "66.82", "66.88", "66.17", "66.69", "66.7", "66.64", "66.65", "66.63", "66.64", "66.65", "66.66", "66.63", "66.67", "68.08", "68.6", "66.66", "66.69", "66.66", "66.67", "66.65", "66.66", "66.66", "66.68", "66.65", "66.66", "66.65", "66.66", "66.65", "66.66", "66.65", "66.66", "66.65", "66.68", "66.65", "66.66", "66.65", "66.66", "67.32", "67.39", "66.71", "66.75", "66.69", "66.7", "66.69", "66.7", "66.74", "66.75", "66.69", "66.7", "66.79", "67.74", "66.84", "66.85", "68.79", "70.38", "70.08", "71.54", "67.48", "70.23", "67.28", "68.21"]
+		var memactivity = [".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.ShareActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity"]
+		var data= [["2018-12-07 16:09:15", 40.38], ["2018-12-07 16:09:18", 37.04], ["2018-12-07 16:09:22", 35.27], ["2018-12-07 16:09:26", 38.71], ["2018-12-07 16:09:29", 46.32], ["2018-12-07 16:09:32", 44.97], ["2018-12-07 16:09:36", 36.42], ["2018-12-07 16:09:39", 36.46], ["2018-12-07 16:09:42", 36.34], ["2018-12-07 16:09:46", 36.36], ["2018-12-07 16:09:49", 36.34], ["2018-12-07 16:09:52", 36.5], ["2018-12-07 16:09:56", 36.34], ["2018-12-07 16:09:59", 36.41], ["2018-12-07 16:10:02", 36.32], ["2018-12-07 16:10:06", 36.32], ["2018-12-07 16:10:09", 36.29], ["2018-12-07 16:10:12", 36.3], ["2018-12-07 16:10:15", 36.27], ["2018-12-07 16:10:19", 37.74], ["2018-12-07 16:10:22", 37.04], ["2018-12-07 16:10:26", 38.82], ["2018-12-07 16:10:30", 40.95], ["2018-12-07 16:10:34", 39.77], ["2018-12-07 16:10:38", 43.41], ["2018-12-07 16:10:42", 46.45], ["2018-12-07 16:10:46", 41.74], ["2018-12-07 16:10:51", 103.14], ["2018-12-07 16:10:56", 50.34], ["2018-12-07 16:11:00", 58.47], ["2018-12-07 16:11:04", 55.84], ["2018-12-07 16:11:09", 66.63], ["2018-12-07 16:11:13", 56.68], ["2018-12-07 16:11:17", 56.69], ["2018-12-07 16:11:21", 57.21], ["2018-12-07 16:11:25", 58.32], ["2018-12-07 16:11:28", 56.41], ["2018-12-07 16:11:32", 56.4], ["2018-12-07 16:11:36", 56.33], ["2018-12-07 16:11:39", 56.34], ["2018-12-07 16:11:43", 58.02], ["2018-12-07 16:11:48", 58.77], ["2018-12-07 16:11:52", 56.29], ["2018-12-07 16:11:55", 56.32], ["2018-12-07 16:11:59", 56.29], ["2018-12-07 16:12:03", 56.3], ["2018-12-07 16:12:07", 56.3], ["2018-12-07 16:12:11", 56.4], ["2018-12-07 16:12:15", 56.29], ["2018-12-07 16:12:18", 56.32], ["2018-12-07 16:12:22", 56.28], ["2018-12-07 16:12:26", 56.29], ["2018-12-07 16:12:29", 56.29], ["2018-12-07 16:12:33", 56.3], ["2018-12-07 16:12:38", 56.27], ["2018-12-07 16:12:41", 56.3], ["2018-12-07 16:12:45", 56.28], ["2018-12-07 16:12:49", 56.29], ["2018-12-07 16:12:52", 56.28], ["2018-12-07 16:12:56", 58.65], ["2018-12-07 16:13:00", 58.93], ["2018-12-07 16:13:04", 58.45], ["2018-12-07 16:13:08", 57.34], ["2018-12-07 16:13:12", 62.11], ["2018-12-07 16:13:17", 59.33], ["2018-12-07 16:13:21", 59.61], ["2018-12-07 16:13:25", 57.54], ["2018-12-07 16:13:29", 58.02], ["2018-12-07 16:13:34", 8.95], ["2018-12-07 16:13:39", 28.2], ["2018-12-07 16:13:42", 33.36], ["2018-12-07 16:13:46", 40.19], ["2018-12-07 16:13:50", 42.82], ["2018-12-07 16:13:54", 41.56], ["2018-12-07 16:14:00", 45.66], ["2018-12-07 16:14:05", 46.57], ["2018-12-07 16:14:09", 50.2], ["2018-12-07 16:14:14", 50.28], ["2018-12-07 16:14:18", 48.84], ["2018-12-07 16:14:23", 51.16], ["2018-12-07 16:14:28", 55.11], ["2018-12-07 16:14:34", 55.74], ["2018-12-07 16:14:39", 65.63], ["2018-12-07 16:14:43", 63.75], ["2018-12-07 16:14:50", 73.45], ["2018-12-07 16:14:55", 60.01], ["2018-12-07 16:14:59", 57.95], ["2018-12-07 16:15:03", 57.95], ["2018-12-07 16:15:07", 67.08], ["2018-12-07 16:15:11", 67.05], ["2018-12-07 16:15:15", 66.74], ["2018-12-07 16:15:19", 66.76], ["2018-12-07 16:15:23", 66.7], ["2018-12-07 16:15:26", 66.72], ["2018-12-07 16:15:30", 67.42], ["2018-12-07 16:15:34", 66.73], ["2018-12-07 16:15:39", 66.68], ["2018-12-07 16:15:42", 66.82], ["2018-12-07 16:15:46", 66.88], ["2018-12-07 16:15:50", 66.17], ["2018-12-07 16:15:54", 66.69], ["2018-12-07 16:15:58", 66.7], ["2018-12-07 16:16:01", 66.64], ["2018-12-07 16:16:05", 66.65], ["2018-12-07 16:16:09", 66.63], ["2018-12-07 16:16:13", 66.64], ["2018-12-07 16:16:17", 66.65], ["2018-12-07 16:16:21", 66.66], ["2018-12-07 16:16:25", 66.63], ["2018-12-07 16:16:29", 66.67], ["2018-12-07 16:16:33", 68.08], ["2018-12-07 16:16:38", 68.6], ["2018-12-07 16:16:42", 66.66], ["2018-12-07 16:16:46", 66.69], ["2018-12-07 16:16:50", 66.66], ["2018-12-07 16:16:54", 66.67], ["2018-12-07 16:16:58", 66.65], ["2018-12-07 16:17:02", 66.66], ["2018-12-07 16:17:06", 66.66], ["2018-12-07 16:17:11", 66.68], ["2018-12-07 16:17:15", 66.65], ["2018-12-07 16:17:19", 66.66], ["2018-12-07 16:17:23", 66.65], ["2018-12-07 16:17:27", 66.66], ["2018-12-07 16:17:32", 66.65], ["2018-12-07 16:17:36", 66.66], ["2018-12-07 16:17:40", 66.65], ["2018-12-07 16:17:43", 66.66], ["2018-12-07 16:17:47", 66.65], ["2018-12-07 16:17:51", 66.68], ["2018-12-07 16:17:55", 66.65], ["2018-12-07 16:18:00", 66.66], ["2018-12-07 16:18:04", 66.65], ["2018-12-07 16:18:08", 66.66], ["2018-12-07 16:18:12", 67.32], ["2018-12-07 16:18:16", 67.39], ["2018-12-07 16:18:20", 66.71], ["2018-12-07 16:18:24", 66.75], ["2018-12-07 16:18:28", 66.69], ["2018-12-07 16:18:32", 66.7], ["2018-12-07 16:18:37", 66.69], ["2018-12-07 16:18:41", 66.7], ["2018-12-07 16:18:45", 66.74], ["2018-12-07 16:18:49", 66.75], ["2018-12-07 16:18:53", 66.69], ["2018-12-07 16:18:57", 66.7], ["2018-12-07 16:19:01", 66.79], ["2018-12-07 16:19:05", 67.74], ["2018-12-07 16:19:09", 66.84], ["2018-12-07 16:19:13", 66.85], ["2018-12-07 16:19:18", 68.79], ["2018-12-07 16:19:23", 70.38], ["2018-12-07 16:19:27", 70.08], ["2018-12-07 16:19:32", 71.54], ["2018-12-07 16:19:36", 67.48], ["2018-12-07 16:19:41", 70.23], ["2018-12-07 16:19:46", 67.28], ["2018-12-07 16:19:50", 68.21]]
+		//内存数据
+
+		var cputime = ["2018-12-07 16:09:15", "2018-12-07 16:09:18", "2018-12-07 16:09:22", "2018-12-07 16:09:25", "2018-12-07 16:09:29", "2018-12-07 16:09:32", "2018-12-07 16:09:36", "2018-12-07 16:09:39", "2018-12-07 16:09:42", "2018-12-07 16:09:45", "2018-12-07 16:09:49", "2018-12-07 16:09:52", "2018-12-07 16:09:56", "2018-12-07 16:09:59", "2018-12-07 16:10:02", "2018-12-07 16:10:05", "2018-12-07 16:10:09", "2018-12-07 16:10:12", "2018-12-07 16:10:15", "2018-12-07 16:10:19", "2018-12-07 16:10:22", "2018-12-07 16:10:26", "2018-12-07 16:10:29", "2018-12-07 16:10:33", "2018-12-07 16:10:38", "2018-12-07 16:10:42", "2018-12-07 16:10:46", "2018-12-07 16:10:51", "2018-12-07 16:10:55", "2018-12-07 16:11:00", "2018-12-07 16:11:04", "2018-12-07 16:11:08", "2018-12-07 16:11:12", "2018-12-07 16:11:16", "2018-12-07 16:11:21", "2018-12-07 16:11:25", "2018-12-07 16:11:28", "2018-12-07 16:11:32", "2018-12-07 16:11:35", "2018-12-07 16:11:39", "2018-12-07 16:11:43", "2018-12-07 16:11:47", "2018-12-07 16:11:51", "2018-12-07 16:11:55", "2018-12-07 16:11:59", "2018-12-07 16:12:03", "2018-12-07 16:12:07", "2018-12-07 16:12:10", "2018-12-07 16:12:14", "2018-12-07 16:12:18", "2018-12-07 16:12:22", "2018-12-07 16:12:25", "2018-12-07 16:12:29", "2018-12-07 16:12:33", "2018-12-07 16:12:37", "2018-12-07 16:12:41", "2018-12-07 16:12:45", "2018-12-07 16:12:49", "2018-12-07 16:12:52", "2018-12-07 16:12:56", "2018-12-07 16:13:00", "2018-12-07 16:13:04", "2018-12-07 16:13:08", "2018-12-07 16:13:12", "2018-12-07 16:13:16", "2018-12-07 16:13:20", "2018-12-07 16:13:24", "2018-12-07 16:13:29", "2018-12-07 16:13:34", "2018-12-07 16:13:39", "2018-12-07 16:13:42", "2018-12-07 16:13:46", "2018-12-07 16:13:50", "2018-12-07 16:13:54", "2018-12-07 16:13:59", "2018-12-07 16:14:05", "2018-12-07 16:14:09", "2018-12-07 16:14:13", "2018-12-07 16:14:18", "2018-12-07 16:14:23", "2018-12-07 16:14:28", "2018-12-07 16:14:33", "2018-12-07 16:14:38", "2018-12-07 16:14:43", "2018-12-07 16:14:49", "2018-12-07 16:14:54", "2018-12-07 16:14:59", "2018-12-07 16:15:02", "2018-12-07 16:15:07", "2018-12-07 16:15:11", "2018-12-07 16:15:14", "2018-12-07 16:15:18", "2018-12-07 16:15:22", "2018-12-07 16:15:26", "2018-12-07 16:15:30", "2018-12-07 16:15:34", "2018-12-07 16:15:38", "2018-12-07 16:15:42", "2018-12-07 16:15:46", "2018-12-07 16:15:50", "2018-12-07 16:15:54", "2018-12-07 16:15:57", "2018-12-07 16:16:01", "2018-12-07 16:16:05", "2018-12-07 16:16:09", "2018-12-07 16:16:13", "2018-12-07 16:16:17", "2018-12-07 16:16:21", "2018-12-07 16:16:25", "2018-12-07 16:16:29", "2018-12-07 16:16:33", "2018-12-07 16:16:37", "2018-12-07 16:16:41", "2018-12-07 16:16:46", "2018-12-07 16:16:50", "2018-12-07 16:16:54", "2018-12-07 16:16:58", "2018-12-07 16:17:02", "2018-12-07 16:17:06", "2018-12-07 16:17:11", "2018-12-07 16:17:15", "2018-12-07 16:17:19", "2018-12-07 16:17:23", "2018-12-07 16:17:27", "2018-12-07 16:17:31", "2018-12-07 16:17:36", "2018-12-07 16:17:40", "2018-12-07 16:17:43", "2018-12-07 16:17:47", "2018-12-07 16:17:51", "2018-12-07 16:17:55", "2018-12-07 16:18:00", "2018-12-07 16:18:04", "2018-12-07 16:18:08", "2018-12-07 16:18:12", "2018-12-07 16:18:16", "2018-12-07 16:18:20", "2018-12-07 16:18:24", "2018-12-07 16:18:28", "2018-12-07 16:18:32", "2018-12-07 16:18:37", "2018-12-07 16:18:40", "2018-12-07 16:18:45", "2018-12-07 16:18:49", "2018-12-07 16:18:53", "2018-12-07 16:18:56", "2018-12-07 16:19:01", "2018-12-07 16:19:04", "2018-12-07 16:19:08", "2018-12-07 16:19:13", "2018-12-07 16:19:18", "2018-12-07 16:19:22", "2018-12-07 16:19:26", "2018-12-07 16:19:31", "2018-12-07 16:19:36", "2018-12-07 16:19:40", "2018-12-07 16:19:45", "2018-12-07 16:19:50"]
+		var cpuinfo = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "+0", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9", "0.9"]
+		var cpuactivity = [".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.ShareActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity"]
+		var data1= [["2018-12-07 16:09:15", 0.0], ["2018-12-07 16:09:18", 0.0], ["2018-12-07 16:09:22", 0.0], ["2018-12-07 16:09:25", 0.0], ["2018-12-07 16:09:29", 0.0], ["2018-12-07 16:09:32", 0.0], ["2018-12-07 16:09:36", 0.0], ["2018-12-07 16:09:39", 0.0], ["2018-12-07 16:09:42", 0.0], ["2018-12-07 16:09:45", 0.0], ["2018-12-07 16:09:49", 0.0], ["2018-12-07 16:09:52", 0.0], ["2018-12-07 16:09:56", 0.0], ["2018-12-07 16:09:59", 0.0], ["2018-12-07 16:10:02", 0.0], ["2018-12-07 16:10:05", 0.0], ["2018-12-07 16:10:09", 0.0], ["2018-12-07 16:10:12", 0.0], ["2018-12-07 16:10:15", 0.0], ["2018-12-07 16:10:19", 0.0], ["2018-12-07 16:10:22", 0.0], ["2018-12-07 16:10:26", 0.0], ["2018-12-07 16:10:29", 0.0], ["2018-12-07 16:10:33", 0.0], ["2018-12-07 16:10:38", 0.0], ["2018-12-07 16:10:42", 0.0], ["2018-12-07 16:10:46", 0.0], ["2018-12-07 16:10:51", 0.0], ["2018-12-07 16:10:55", 0.0], ["2018-12-07 16:11:00", 0.0], ["2018-12-07 16:11:04", 0.0], ["2018-12-07 16:11:08", 0.0], ["2018-12-07 16:11:12", 0.0], ["2018-12-07 16:11:16", 0.0], ["2018-12-07 16:11:21", 0.0], ["2018-12-07 16:11:25", 0.0], ["2018-12-07 16:11:28", 0.0], ["2018-12-07 16:11:32", 0.0], ["2018-12-07 16:11:35", 0.0], ["2018-12-07 16:11:39", 0.0], ["2018-12-07 16:11:43", 0.0], ["2018-12-07 16:11:47", 0.0], ["2018-12-07 16:11:51", 0.0], ["2018-12-07 16:11:55", 0.0], ["2018-12-07 16:11:59", 0.0], ["2018-12-07 16:12:03", 0.0], ["2018-12-07 16:12:07", 0.0], ["2018-12-07 16:12:10", 0.0], ["2018-12-07 16:12:14", 0.0], ["2018-12-07 16:12:18", 0.0], ["2018-12-07 16:12:22", 0.0], ["2018-12-07 16:12:25", 0.0], ["2018-12-07 16:12:29", 0.0], ["2018-12-07 16:12:33", 0.0], ["2018-12-07 16:12:37", 0.0], ["2018-12-07 16:12:41", 0.0], ["2018-12-07 16:12:45", 0.0], ["2018-12-07 16:12:49", 0.0], ["2018-12-07 16:12:52", 0.0], ["2018-12-07 16:12:56", 0.0], ["2018-12-07 16:13:00", 0.0], ["2018-12-07 16:13:04", 0.0], ["2018-12-07 16:13:08", 0.0], ["2018-12-07 16:13:12", 0.0], ["2018-12-07 16:13:16", 0.0], ["2018-12-07 16:13:20", 0.0], ["2018-12-07 16:13:24", 0.0], ["2018-12-07 16:13:29", 0.0], ["2018-12-07 16:13:34", 0.0], ["2018-12-07 16:13:39", 0.0], ["2018-12-07 16:13:42", 0.0], ["2018-12-07 16:13:46", 0.0], ["2018-12-07 16:13:50", 0.0], ["2018-12-07 16:13:54", 0.0], ["2018-12-07 16:13:59", 0.0], ["2018-12-07 16:14:05", 0.0], ["2018-12-07 16:14:09", 0.0], ["2018-12-07 16:14:13", 0.0], ["2018-12-07 16:14:18", 0.0], ["2018-12-07 16:14:23", 0.0], ["2018-12-07 16:14:28", 0.0], ["2018-12-07 16:14:33", 0.0], ["2018-12-07 16:14:38", 0.0], ["2018-12-07 16:14:43", 0.0], ["2018-12-07 16:14:49", 0.0], ["2018-12-07 16:14:54", 0.0], ["2018-12-07 16:14:59", 0.0], ["2018-12-07 16:15:02", 0.0], ["2018-12-07 16:15:07", 0.0], ["2018-12-07 16:15:11", 0.0], ["2018-12-07 16:15:14", 0.0], ["2018-12-07 16:15:18", 0.0], ["2018-12-07 16:15:22", 0.0], ["2018-12-07 16:15:26", 0.0], ["2018-12-07 16:15:30", 0.0], ["2018-12-07 16:15:34", 0.0], ["2018-12-07 16:15:38", 0.0], ["2018-12-07 16:15:42", 0.0], ["2018-12-07 16:15:46", 0.0], ["2018-12-07 16:15:50", 0.0], ["2018-12-07 16:15:54", 0.0], ["2018-12-07 16:15:57", 0.0], ["2018-12-07 16:16:01", 0.0], ["2018-12-07 16:16:05", 0.0], ["2018-12-07 16:16:09", 0.0], ["2018-12-07 16:16:13", 0.0], ["2018-12-07 16:16:17", 0.0], ["2018-12-07 16:16:21", 0.0], ["2018-12-07 16:16:25", 0.0], ["2018-12-07 16:16:29", 0.0], ["2018-12-07 16:16:33", 0.0], ["2018-12-07 16:16:37", 0.0], ["2018-12-07 16:16:41", 0.9], ["2018-12-07 16:16:46", 0.9], ["2018-12-07 16:16:50", 0.9], ["2018-12-07 16:16:54", 0.9], ["2018-12-07 16:16:58", 0.9], ["2018-12-07 16:17:02", 0.9], ["2018-12-07 16:17:06", 0.9], ["2018-12-07 16:17:11", 0.9], ["2018-12-07 16:17:15", 0.9], ["2018-12-07 16:17:19", 0.9], ["2018-12-07 16:17:23", 0.9], ["2018-12-07 16:17:27", 0.9], ["2018-12-07 16:17:31", 0.9], ["2018-12-07 16:17:36", 0.9], ["2018-12-07 16:17:40", 0.9], ["2018-12-07 16:17:43", 0.9], ["2018-12-07 16:17:47", 0.9], ["2018-12-07 16:17:51", 0.9], ["2018-12-07 16:17:55", 0.9], ["2018-12-07 16:18:00", 0.9], ["2018-12-07 16:18:04", 0.9], ["2018-12-07 16:18:08", 0.9], ["2018-12-07 16:18:12", 0.9], ["2018-12-07 16:18:16", 0.9], ["2018-12-07 16:18:20", 0.9], ["2018-12-07 16:18:24", 0.9], ["2018-12-07 16:18:28", 0.9], ["2018-12-07 16:18:32", 0.9], ["2018-12-07 16:18:37", 0.9], ["2018-12-07 16:18:40", 0.9], ["2018-12-07 16:18:45", 0.9], ["2018-12-07 16:18:49", 0.9], ["2018-12-07 16:18:53", 0.9], ["2018-12-07 16:18:56", 0.9], ["2018-12-07 16:19:01", 0.9], ["2018-12-07 16:19:04", 0.9], ["2018-12-07 16:19:08", 0.9], ["2018-12-07 16:19:13", 0.9], ["2018-12-07 16:19:18", 0.9], ["2018-12-07 16:19:22", 0.9], ["2018-12-07 16:19:26", 0.9], ["2018-12-07 16:19:31", 0.9], ["2018-12-07 16:19:36", 0.9], ["2018-12-07 16:19:40", 0.9], ["2018-12-07 16:19:45", 0.9], ["2018-12-07 16:19:50", 0.9]]
+		//cpu数据
+
+        var pagetime = ["12-07 02:59:47.261", "12-07 02:51:54.526", "12-07 02:51:55.499", "12-07 02:57:00.880", "12-07 02:59:40.923", "12-07 02:59:37.133", "12-07 02:53:38.273", "12-07 02:50:15.859", "12-07 02:54:03.896", "12-07 02:59:54.722", "12-07 02:51:52.899", "12-07 02:52:06.807", "12-07 02:59:59.406", "12-07 02:52:28.417", "12-07 02:54:00.231", "12-07 02:55:04.425", "12-07 02:54:11.920", "12-07 02:55:35.957", "12-07 02:53:55.443", "12-07 02:52:08.237", "12-07 02:59:44.150", "12-07 02:55:13.354", "12-07 02:53:35.485", "12-07 02:55:22.573", "12-07 02:59:55.989", "12-07 02:54:10.078", "12-07 02:54:44.427"]
+		var pageinfo = [1038, "558", "233", 1328, "225", "314", "214", "234", "202", "176", 1906, "313", "538", 1838, "464", "340", 1361, "875", "487", "293", "360", 1154, "265", 1169, "629", "830", "511"]
+		var pageactivity = [".activity.WebViewActivity", ".activity.LoginActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.LoginActivity", ".activity.ShareActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.EditSongListActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.EditSongListActivity", ".activity.WebViewActivity", ".activity.MVPlayerActivity", ".activity.LoginActivity"]
+		var data2= [["12-07 02:59:47.261", 1038.0], ["12-07 02:51:54.526", 558.0], ["12-07 02:51:55.499", 233.0], ["12-07 02:57:00.880", 1328.0], ["12-07 02:59:40.923", 225.0], ["12-07 02:59:37.133", 314.0], ["12-07 02:53:38.273", 214.0], ["12-07 02:50:15.859", 234.0], ["12-07 02:54:03.896", 202.0], ["12-07 02:59:54.722", 176.0], ["12-07 02:51:52.899", 1906.0], ["12-07 02:52:06.807", 313.0], ["12-07 02:59:59.406", 538.0], ["12-07 02:52:28.417", 1838.0], ["12-07 02:54:00.231", 464.0], ["12-07 02:55:04.425", 340.0], ["12-07 02:54:11.920", 1361.0], ["12-07 02:55:35.957", 875.0], ["12-07 02:53:55.443", 487.0], ["12-07 02:52:08.237", 293.0], ["12-07 02:59:44.150", 360.0], ["12-07 02:55:13.354", 1154.0], ["12-07 02:53:35.485", 265.0], ["12-07 02:55:22.573", 1169.0], ["12-07 02:59:55.989", 629.0], ["12-07 02:54:10.078", 830.0], ["12-07 02:54:44.427", 511.0]]
+		//cpu数据
+
+
+		//自己编写的js方法
+		function getActivity(yInfo, mInfo, info){
+			var i = yInfo.indexOf(info);
+			return mInfo[i];
+		}
+
+        $(function () {
+           $('#memchart').highcharts({
+	        chart: {
+	            zoomType: 'x'
+	        },
+	        title: {
+	            text: '内存使用率'
+	        },
+	        xAxis: {
+	            type: 'datetime',
+	            crosshair: true,
+	            type: "datetime",
+	            categories: memtime
+	        },
+           //设置滚动条
+            scrollbar: {
+                enabled: true
+            },
+	        tooltip: {
+	            dateTimeLabelFormats: {
+	                millisecond: '%H:%M:%S.%L',
+	                second: '%H:%M:%S',
+	                minute: '%H:%M',
+	                hour: '%H:%M',
+	                day: '%Y-%m-%d',
+	                week: '%m-%d',
+	                month: '%Y-%m',
+	                year: '%Y'
+	            },formatter: function () {
+	            			var mInfo = [".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.ShareActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity"];
+		                	var yInfo = ["2018-12-07 16:09:15", "2018-12-07 16:09:18", "2018-12-07 16:09:22", "2018-12-07 16:09:26", "2018-12-07 16:09:29", "2018-12-07 16:09:32", "2018-12-07 16:09:36", "2018-12-07 16:09:39", "2018-12-07 16:09:42", "2018-12-07 16:09:46", "2018-12-07 16:09:49", "2018-12-07 16:09:52", "2018-12-07 16:09:56", "2018-12-07 16:09:59", "2018-12-07 16:10:02", "2018-12-07 16:10:06", "2018-12-07 16:10:09", "2018-12-07 16:10:12", "2018-12-07 16:10:15", "2018-12-07 16:10:19", "2018-12-07 16:10:22", "2018-12-07 16:10:26", "2018-12-07 16:10:30", "2018-12-07 16:10:34", "2018-12-07 16:10:38", "2018-12-07 16:10:42", "2018-12-07 16:10:46", "2018-12-07 16:10:51", "2018-12-07 16:10:56", "2018-12-07 16:11:00", "2018-12-07 16:11:04", "2018-12-07 16:11:09", "2018-12-07 16:11:13", "2018-12-07 16:11:17", "2018-12-07 16:11:21", "2018-12-07 16:11:25", "2018-12-07 16:11:28", "2018-12-07 16:11:32", "2018-12-07 16:11:36", "2018-12-07 16:11:39", "2018-12-07 16:11:43", "2018-12-07 16:11:48", "2018-12-07 16:11:52", "2018-12-07 16:11:55", "2018-12-07 16:11:59", "2018-12-07 16:12:03", "2018-12-07 16:12:07", "2018-12-07 16:12:11", "2018-12-07 16:12:15", "2018-12-07 16:12:18", "2018-12-07 16:12:22", "2018-12-07 16:12:26", "2018-12-07 16:12:29", "2018-12-07 16:12:33", "2018-12-07 16:12:38", "2018-12-07 16:12:41", "2018-12-07 16:12:45", "2018-12-07 16:12:49", "2018-12-07 16:12:52", "2018-12-07 16:12:56", "2018-12-07 16:13:00", "2018-12-07 16:13:04", "2018-12-07 16:13:08", "2018-12-07 16:13:12", "2018-12-07 16:13:17", "2018-12-07 16:13:21", "2018-12-07 16:13:25", "2018-12-07 16:13:29", "2018-12-07 16:13:34", "2018-12-07 16:13:39", "2018-12-07 16:13:42", "2018-12-07 16:13:46", "2018-12-07 16:13:50", "2018-12-07 16:13:54", "2018-12-07 16:14:00", "2018-12-07 16:14:05", "2018-12-07 16:14:09", "2018-12-07 16:14:14", "2018-12-07 16:14:18", "2018-12-07 16:14:23", "2018-12-07 16:14:28", "2018-12-07 16:14:34", "2018-12-07 16:14:39", "2018-12-07 16:14:43", "2018-12-07 16:14:50", "2018-12-07 16:14:55", "2018-12-07 16:14:59", "2018-12-07 16:15:03", "2018-12-07 16:15:07", "2018-12-07 16:15:11", "2018-12-07 16:15:15", "2018-12-07 16:15:19", "2018-12-07 16:15:23", "2018-12-07 16:15:26", "2018-12-07 16:15:30", "2018-12-07 16:15:34", "2018-12-07 16:15:39", "2018-12-07 16:15:42", "2018-12-07 16:15:46", "2018-12-07 16:15:50", "2018-12-07 16:15:54", "2018-12-07 16:15:58", "2018-12-07 16:16:01", "2018-12-07 16:16:05", "2018-12-07 16:16:09", "2018-12-07 16:16:13", "2018-12-07 16:16:17", "2018-12-07 16:16:21", "2018-12-07 16:16:25", "2018-12-07 16:16:29", "2018-12-07 16:16:33", "2018-12-07 16:16:38", "2018-12-07 16:16:42", "2018-12-07 16:16:46", "2018-12-07 16:16:50", "2018-12-07 16:16:54", "2018-12-07 16:16:58", "2018-12-07 16:17:02", "2018-12-07 16:17:06", "2018-12-07 16:17:11", "2018-12-07 16:17:15", "2018-12-07 16:17:19", "2018-12-07 16:17:23", "2018-12-07 16:17:27", "2018-12-07 16:17:32", "2018-12-07 16:17:36", "2018-12-07 16:17:40", "2018-12-07 16:17:43", "2018-12-07 16:17:47", "2018-12-07 16:17:51", "2018-12-07 16:17:55", "2018-12-07 16:18:00", "2018-12-07 16:18:04", "2018-12-07 16:18:08", "2018-12-07 16:18:12", "2018-12-07 16:18:16", "2018-12-07 16:18:20", "2018-12-07 16:18:24", "2018-12-07 16:18:28", "2018-12-07 16:18:32", "2018-12-07 16:18:37", "2018-12-07 16:18:41", "2018-12-07 16:18:45", "2018-12-07 16:18:49", "2018-12-07 16:18:53", "2018-12-07 16:18:57", "2018-12-07 16:19:01", "2018-12-07 16:19:05", "2018-12-07 16:19:09", "2018-12-07 16:19:13", "2018-12-07 16:19:18", "2018-12-07 16:19:23", "2018-12-07 16:19:27", "2018-12-07 16:19:32", "2018-12-07 16:19:36", "2018-12-07 16:19:41", "2018-12-07 16:19:46", "2018-12-07 16:19:50"];
+		                	var point = this.points[0];
+							return '<b>' + "内存: </b>" + point.y + '<br/>' +
+								   '<b>' + "Time: </b>" + point.x + '<br/>' +
+								   '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+	            },
+	            shared: true
+
+	        },
+	        yAxis: {
+	            min:0,
+	            title: {
+	                text: 'MB'
+	            }
+	        },
+	        legend: {
+	            enabled: false
+	        },
+	        plotOptions: {
+	            area: {
+	                fillColor: {
+	                    linearGradient: {
+	                        x1: 0,
+	                        y1: 0,
+	                        x2: 0,
+	                        y2: 1
+	                    },
+	                    stops: [
+	                        [0, Highcharts.getOptions().colors[0]],
+	                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                    ]
+	                },
+	                marker: {
+	                    radius: 2
+	                },
+	                lineWidth: 1,
+	                states: {
+	                    hover: {
+	                        lineWidth: 1
+	                    }
+	                },
+	                threshold: null
+	            }
+	        },
+	        series: [{
+	            type: 'area',
+	            name: '内存使用率',
+	            data: data,
+                turboThreshold: 5000
+	        }]
+	    });
+            $('#cpuchart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'CPU使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: cputime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = [".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.ShareActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.AppStarterActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.LoginActivity", ".activity.EditSongListActivity", ".activity.EditSongListActivity"];
+                                var yInfo = ["2018-12-07 16:09:15", "2018-12-07 16:09:18", "2018-12-07 16:09:22", "2018-12-07 16:09:25", "2018-12-07 16:09:29", "2018-12-07 16:09:32", "2018-12-07 16:09:36", "2018-12-07 16:09:39", "2018-12-07 16:09:42", "2018-12-07 16:09:45", "2018-12-07 16:09:49", "2018-12-07 16:09:52", "2018-12-07 16:09:56", "2018-12-07 16:09:59", "2018-12-07 16:10:02", "2018-12-07 16:10:05", "2018-12-07 16:10:09", "2018-12-07 16:10:12", "2018-12-07 16:10:15", "2018-12-07 16:10:19", "2018-12-07 16:10:22", "2018-12-07 16:10:26", "2018-12-07 16:10:29", "2018-12-07 16:10:33", "2018-12-07 16:10:38", "2018-12-07 16:10:42", "2018-12-07 16:10:46", "2018-12-07 16:10:51", "2018-12-07 16:10:55", "2018-12-07 16:11:00", "2018-12-07 16:11:04", "2018-12-07 16:11:08", "2018-12-07 16:11:12", "2018-12-07 16:11:16", "2018-12-07 16:11:21", "2018-12-07 16:11:25", "2018-12-07 16:11:28", "2018-12-07 16:11:32", "2018-12-07 16:11:35", "2018-12-07 16:11:39", "2018-12-07 16:11:43", "2018-12-07 16:11:47", "2018-12-07 16:11:51", "2018-12-07 16:11:55", "2018-12-07 16:11:59", "2018-12-07 16:12:03", "2018-12-07 16:12:07", "2018-12-07 16:12:10", "2018-12-07 16:12:14", "2018-12-07 16:12:18", "2018-12-07 16:12:22", "2018-12-07 16:12:25", "2018-12-07 16:12:29", "2018-12-07 16:12:33", "2018-12-07 16:12:37", "2018-12-07 16:12:41", "2018-12-07 16:12:45", "2018-12-07 16:12:49", "2018-12-07 16:12:52", "2018-12-07 16:12:56", "2018-12-07 16:13:00", "2018-12-07 16:13:04", "2018-12-07 16:13:08", "2018-12-07 16:13:12", "2018-12-07 16:13:16", "2018-12-07 16:13:20", "2018-12-07 16:13:24", "2018-12-07 16:13:29", "2018-12-07 16:13:34", "2018-12-07 16:13:39", "2018-12-07 16:13:42", "2018-12-07 16:13:46", "2018-12-07 16:13:50", "2018-12-07 16:13:54", "2018-12-07 16:13:59", "2018-12-07 16:14:05", "2018-12-07 16:14:09", "2018-12-07 16:14:13", "2018-12-07 16:14:18", "2018-12-07 16:14:23", "2018-12-07 16:14:28", "2018-12-07 16:14:33", "2018-12-07 16:14:38", "2018-12-07 16:14:43", "2018-12-07 16:14:49", "2018-12-07 16:14:54", "2018-12-07 16:14:59", "2018-12-07 16:15:02", "2018-12-07 16:15:07", "2018-12-07 16:15:11", "2018-12-07 16:15:14", "2018-12-07 16:15:18", "2018-12-07 16:15:22", "2018-12-07 16:15:26", "2018-12-07 16:15:30", "2018-12-07 16:15:34", "2018-12-07 16:15:38", "2018-12-07 16:15:42", "2018-12-07 16:15:46", "2018-12-07 16:15:50", "2018-12-07 16:15:54", "2018-12-07 16:15:57", "2018-12-07 16:16:01", "2018-12-07 16:16:05", "2018-12-07 16:16:09", "2018-12-07 16:16:13", "2018-12-07 16:16:17", "2018-12-07 16:16:21", "2018-12-07 16:16:25", "2018-12-07 16:16:29", "2018-12-07 16:16:33", "2018-12-07 16:16:37", "2018-12-07 16:16:41", "2018-12-07 16:16:46", "2018-12-07 16:16:50", "2018-12-07 16:16:54", "2018-12-07 16:16:58", "2018-12-07 16:17:02", "2018-12-07 16:17:06", "2018-12-07 16:17:11", "2018-12-07 16:17:15", "2018-12-07 16:17:19", "2018-12-07 16:17:23", "2018-12-07 16:17:27", "2018-12-07 16:17:31", "2018-12-07 16:17:36", "2018-12-07 16:17:40", "2018-12-07 16:17:43", "2018-12-07 16:17:47", "2018-12-07 16:17:51", "2018-12-07 16:17:55", "2018-12-07 16:18:00", "2018-12-07 16:18:04", "2018-12-07 16:18:08", "2018-12-07 16:18:12", "2018-12-07 16:18:16", "2018-12-07 16:18:20", "2018-12-07 16:18:24", "2018-12-07 16:18:28", "2018-12-07 16:18:32", "2018-12-07 16:18:37", "2018-12-07 16:18:40", "2018-12-07 16:18:45", "2018-12-07 16:18:49", "2018-12-07 16:18:53", "2018-12-07 16:18:56", "2018-12-07 16:19:01", "2018-12-07 16:19:04", "2018-12-07 16:19:08", "2018-12-07 16:19:13", "2018-12-07 16:19:18", "2018-12-07 16:19:22", "2018-12-07 16:19:26", "2018-12-07 16:19:31", "2018-12-07 16:19:36", "2018-12-07 16:19:40", "2018-12-07 16:19:45", "2018-12-07 16:19:50"];
+                                var point = this.points[0];
+                                return '<b>' + "CPU: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    max:100,
+                    title: {
+                        text: '%'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'CPU使用率',
+                    data: data1,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+            $('#pagechart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: '页面加载使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: pagetime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = [".activity.WebViewActivity", ".activity.LoginActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.LoginActivity", ".activity.ShareActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".activity.EditSongListActivity", ".activity.AppStarterActivity", ".activity.LoginActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.WebViewActivity", ".activity.LoginActivity", ".activity.WebViewActivity", ".activity.EditSongListActivity", ".activity.WebViewActivity", ".activity.MVPlayerActivity", ".activity.LoginActivity"];
+                                var yInfo = ["12-07 02:59:47.261", "12-07 02:51:54.526", "12-07 02:51:55.499", "12-07 02:57:00.880", "12-07 02:59:40.923", "12-07 02:59:37.133", "12-07 02:53:38.273", "12-07 02:50:15.859", "12-07 02:54:03.896", "12-07 02:59:54.722", "12-07 02:51:52.899", "12-07 02:52:06.807", "12-07 02:59:59.406", "12-07 02:52:28.417", "12-07 02:54:00.231", "12-07 02:55:04.425", "12-07 02:54:11.920", "12-07 02:55:35.957", "12-07 02:53:55.443", "12-07 02:52:08.237", "12-07 02:59:44.150", "12-07 02:55:13.354", "12-07 02:53:35.485", "12-07 02:55:22.573", "12-07 02:59:55.989", "12-07 02:54:10.078", "12-07 02:54:44.427"];
+                                var point = this.points[0];
+                                return '<b>' + "耗时: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'ms'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: '页面加载耗时',
+                    data: data2,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+
+            $('#coverage_percent').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                        text: '自动化遍历占比'
+                },
+                tooltip: {
+                        headerFormat: '{series.name}<br>',
+                        pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                        pie: {
+						allowPointSelect: true,
+						cursor: 'pointer',
+						dataLabels: {
+								enabled: true,
+								format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+								style: {
+										color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+								}
+						},
+						states: {
+								hover: {
+										enabled: false
+								}
+						},
+						slicedOffset: 20,// 突出间距
+						point: {
+						    // 每个扇区是数据点对象，所以事件应该写在 point 下面
+								events: {
+										// 鼠标滑过是，突出当前扇区
+										mouseOver: function() {
+												this.slice();
+										},
+										// 鼠标移出时，收回突出显示
+										mouseOut: function() {
+												this.slice();
+										},
+										// 默认是点击突出，这里屏蔽掉
+										click: function() {
+												return false;
+										}}
+						}}},
+                series: [{
+                        type: 'pie',
+                        name: '自动化遍历页面占比',
+                        data: [
+                                ['未遍历',100],
+                                {
+                                name: '已遍历',
+                                y: 0,
+                                sliced: true, // 突出显示这个点（扇区），用于强调。
+                                },
+                        ]}]
+                    });
+
+            $('#start_time').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                credits: {
+                    enabled:false
+                },
+                title: {
+                    text: 'App启动时间'
+                },
+                xAxis: {
+                    categories: [
+                        '冷启动'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '秒'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="font-size:10px;color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0;font-size:10px;">{point.y:.1f} 秒</td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: '启动时间',
+                    data: [0.86]
+                }]
+            });
+        })
+    </script>
+    <style type="text/css">
+    </style>
+</body>
+</html>
+

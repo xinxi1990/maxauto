@@ -1,93 +1,73 @@
-# coding=utf-8
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 '''
-
-获取设备流量
+Author  : xinxi
+@Time    : 2018/12/5 18:34
+@describe: 统计消耗流量
 上行+下行
 模拟和真机获取方式不一样
-@author xinxi
-
 '''
-from AdbCommon import AdbCommon
-import subprocess
-from DateBean import DateBean
-import logger
-import time
 
-total = 0
+import subprocess,time,re,sys
+sys.path.append('..')
+reload(sys)
+sys.setdefaultencoding("utf-8")
+from tools.loggers import JFMlogging
+from config import *
+from common import get_app_uid
+logger = JFMlogging().getloger()
+from tools.filetools import write_file
 
 
 class GetNetWork():
 
-    def __init__(self, dev):
-        self.dev = dev
-        self.db = DateBean()
+    def __init__(self, device_name,activity,pck_name):
+        self.device_name = device_name
+        self.activity = activity
+        self.pck_name = pck_name
 
-    def getnetwork(self,activity):
+    def real_network(self):
         '''
         获取真机的流量
         获取上传和下载的流量
         :return:
         '''
-        adc = AdbCommon(self.dev)
-
-        global total
+        total = ''
         try:
-
-            uid = adc.get_app_uid(self.db.packagename)
+            uid = get_app_uid(self.device_name, self.pck_name)
             # 获取uid
-
-            cmd = 'adb -s %s shell  cat /proc/uid_stat/%s/tcp_snd' % (self.dev, uid)
+            cmd = 'adb -s %s shell  cat /proc/uid_stat/%s/tcp_snd' % (self.device_name, uid)
             # 上传流量
-            logger.log_debug(cmd)
-
             pipe = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout
             updata = int(pipe.read().split('/')[0])
-
-            cmd = 'adb -s %s shell  cat /proc/uid_stat/%s/tcp_rcv' % (self.dev, uid)
-            logger.log_debug(cmd)
+            cmd = 'adb -s %s shell cat /proc/uid_stat/%s/tcp_rcv' % (self.device_name, uid)
             # 下载流量
-
             pipe = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout
             downdata = int(pipe.read().split('/')[0])
-
             total = (format(float(updata + downdata) / float(1024 * 1024), '.3f'))
-
         except  Exception, e:
-            logger.log_error('获取真机流量失败:%s' + str(e))
-            total = 0
-
+            logger.error('获取真机流量失败:%s' + str(e))
         finally:
-
-            times = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
             # 发生时间
-            with open(self.db.networkpath, 'ab+') as f:
-                f.write(
-                    str(times) + ',' +
-                    str(total) + ',' +
-                    str(activity) + ',' + '\n'
-                )
+            info = current_time + ',' + str(total)  + ',' + self.activity + ',' + '\n'
+            write_file(network_path, info, is_cover=False)
 
-    def simulatorgetnetwork(self,activity):
+
+
+    def simu_network(self):
         '''
         获取模拟器的流量
         获取上传和下载的流量
         :return:
         '''
-        global total
-
-        adc = AdbCommon(self.dev)
-
+        total = ''
         try:
-            uid = adc.get_app_pid(self.db.packagename)
-
-            cmd = 'adb -s %s shell  cat /proc/%s/net/dev' % (self.dev, uid)
+            uid = get_app_uid(self.device_name,self.pck_name)
+            cmd = 'adb -s %s shell cat /proc/%s/net/dev' % (self.device_name, uid)
             # 获取流量命令
-            logger.log_debug(cmd)
-
             pipe = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout
-
             for index in pipe.readlines():
                 # if index.startswith(' wlan0'): # 真机
                 if 'eth0' in index:  # 模拟器
@@ -95,38 +75,23 @@ class GetNetWork():
                     # 下载
                     send = index.split()[9]
                     # 上传
-
                     total = (int(down) + int(send)) / (1024 * 1024)
                     # 上传和下载
         except  Exception, e:
-            logger.log_error('获取模拟器流量失败:%e' + str(e))
-            total = 0
-
+            logger.error('获取模拟器流量失败:{}'.format(e))
         finally:
-
-            times = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
             # 发生时间
+            info = current_time + ',' + str(total) + ',' + self.activity + ',' + '\n'
+            write_file(network_path, info, is_cover=False)
 
-            with open(self.db.networkpath, 'ab+') as f:
-                f.write(
-                    str(times) + ',' +
-                    str(total) + ',' +
-                    str(activity) + ',' + '\n'
-                )
 
-    def selectnetwork(self,simulator,activity):
-        '''
-        选择真机或者模拟器获取流量的方法
-        :param simulator: 取Path.py中的simulator的参数
-        :return:
-        '''
-
-        logger.log_info("simulator: " + str(simulator))
-
-        if simulator:
-            self.simulatorgetnetwork(activity)
+    def get_network(self):
+        if re.findall(':',self.device_name):
+            self.simu_network()
         else:
-            self.getnetwork(activity)
+            self.real_network()
+
 
 
 

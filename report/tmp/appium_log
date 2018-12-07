@@ -1,0 +1,292 @@
+2018-12-07 10:08:12:194 - info: [Appium] Welcome to Appium v1.9.0 (REV 3837f089f0431dfcd5e1e7bb846b9643718ef766)
+2018-12-07 10:08:12:195 - info: [Appium] Non-default server args:
+2018-12-07 10:08:12:196 - info: [Appium]   address: 127.0.0.1
+2018-12-07 10:08:12:196 - info: [Appium]   port: 4725
+2018-12-07 10:08:12:196 - info: [Appium]   sessionOverride: true
+2018-12-07 10:08:12:196 - info: [Appium]   log: /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log
+2018-12-07 10:08:12:196 - info: [Appium]   udid: 192.168.56.101:5555
+2018-12-07 10:08:12:197 - warn: [Appium] Deprecated server args:
+2018-12-07 10:08:12:197 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.101:5555"}'
+2018-12-07 10:08:12:197 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2018-12-07 10:08:12:197 - info: [Appium]   udid: 192.168.56.101:5555
+2018-12-07 10:08:12:230 - info: [Appium] Appium REST http interface listener started on 127.0.0.1:4725
+2018-12-07 10:08:13:258 - info: [HTTP] --> POST /wd/hub/session
+2018-12-07 10:08:13:258 - info: [HTTP] {"capabilities":{"alwaysMatch":{"appium:unicodeKeyboard":"true","appium:resetKeyboard":"true","appium:autoLaunch":"true","appium:appActivity":"com.tencent.news.activity.SplashActivity","appium:platformVersion ":"7.0","appium:appPackage":"com.tencent.news","appium:deviceName":"192.168.56.101:5555","platformName":"Android"},"firstMatch":[{}]},"desiredCapabilities":{"unicodeKeyboard":"true","deviceName":"192.168.56.101:5555","autoLaunch":"true","platformVersion ":"7.0","resetKeyboard":"true","appPackage":"com.tencent.news","platformName":"Android","appActivity":"com.tencent.news.activity.SplashActivity"}}
+2018-12-07 10:08:13:261 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"unicodeKeyboard":"true","deviceName":"192.168.56.101:5555","autoLaunch":"true","platformVersion ":"7.0","resetKeyboard":"true","appPackage":"com.tencent.news","platformName":"Android","appActivity":"com.tencent.news.activity.SplashActivity"},null,{"alwaysMatch":{"appium:unicodeKeyboard":"true","appium:resetKeyboard":"true","appium:autoLaunch":"true","appium:appActivity":"com.tencent.news.activity.SplashActivity","appium:platformVersion ":"7.0","appium:appPackage":"com.tencent.news","appium:deviceName":"192.168.56.101:5555","platformName":"Android"},"firstMatch":[{}]}]
+2018-12-07 10:08:13:262 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1544177293262 (18:08:13 GMT+0800 (CST))
+2018-12-07 10:08:13:266 - warn: [BaseDriver] The capabilities ["udid"] are not standard capabilities and should have an extension prefix
+2018-12-07 10:08:13:269 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2018-12-07 10:08:13:272 - info: [Appium] Creating new AndroidDriver (v3.7.0) session
+2018-12-07 10:08:13:272 - info: [Appium] Capabilities:
+2018-12-07 10:08:13:272 - info: [Appium]   udid: 192.168.56.101:5555
+2018-12-07 10:08:13:272 - info: [Appium]   platformName: Android
+2018-12-07 10:08:13:272 - info: [Appium]   unicodeKeyboard: true
+2018-12-07 10:08:13:272 - info: [Appium]   resetKeyboard: true
+2018-12-07 10:08:13:273 - info: [Appium]   autoLaunch: true
+2018-12-07 10:08:13:273 - info: [Appium]   appActivity: com.tencent.news.activity.SplashActivity
+2018-12-07 10:08:13:273 - info: [Appium]   platformVersion : 7.0
+2018-12-07 10:08:13:273 - info: [Appium]   appPackage: com.tencent.news
+2018-12-07 10:08:13:273 - info: [Appium]   deviceName: 192.168.56.101:5555
+2018-12-07 10:08:13:279 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities {"udid":"192.168.56.101:555... were provided
+2018-12-07 10:08:13:280 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...
+2018-12-07 10:08:13:282 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2018-12-07 10:08:13:282 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2018-12-07 10:08:13:282 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2018-12-07 10:08:13:285 - warn: [BaseDriver] Capability 'autoLaunch' changed from string to boolean. This may cause unexpected behavior
+2018-12-07 10:08:13:285 - warn: [BaseDriver] Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+2018-12-07 10:08:13:289 - warn: [BaseDriver] Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+2018-12-07 10:08:13:345 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: platformVersion .
+2018-12-07 10:08:13:348 - info: [BaseDriver] Session created with session id: c6248bc4-2095-400a-bdd0-1834916ff149
+2018-12-07 10:08:13:534 - info: [AndroidDriver] Java version is: 1.8.0_161
+2018-12-07 10:08:13:538 - info: [ADB] Checking whether adb is present
+2018-12-07 10:08:13:546 - info: [ADB] Found 15 'build-tools' folders under '/Users/xinxi/Library/Android/sdk' (newest first):
+2018-12-07 10:08:13:546 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/28.0.3
+2018-12-07 10:08:13:546 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/27.0.3
+2018-12-07 10:08:13:547 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/27.0.1
+2018-12-07 10:08:13:547 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.2
+2018-12-07 10:08:13:547 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.1
+2018-12-07 10:08:13:547 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.0
+2018-12-07 10:08:13:548 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.2
+2018-12-07 10:08:13:548 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.1
+2018-12-07 10:08:13:548 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.0
+2018-12-07 10:08:13:548 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/24.0.2
+2018-12-07 10:08:13:548 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.3
+2018-12-07 10:08:13:548 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.2
+2018-12-07 10:08:13:549 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.1
+2018-12-07 10:08:13:549 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/22.0.1
+2018-12-07 10:08:13:549 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/21.1.2
+2018-12-07 10:08:13:557 - info: [ADB] Using adb from /Users/xinxi/Library/Android/sdk/platform-tools/adb
+2018-12-07 10:08:13:558 - info: [AndroidDriver] Retrieving device list
+2018-12-07 10:08:13:558 - info: [debug] [ADB] Trying to find a connected android device
+2018-12-07 10:08:13:559 - info: [debug] [ADB] Getting connected devices...
+2018-12-07 10:08:13:577 - info: [debug] [ADB] 1 device(s) connected
+2018-12-07 10:08:13:577 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2018-12-07 10:08:13:579 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2018-12-07 10:08:13:582 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2018-12-07 10:08:13:610 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 24
+2018-12-07 10:08:13:611 - info: [debug] [ADB] Device API level: 24
+2018-12-07 10:08:13:611 - warn: [AndroidDriver] Consider setting 'automationName' capability to 'uiautomator2' on Android >= 6, since UIAutomator framework is not maintained anymore by the OS vendor.
+2018-12-07 10:08:13:611 - info: [AndroidDriver] App file was not listed, instead we're going to run com.tencent.news directly on the device
+2018-12-07 10:08:13:611 - info: [debug] [AndroidDriver] Checking whether package is present on the device
+2018-12-07 10:08:13:612 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.tencent.news'
+2018-12-07 10:08:13:904 - info: [AndroidDriver] Starting Android session
+2018-12-07 10:08:13:905 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2018-12-07 10:08:13:919 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2018-12-07 10:08:13:938 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-12-07 10:08:13:939 - info: [debug] [ADB] Getting install status for io.appium.settings
+2018-12-07 10:08:13:940 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2018-12-07 10:08:14:166 - info: [debug] [ADB] App is installed
+2018-12-07 10:08:14:167 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2018-12-07 10:08:14:167 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2018-12-07 10:08:14:195 - info: [ADB] Checking whether aapt is present
+2018-12-07 10:08:14:196 - info: [ADB] Using aapt from /Users/xinxi/Library/Android/sdk/build-tools/28.0.3/aapt
+2018-12-07 10:08:14:225 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2018-12-07 10:08:14:226 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2018-12-07 10:08:14:251 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2018-12-07 10:08:14:251 - info: [debug] [ADB] Device API level: 24
+2018-12-07 10:08:14:252 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2018-12-07 10:08:14:277 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-12-07 10:08:14:278 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-12-07 10:08:14:279 - info: [debug] [Logcat] Starting logcat capture
+2018-12-07 10:08:14:300 - info: [debug] [AndroidDriver] Enabling Unicode keyboard support
+2018-12-07 10:08:14:301 - info: [debug] [AndroidDriver] Pushing unicode ime to device...
+2018-12-07 10:08:14:302 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 install /usr/local/lib/node_modules/appium/node_modules/appium-android-ime/bin/UnicodeIME-debug.apk'
+2018-12-07 10:08:14:404 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 install /usr/local/lib/node_modules/appium/node_modules/appium-android-ime/bin/UnicodeIME-debug.apk'
+2018-12-07 10:08:14:487 - info: [debug] [ADB] Application '/usr/local/lib/node_modules/appium/node_modules/appium-android-ime/bin/UnicodeIME-debug.apk' already installed. Continuing.
+2018-12-07 10:08:14:488 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell settings get secure default_input_method'
+2018-12-07 10:08:14:716 - info: [debug] [AndroidDriver] Unsetting previous IME io.appium.android.ime/.UnicodeIME
+2018-12-07 10:08:14:717 - info: [debug] [AndroidDriver] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2018-12-07 10:08:14:717 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ime enable io.appium.android.ime/.UnicodeIME'
+2018-12-07 10:08:15:046 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ime set io.appium.android.ime/.UnicodeIME'
+2018-12-07 10:08:15:353 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-12-07 10:08:15:354 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-12-07 10:08:15:354 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2018-12-07 10:08:15:583 - info: [debug] [ADB] App is installed
+2018-12-07 10:08:15:583 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2018-12-07 10:08:15:584 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2018-12-07 10:08:15:618 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-12-07 10:08:15:618 - info: [ADB] Getting device platform version
+2018-12-07 10:08:15:619 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2018-12-07 10:08:15:639 - info: [debug] [ADB] Current device property 'ro.build.version.release': 7.0
+2018-12-07 10:08:15:639 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2018-12-07 10:08:15:859 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2018-12-07 10:08:15:879 - info: [debug] [ADB] Current device property 'ro.product.model': Google
+2018-12-07 10:08:15:879 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2018-12-07 10:08:15:901 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2018-12-07 10:08:15:901 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2018-12-07 10:08:15:902 - info: [debug] [AndroidDriver] No app capability. Assuming it is already on the device
+2018-12-07 10:08:15:902 - info: [debug] [ADB] Getting install status for com.tencent.news
+2018-12-07 10:08:15:902 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.tencent.news'
+2018-12-07 10:08:16:111 - info: [debug] [ADB] App is installed
+2018-12-07 10:08:16:112 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.tencent.news'
+2018-12-07 10:08:16:368 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.tencent.news'
+2018-12-07 10:08:16:846 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.tencent.news' application (stop and clear)
+2018-12-07 10:08:16:846 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-12-07 10:08:16:848 - info: [debug] [ADB] Forwarding system: 4724 to device: 4724
+2018-12-07 10:08:16:848 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:4724 tcp\:4724'
+2018-12-07 10:08:16:863 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-12-07 10:08:16:863 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-12-07 10:08:16:863 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-12-07 10:08:16:863 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-12-07 10:08:16:864 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 push /usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+2018-12-07 10:08:16:902 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-12-07 10:08:16:903 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-12-07 10:08:16:903 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2018-12-07 10:08:16:930 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-12-07 10:08:16:930 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-12-07 10:08:16:931 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","192.168.56.101:5555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.tencent.news","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-12-07 10:08:17:293 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-12-07 10:08:17:296 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+2018-12-07 10:08:17:296 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2018-12-07 10:08:17:300 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-12-07 10:08:17:302 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2018-12-07 10:08:17:306 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-12-07 10:08:17:345 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-12-07 10:08:17:347 - info: [debug] [ADB] Device API level: 24
+2018-12-07 10:08:17:347 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.tencent.news/com.tencent.news.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-12-07 10:08:19:233 - info: [Appium] New AndroidDriver session created successfully, session c6248bc4-2095-400a-bdd0-1834916ff149 added to master session list
+2018-12-07 10:08:19:234 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1544177299233 (18:08:19 GMT+0800 (CST))
+2018-12-07 10:08:19:235 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","udid":"192.168.56.101:5555","unicodeKeyboard":true,"resetKeyboard":true,"autoLaunch":true,"appActivity":"com.tencent.news.activity.SplashActivity","platformVersion ":"7.0","appPackage":"com.tencent.news","deviceName":"192.168.56.101:5555"},"platformName":"Android","udid":"192.168.56.101:5555","unicodeKeyboard":true,"resetKeyboard":true,"autoLaunch":true,"appActivity":"com.tencent.news.activity.SplashActivity","platformVersion ":"7.0","appPackage":"com.tencent.news","deviceName":"192.168.56.101:5555","deviceUDID":"192.168.56.101:5555","platformVersion":"7.0","deviceScreenSize":"1080x1920","deviceModel":"Google","deviceManufacturer":"Genymotion"}}
+2018-12-07 10:08:19:242 - info: [HTTP] <-- POST /wd/hub/session 200 5981 ms - 962
+2018-12-07 10:08:19:242 - info: [HTTP] 
+2018-12-07 10:08:19:247 - info: [HTTP] --> POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/timeouts
+2018-12-07 10:08:19:247 - info: [HTTP] {"sessionId":"c6248bc4-2095-400a-bdd0-1834916ff149","implicit":5000}
+2018-12-07 10:08:19:248 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,5000,"c6248bc4-2095-400a-bdd0-1834916ff149"]
+2018-12-07 10:08:19:265 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":5000}}
+2018-12-07 10:08:19:265 - info: [debug] [BaseDriver] Set implicit wait to 5000ms
+2018-12-07 10:08:19:268 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2018-12-07 10:08:19:270 - info: [HTTP] <-- POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/timeouts 200 22 ms - 14
+2018-12-07 10:08:19:270 - info: [HTTP] 
+2018-12-07 10:08:19:272 - info: [HTTP] --> POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/elements
+2018-12-07 10:08:19:272 - info: [HTTP] {"using":"xpath","sessionId":"c6248bc4-2095-400a-bdd0-1834916ff149","value":"//*[@text='ALLOW']"}
+2018-12-07 10:08:19:275 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='ALLOW']","c6248bc4-2095-400a-bdd0-1834916ff149"]
+2018-12-07 10:08:19:277 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-12-07 10:08:19:278 - info: [debug] [BaseDriver] Waiting up to 5000 ms for condition
+2018-12-07 10:08:19:281 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:19:289 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:19:289 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:19:289 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:19:289 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:20:396 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:20:399 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:20:460 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:20:460 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:20:461 - info: [debug] [BaseDriver] Waited for 1182 ms so far
+2018-12-07 10:08:20:962 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:20:966 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:20:966 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:20:966 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:20:967 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:21:175 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:21:184 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:21:247 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:21:247 - info: [debug] [BaseDriver] Waited for 1968 ms so far
+2018-12-07 10:08:21:247 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:21:749 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:21:754 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:21:754 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:21:754 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:21:754 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:21:770 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:21:776 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:21:807 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:21:807 - info: [debug] [BaseDriver] Waited for 2528 ms so far
+2018-12-07 10:08:21:808 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:22:311 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:22:314 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:22:314 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:22:314 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:22:314 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:22:321 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:22:322 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:22:330 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:22:331 - info: [debug] [BaseDriver] Waited for 3052 ms so far
+2018-12-07 10:08:22:331 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:22:835 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:22:838 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:22:839 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:22:839 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:22:839 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:22:854 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:22:859 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:22:877 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:22:877 - info: [debug] [BaseDriver] Waited for 3598 ms so far
+2018-12-07 10:08:22:877 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:23:379 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:23:384 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:23:384 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:23:386 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:23:386 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:23:394 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:23:398 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:23:413 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:23:414 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:23:414 - info: [debug] [BaseDriver] Waited for 4135 ms so far
+2018-12-07 10:08:23:917 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:23:925 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:23:925 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:23:925 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:23:925 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:23:978 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:23:981 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:24:030 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:24:031 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:24:031 - info: [debug] [BaseDriver] Waited for 4752 ms so far
+2018-12-07 10:08:24:531 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:24:535 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='ALLOW']","context":"","multiple":true}}
+2018-12-07 10:08:24:535 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:24:535 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:24:535 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:24:543 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-12-07 10:08:24:545 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='ALLOW']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:24:555 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+2018-12-07 10:08:24:555 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:24:556 - info: [debug] [W3C] Responding to client with driver.findElements() result: []
+2018-12-07 10:08:24:558 - info: [HTTP] <-- POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/elements 200 5287 ms - 12
+2018-12-07 10:08:24:558 - info: [HTTP] 
+2018-12-07 10:08:24:560 - info: [HTTP] --> POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/elements
+2018-12-07 10:08:24:560 - info: [HTTP] {"using":"xpath","sessionId":"c6248bc4-2095-400a-bdd0-1834916ff149","value":"//*[@text='允许']"}
+2018-12-07 10:08:24:561 - info: [debug] [W3C] Calling AppiumDriver.findElements() with args: ["xpath","//*[@text='允许']","c6248bc4-2095-400a-bdd0-1834916ff149"]
+2018-12-07 10:08:24:562 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-12-07 10:08:24:563 - info: [debug] [BaseDriver] Waiting up to 5000 ms for condition
+2018-12-07 10:08:24:563 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='允许']","context":"","multiple":true}}
+2018-12-07 10:08:24:565 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='允许']","context":"","multiple":true}}
+2018-12-07 10:08:24:566 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:24:566 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:24:566 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='允许']' using 'XPATH' with the contextId: '' multiple: true
+2018-12-07 10:08:24:590 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button, INSTANCE=1]
+2018-12-07 10:08:24:595 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:24:596 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[CLASS=android.widget.Button, INSTANCE=1]
+2018-12-07 10:08:24:596 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Selector ends with instance.
+2018-12-07 10:08:24:596 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"1"}]}
+2018-12-07 10:08:24:597 - info: [debug] [W3C] Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"1"}]
+2018-12-07 10:08:24:597 - info: [HTTP] <-- POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/elements 200 37 ms - 55
+2018-12-07 10:08:24:597 - info: [HTTP] 
+2018-12-07 10:08:24:599 - info: [HTTP] --> POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/element
+2018-12-07 10:08:24:599 - info: [HTTP] {"using":"xpath","sessionId":"c6248bc4-2095-400a-bdd0-1834916ff149","value":"//*[@text='允许']"}
+2018-12-07 10:08:24:600 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["xpath","//*[@text='允许']","c6248bc4-2095-400a-bdd0-1834916ff149"]
+2018-12-07 10:08:24:601 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-12-07 10:08:24:601 - info: [debug] [BaseDriver] Waiting up to 5000 ms for condition
+2018-12-07 10:08:24:602 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='允许']","context":"","multiple":false}}
+2018-12-07 10:08:24:604 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//*[@text='允许']","context":"","multiple":false}}
+2018-12-07 10:08:24:604 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:24:604 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-12-07 10:08:24:604 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//*[@text='允许']' using 'XPATH' with the contextId: '' multiple: false
+2018-12-07 10:08:24:631 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.Button, INSTANCE=1]
+2018-12-07 10:08:24:633 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:24:634 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+2018-12-07 10:08:24:634 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2"}
+2018-12-07 10:08:24:635 - info: [HTTP] <-- POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/element 200 36 ms - 53
+2018-12-07 10:08:24:635 - info: [HTTP] 
+2018-12-07 10:08:24:637 - info: [HTTP] --> POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/element/2/click
+2018-12-07 10:08:24:637 - info: [HTTP] {"sessionId":"c6248bc4-2095-400a-bdd0-1834916ff149","id":"2"}
+2018-12-07 10:08:24:638 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["2","c6248bc4-2095-400a-bdd0-1834916ff149"]
+2018-12-07 10:08:24:649 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2018-12-07 10:08:24:653 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2018-12-07 10:08:24:653 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-12-07 10:08:24:654 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2018-12-07 10:08:27:766 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-12-07 10:08:27:766 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2018-12-07 10:08:27:767 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2018-12-07 10:08:27:767 - info: [HTTP] <-- POST /wd/hub/session/c6248bc4-2095-400a-bdd0-1834916ff149/element/2/click 200 3131 ms - 14
+2018-12-07 10:08:27:767 - info: [HTTP] 

@@ -15,6 +15,7 @@ import common
 from getcpu import GetCPU
 from getmem import GetMem
 from getbasic import GetBasic
+from getnetwork import GetNetWork
 from tools.loggers import JFMlogging
 from config import *
 logger = JFMlogging().getloger()
@@ -75,6 +76,8 @@ class Monkey():
                     current_activity = common.get_current_activity(self.device)
                     GetCPU(self.device,current_activity,self.pkg).get_cpu()
                     GetMem(self.device,current_activity,self.pkg).get_mem()
+                    GetNetWork(self.device,current_activity,self.pkg).get_network()
+                    common.write_activity_back(current_activity)
                     self.write_page()
                     time.sleep(self.sleep_time)
                 else:
@@ -123,7 +126,6 @@ class Monkey():
             if result != None or result != '':
                 with open(page_path,'a') as f:
                     f.write(result)
-                # logger.info('页面加载时间写入完成!')
         except Exception as e:
             logger.error("页面加载时间写入失败!{}".format(e))
 
@@ -167,7 +169,7 @@ class Monkey():
                             actlist.append(str(act).split("-")[1].replace("\n","").strip())
                 else:
                     logger.info("{}文件中未查询到activity列表".format(self.monkeylog))
-                common.write_file(acts_path, actlist)
+                common.write_file(run_activity_path, actlist)
         except Exception as e:
             logger.error('获取activity列表异常:{}'.format(e))
         finally:

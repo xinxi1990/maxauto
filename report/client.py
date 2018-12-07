@@ -47,4 +47,4 @@ def get_html(apk_path,device_name,mail_list):
 
 
 if __name__ == '__main__':
-    get_html('/Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk','192.168.56.101:5555','xxx')
+    get_html('/Users/xinxi/Downloads/TencentNews_63_v5710.apk','192.168.56.101:5555','xxx')

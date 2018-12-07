@@ -12,6 +12,9 @@ sys.path.append('..')
 reload(sys)
 sys.setdefaultencoding("utf-8")
 from tools.loggers import JFMlogging
+from tools.filetools import write_file
+from tools.filetools import read_file
+from config import run_activity_path_back
 logger = JFMlogging().getloger()
 
 
@@ -186,5 +189,38 @@ def get_app_pid(device_name,app_name):
         return pid
 
 
-if __name__ == '__main__':
-    print get_app_pid('192.168.56.101:5555','com.tencent.qqmusic')
+def get_app_uid(device_name,pkg_name):
+    '''
+    根据包名得到进程id
+    :return: 0表示未获取到,uid是设备的真实uid
+    '''
+    uid = ''
+    try:
+        pid = get_app_pid(device_name,pkg_name)
+        cmd = "adb -s {} shell cat /proc/{}/status".format(device_name,pid)
+        result = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout.readlines()
+        for line in result:
+            if line.startswith('Uid'):
+                uid =  line.split()[1]
+    except Exception, e:
+        logger.error("获取进程id异常{}".format(e))
+    finally:
+        return uid
+
+
+def write_activity_back(activity):
+    '''
+    写备份运行的activity
+    :return:
+    '''
+    try:
+        result = read_file(run_activity_path_back)
+        if result != '':
+            if not re.findall(activity,result):
+                write_file(run_activity_path_back,activity + '\n')
+            else:
+                logger.info("已经存在activity!")
+        else:
+            write_file(run_activity_path_back, activity + '\n')
+    except Exception as e:
+        logger.error("备份运行的activity写入异常!{}".format(e))
