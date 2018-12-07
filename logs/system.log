@@ -14,3 +14,1371 @@
 [2018-12-07 01:15:45,644] [INFO] [xinxideMacBook-Pro.local][client.py - line:31] 开始获取报告!
 [2018-12-07 01:15:45,768] [INFO] [xinxideMacBook-Pro.local][client.py - line:36] 服务端状态码:200
 [2018-12-07 01:15:45,770] [INFO] [xinxideMacBook-Pro.local][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181207011541.html
+[2018-12-07 12:09:16,062] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:09:16,062] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:09:16,458] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.xueqiu.android
+[2018-12-07 12:09:16,462] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/com.xueqiu.android_11.9.1_187.apk
+[2018-12-07 12:09:17,948] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:18,809] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:19,613] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:20,429] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:21,071] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:21,457] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:21,756] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:22,060] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:22,359] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:22,612] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:22,870] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:23,112] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:23,379] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:23,696] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:24,208] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:24,543] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:09:24,936] [INFO] [bogon][installapp.py - line:50] app安装成功!
+[2018-12-07 12:09:24,936] [INFO] [bogon][installapp.py - line:54] app安装耗时:9s
+[2018-12-07 12:09:24,937] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:09:25,199] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.xueqiu.android
+[2018-12-07 12:09:26,319] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.xueqiu.android/
+[2018-12-07 12:09:26,320] [INFO] [bogon][lanuchapp.py - line:57] 本次冷启动时间:815
+[2018-12-07 12:09:29,327] [INFO] [bogon][lanuchapp.py - line:82] 均值为:815.0
+[2018-12-07 12:09:29,327] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-07 12:09:29,382] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:09:29,383] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-07 12:09:34,317] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-07 12:09:34,317] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-07 12:09:41,730] [INFO] [bogon][logintest.py - line:150] 登录测试异常:Message: An unknown server-side error occurred while processing the command. Original error: activity and pkg are required to start an application
+
+[2018-12-07 12:09:41,909] [INFO] [bogon][logintest.py - line:57] 停止appium进程:32281
+[2018-12-07 12:09:41,909] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log文件完成
+[2018-12-07 12:09:41,915] [INFO] [bogon][monkey.py - line:133] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:09:42,095] [INFO] [bogon][monkey.py - line:247] 清除logcat日志
+[2018-12-07 12:09:42,096] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:09:42,132] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:09:42,176] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:09:42,292] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:09:42,400] [INFO] [bogon][common.py - line:58] 结束:logcat,进程号:32127
+[2018-12-07 12:09:42,402] [INFO] [bogon][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.xueqiu.android --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:10:18,948] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:10:18,948] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:10:30,782] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:10:30,782] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:10:45,626] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:10:45,627] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:11:06,800] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:11:06,800] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:11:17,991] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:11:17,991] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:11:30,408] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:11:30,409] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:17:26,192] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:17:26,193] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:17:26,352] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.tencent.qqmusic
+[2018-12-07 12:17:26,357] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/QQMusic72282.apk
+[2018-12-07 12:17:27,133] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:27,449] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:27,919] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:28,235] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:28,464] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:28,700] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:28,938] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:29,180] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:29,417] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:29,632] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:29,888] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:30,171] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:30,432] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:30,691] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:30,947] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:31,116] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:17:38,231] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:17:38,231] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:17:38,347] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.tencent.qqmusic
+[2018-12-07 12:17:38,350] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/QQMusic72282.apk
+[2018-12-07 12:17:38,904] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:39,420] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:40,000] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:40,244] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:40,465] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:40,696] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:40,937] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:41,164] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:41,384] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:41,627] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:41,879] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:42,115] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:42,352] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:42,579] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:42,831] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:43,063] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:43,427] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:43,667] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:43,915] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:44,143] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:44,395] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:44,632] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:45,035] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:45,287] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:45,535] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:45,807] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:46,055] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:46,308] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:46,652] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:46,923] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:17:46,924] [INFO] [bogon][installapp.py - line:60] app安装超过最长时间:30!
+[2018-12-07 12:17:46,924] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:17:47,175] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.tencent.qqmusic
+[2018-12-07 12:17:48,048] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.tencent.qqmusic/com.tencent.qqmusic.activity.AppStarterActivity
+[2018-12-07 12:17:48,049] [INFO] [bogon][lanuchapp.py - line:57] 本次冷启动时间:560
+[2018-12-07 12:17:51,054] [INFO] [bogon][lanuchapp.py - line:82] 均值为:560.0
+[2018-12-07 12:17:51,054] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-07 12:17:51,100] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:17:51,100] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-07 12:17:55,076] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-07 12:17:55,076] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-07 12:18:02,835] [INFO] [bogon][logintest.py - line:137] 启动app中.....
+[2018-12-07 12:18:08,636] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:18:08,637] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log文件完成
+[2018-12-07 12:18:57,677] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:18:57,678] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:18:57,799] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.tencent.qqmusic
+[2018-12-07 12:18:57,804] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/QQMusic72282.apk
+[2018-12-07 12:18:58,490] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:18:58,871] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:18:59,463] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:18:59,995] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:00,284] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:00,544] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:00,799] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:01,034] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:01,287] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:01,558] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:01,824] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:02,104] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:02,344] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:02,611] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:02,848] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:03,088] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:03,347] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:03,611] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:03,851] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:04,095] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:04,339] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:04,624] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:04,976] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:05,324] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:05,651] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:05,999] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:06,315] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:06,627] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:06,891] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:07,183] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:19:07,184] [INFO] [bogon][installapp.py - line:60] app安装超过最长时间:30!
+[2018-12-07 12:19:07,184] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:19:07,419] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.tencent.qqmusic
+[2018-12-07 12:19:07,667] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.tencent.qqmusic/com.tencent.qqmusic.activity.AppStarterActivity
+[2018-12-07 12:19:10,670] [INFO] [bogon][lanuchapp.py - line:64] 启动时间计算异常!:unsupported operand type(s) for /: 'str' and 'int'
+[2018-12-07 12:19:10,670] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-07 12:19:10,722] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:19:10,722] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-07 12:19:14,558] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-07 12:19:14,561] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-07 12:19:17,843] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:19:17,843] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log文件完成
+[2018-12-07 12:20:03,914] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:20:03,914] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:20:04,032] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.tencent.qqmusic
+[2018-12-07 12:20:04,037] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/QQMusic72282.apk
+[2018-12-07 12:20:04,700] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:05,095] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:05,456] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:05,799] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:06,048] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:06,287] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:06,533] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:06,868] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:07,195] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:07,535] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:07,876] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:08,202] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:08,516] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:08,915] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:09,151] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:09,379] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:09,612] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:09,847] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:10,083] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:10,327] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:10,587] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:10,811] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:11,047] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:11,452] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:11,727] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:11,987] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:12,239] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:12,471] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:12,739] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:12,971] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:20:12,972] [INFO] [bogon][installapp.py - line:60] app安装超过最长时间:30!
+[2018-12-07 12:20:12,972] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:20:13,215] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.tencent.qqmusic
+[2018-12-07 12:20:13,503] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.tencent.qqmusic/com.tencent.qqmusic.activity.AppStarterActivity
+[2018-12-07 12:20:16,514] [INFO] [bogon][lanuchapp.py - line:64] 启动时间计算异常!:unsupported operand type(s) for /: 'str' and 'int'
+[2018-12-07 12:20:16,514] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-07 12:20:16,589] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:20:16,589] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-07 12:20:21,026] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-07 12:20:21,026] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-07 12:20:28,374] [INFO] [bogon][logintest.py - line:138] 启动app中.....
+[2018-12-07 12:21:10,241] [INFO] [bogon][logintest.py - line:151] 登录成功
+[2018-12-07 12:21:10,364] [INFO] [bogon][logintest.py - line:57] 停止appium进程:35043
+[2018-12-07 12:21:10,365] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log文件完成
+[2018-12-07 12:21:10,365] [INFO] [bogon][monkey.py - line:133] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:21:10,428] [INFO] [bogon][monkey.py - line:247] 清除logcat日志
+[2018-12-07 12:21:10,429] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:21:10,456] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:21:10,493] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:21:10,564] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:21:10,619] [INFO] [bogon][common.py - line:58] 结束:logcat,进程号:35085
+[2018-12-07 12:21:10,619] [INFO] [bogon][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:21:13,651] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:13,652] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:17,342] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:17,342] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:20,975] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:20,975] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:24,928] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:24,929] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:29,002] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:29,002] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:32,688] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:32,688] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:36,609] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:36,610] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:40,388] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:40,388] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:21:44,330] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:5418
+[2018-12-07 12:21:44,331] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:24:10,040] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:24:10,041] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:24:10,193] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.tencent.qqmusic
+[2018-12-07 12:24:10,198] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/QQMusic72282.apk
+[2018-12-07 12:24:10,724] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:10,990] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:11,225] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:11,460] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:11,764] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:12,017] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:12,252] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:12,484] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:12,713] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:12,941] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:13,192] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:13,444] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:13,672] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:13,893] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:14,137] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:14,375] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:14,621] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:14,876] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:15,124] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:15,372] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:15,608] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:15,836] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:16,056] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:16,309] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:16,541] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:16,782] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:17,012] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:17,245] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:17,481] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:17,732] [INFO] [bogon][installapp.py - line:57] app安装中!
+[2018-12-07 12:24:17,732] [INFO] [bogon][installapp.py - line:60] app安装超过最长时间:30!
+[2018-12-07 12:24:17,732] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:24:17,984] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.tencent.qqmusic
+[2018-12-07 12:24:18,241] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.tencent.qqmusic/com.tencent.qqmusic.activity.AppStarterActivity
+[2018-12-07 12:24:21,244] [INFO] [bogon][lanuchapp.py - line:64] 启动时间计算异常!:unsupported operand type(s) for /: 'str' and 'int'
+[2018-12-07 12:24:21,245] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-07 12:24:21,294] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:24:21,294] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-07 12:24:22,929] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:24:22,930] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log文件完成
+[2018-12-07 12:25:08,335] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:25:08,336] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:25:08,396] [INFO] [bogon][installapp.py - line:37] 卸载app命令:adb -s 192.168.56.101:5555 uninstall com.tencent.qqmusic
+[2018-12-07 12:25:08,402] [INFO] [bogon][installapp.py - line:40] 安装app命令:adb -s 192.168.56.101:5555 install /Users/xinxi/Downloads/QQMusic72282.apk
+[2018-12-07 12:25:09,959] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:11,256] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:12,606] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:13,942] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:15,451] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:16,910] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:18,304] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:19,944] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:21,486] [INFO] [bogon][installapp.py - line:58] app安装中!
+[2018-12-07 12:25:22,856] [INFO] [bogon][installapp.py - line:51] app安装成功!
+[2018-12-07 12:25:22,857] [INFO] [bogon][installapp.py - line:55] app安装耗时:15s
+[2018-12-07 12:25:22,857] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log文件完成
+[2018-12-07 12:25:23,375] [INFO] [bogon][lanuchapp.py - line:35] 清除数据缓存命令:adb -s 192.168.56.101:5555 shell pm clear com.tencent.qqmusic
+[2018-12-07 12:25:24,468] [INFO] [bogon][lanuchapp.py - line:53] 启动app命令:adb -s 192.168.56.101:5555 shell am start -W com.tencent.qqmusic/com.tencent.qqmusic.activity.AppStarterActivity
+[2018-12-07 12:25:24,468] [INFO] [bogon][lanuchapp.py - line:57] 本次冷启动时间:648
+[2018-12-07 12:25:27,471] [INFO] [bogon][lanuchapp.py - line:82] 均值为:648.0
+[2018-12-07 12:25:27,471] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log文件完成
+[2018-12-07 12:25:27,516] [INFO] [bogon][logintest.py - line:53] appium进程不存在
+[2018-12-07 12:25:27,516] [INFO] [bogon][logintest.py - line:68] appium启动命令:appium --log /Users/xinxi/PycharmProjects/maxauto/report/tmp/appium_log --session-override --udid 192.168.56.101:5555 -a 127.0.0.1 -p 4725
+[2018-12-07 12:25:31,392] [INFO] [bogon][logintest.py - line:74] 启动appium中...
+[2018-12-07 12:25:31,392] [INFO] [bogon][logintest.py - line:76] appium启动成功
+[2018-12-07 12:25:40,157] [INFO] [bogon][logintest.py - line:138] 启动app中.....
+[2018-12-07 12:26:21,517] [INFO] [bogon][logintest.py - line:151] 登录成功
+[2018-12-07 12:26:21,620] [INFO] [bogon][logintest.py - line:57] 停止appium进程:36753
+[2018-12-07 12:26:21,621] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log文件完成
+[2018-12-07 12:26:21,621] [INFO] [bogon][monkey.py - line:133] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:26:21,714] [INFO] [bogon][monkey.py - line:247] 清除logcat日志
+[2018-12-07 12:26:21,714] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:26:21,744] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:26:21,794] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:26:21,872] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:26:21,924] [INFO] [bogon][common.py - line:58] 结束:logcat,进程号:36817
+[2018-12-07 12:26:21,924] [INFO] [bogon][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:26:24,958] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7036
+[2018-12-07 12:26:24,958] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:26:28,635] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7036
+[2018-12-07 12:26:28,636] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:26:32,354] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7036
+[2018-12-07 12:26:32,354] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:26:36,881] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7036
+[2018-12-07 12:26:36,881] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:26:40,614] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7036
+[2018-12-07 12:26:40,615] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:27:39,040] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:27:39,040] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:27:39,071] [INFO] [bogon][monkey.py - line:133] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:27:39,154] [INFO] [bogon][monkey.py - line:247] 清除logcat日志
+[2018-12-07 12:27:39,154] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:27:39,178] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:27:39,208] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:27:39,284] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:27:39,341] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:27:39,341] [INFO] [bogon][monkey.py - line:65] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:27:42,378] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7227
+[2018-12-07 12:27:42,379] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:27:46,147] [INFO] [bogon][monkey.py - line:188] 当前monkey进程pid:7227
+[2018-12-07 12:27:46,147] [INFO] [bogon][monkey.py - line:71] ==========Monkey运行中...==========
+[2018-12-07 12:42:01,548] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:42:01,549] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:42:01,587] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:42:01,645] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 12:42:01,645] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:42:01,671] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:42:01,703] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:42:01,778] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:42:01,842] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:42:01,843] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:42:04,874] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7432
+[2018-12-07 12:42:04,874] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:42:05,740] [ERROR] [bogon][getbasic.py - line:186] 获取当前Activity异常!global name 'act' is not defined
+[2018-12-07 12:42:05,740] [ERROR] [bogon][monkey.py - line:91] Monkey运行异常!global name 'logger' is not defined
+[2018-12-07 12:42:05,878] [INFO] [bogon][run.py - line:27] kill进程3059
+[2018-12-07 12:42:05,884] [INFO] [bogon][run.py - line:27] kill进程7411
+[2018-12-07 12:42:09,258] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 12:42:09,260] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 12:42:09,415] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-07 12:42:09,416] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181207124201.html
+[2018-12-07 12:42:45,843] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:42:45,844] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:42:45,875] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:42:45,930] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 12:42:45,930] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:42:45,954] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:42:45,979] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:42:46,051] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:42:46,114] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:42:46,115] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:42:49,152] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7432
+[2018-12-07 12:42:49,152] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:42:49,187] [ERROR] [bogon][monkey.py - line:91] Monkey运行异常!global name 'logger' is not defined
+[2018-12-07 12:42:49,287] [INFO] [bogon][run.py - line:27] kill进程40758
+[2018-12-07 12:42:49,295] [INFO] [bogon][run.py - line:27] kill进程40761
+[2018-12-07 12:42:52,709] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 12:42:52,711] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 12:42:52,757] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-07 12:42:52,757] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-07 12:43:40,731] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:43:40,732] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:43:40,767] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:43:40,821] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 12:43:40,821] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:43:40,861] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:43:40,907] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:43:41,011] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:43:41,066] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:43:41,066] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:43:44,099] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7562
+[2018-12-07 12:43:44,100] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:43:44,129] [ERROR] [bogon][monkey.py - line:91] Monkey运行异常!'RootLogger' object has no attribute 'log_error'
+[2018-12-07 12:43:44,234] [INFO] [bogon][run.py - line:27] kill进程40959
+[2018-12-07 12:43:44,240] [INFO] [bogon][run.py - line:27] kill进程40962
+[2018-12-07 12:45:15,362] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:45:15,362] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:45:15,395] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:45:15,445] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 12:45:15,446] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:45:15,466] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:45:15,495] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:45:15,573] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:45:15,636] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:45:15,636] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:45:18,671] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:7603
+[2018-12-07 12:45:18,672] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:45:18,712] [ERROR] [bogon][monkey.py - line:90] Monkey运行异常!'RootLogger' object has no attribute 'log_error'
+[2018-12-07 12:45:18,815] [INFO] [bogon][run.py - line:27] kill进程41191
+[2018-12-07 12:45:18,820] [INFO] [bogon][run.py - line:27] kill进程41194
+[2018-12-07 12:47:03,801] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:47:03,801] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:47:03,840] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:47:03,892] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 12:47:03,893] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:47:03,915] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:47:03,943] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:47:04,018] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:47:04,077] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:47:04,078] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:47:07,109] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:7661
+[2018-12-07 12:47:07,109] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:47:07,135] [ERROR] [bogon][monkey.py - line:90] Monkey运行异常!'RootLogger' object has no attribute 'log_error'
+[2018-12-07 12:47:07,243] [INFO] [bogon][run.py - line:27] kill进程41564
+[2018-12-07 12:47:07,249] [INFO] [bogon][run.py - line:27] kill进程41569
+[2018-12-07 12:47:21,246] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:47:21,246] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:47:21,265] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:47:21,316] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 12:47:21,317] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:47:21,343] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:47:21,370] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:47:21,446] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:47:21,505] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:47:21,505] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:47:24,539] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7697
+[2018-12-07 12:47:24,541] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:47:24,567] [ERROR] [bogon][monkey.py - line:91] Monkey运行异常!'RootLogger' object has no attribute 'log_error'
+[2018-12-07 12:47:24,661] [INFO] [bogon][run.py - line:27] kill进程41974
+[2018-12-07 12:47:24,666] [INFO] [bogon][run.py - line:27] kill进程41977
+[2018-12-07 12:48:04,196] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:48:04,196] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 12:48:04,229] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 12:48:04,278] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 12:48:04,279] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 12:48:04,299] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 12:48:04,327] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 12:48:04,403] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:48:04,468] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 12:48:04,469] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 12:48:07,505] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7735
+[2018-12-07 12:48:07,505] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:48:10,585] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7735
+[2018-12-07 12:48:10,585] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:48:13,696] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7735
+[2018-12-07 12:48:13,697] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 12:48:16,794] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:7735
+[2018-12-07 12:48:16,794] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:11,987] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:13:11,987] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:13:12,025] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:13:12,078] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:13:12,079] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:13:12,102] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:13:12,131] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:13:12,231] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:13:12,288] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:13:12,288] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:13:15,324] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:15,324] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:18,406] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:18,408] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:21,494] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:21,494] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:24,570] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:24,570] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:27,733] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:27,733] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:30,966] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:30,966] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:34,161] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:34,161] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:37,392] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:37,393] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:40,576] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:40,577] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:43,917] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:43,917] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:47,074] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:47,075] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:50,414] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:50,415] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:53,623] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:53,624] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:13:56,802] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:13:56,802] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:14:00,146] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:14:00,146] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:14:03,350] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8146
+[2018-12-07 13:14:03,350] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:14:41,426] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:14:41,427] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:14:41,460] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:14:41,536] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:14:41,536] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:14:41,570] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:14:41,622] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:14:41,713] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:14:41,766] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:14:41,766] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:14:44,811] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8409
+[2018-12-07 13:14:44,811] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:14:47,925] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8409
+[2018-12-07 13:14:47,925] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:15:13,582] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:15:13,583] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:15:13,616] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:15:13,749] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:15:13,749] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:15:13,780] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:15:13,833] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:15:13,929] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:15:13,979] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:15:13,979] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:15:17,022] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8457
+[2018-12-07 13:15:17,023] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:15:20,124] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8457
+[2018-12-07 13:15:20,124] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:15:44,516] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:15:44,516] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:15:44,549] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:15:44,693] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:15:44,693] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:15:44,730] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:15:44,763] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:15:44,842] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:15:44,892] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:15:44,892] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:15:47,933] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8500
+[2018-12-07 13:15:47,934] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:15:51,040] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8500
+[2018-12-07 13:15:51,040] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:16:35,641] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:16:35,642] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:16:35,681] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:16:35,756] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:16:35,757] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:16:35,783] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:16:35,819] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:16:35,911] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:16:35,968] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:16:35,968] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:16:39,006] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8556
+[2018-12-07 13:16:39,006] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:16:42,109] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8556
+[2018-12-07 13:16:42,109] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:16:56,076] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:16:56,076] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:16:56,095] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:16:56,226] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:16:56,228] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:16:56,315] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:16:56,374] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:16:56,471] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:16:56,522] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:16:56,522] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:16:59,558] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8606
+[2018-12-07 13:16:59,558] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:17:17,265] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:17:17,265] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:17:17,297] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:17:17,366] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:17:17,366] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:17:17,404] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:17:17,443] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:17:17,519] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:17:17,575] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:17:17,575] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:17:20,619] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8684
+[2018-12-07 13:17:20,619] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:17:23,724] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8684
+[2018-12-07 13:17:23,725] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:17:38,139] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:17:38,140] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:17:38,181] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:17:38,279] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:17:38,280] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:17:38,308] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:17:38,376] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:17:38,465] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:17:38,516] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:17:38,516] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:17:41,559] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8726
+[2018-12-07 13:17:41,560] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:17:44,712] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8726
+[2018-12-07 13:17:44,712] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:17:47,807] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8726
+[2018-12-07 13:17:47,807] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:17:50,907] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8726
+[2018-12-07 13:17:50,908] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:19:46,402] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:19:46,402] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:19:46,438] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:19:46,541] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:19:46,542] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:19:46,583] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:19:46,653] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:19:46,744] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:19:46,794] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:19:46,794] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:19:49,837] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8799
+[2018-12-07 13:19:49,837] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:19:52,940] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8799
+[2018-12-07 13:19:52,940] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:19:56,042] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8799
+[2018-12-07 13:19:56,043] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:16,572] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:24:16,573] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:24:16,613] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:24:16,727] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:24:16,728] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:24:16,770] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:24:16,800] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:24:16,894] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:24:16,954] [INFO] [bogon][common.py - line:58] 结束:logcat,进程号:49330
+[2018-12-07 13:24:16,954] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:24:20,031] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:20,032] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:23,187] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:23,188] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:26,320] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:26,320] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:29,460] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:29,460] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:32,737] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:32,737] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:36,401] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:36,402] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:39,726] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:39,726] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:42,866] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:42,867] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:46,121] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:46,121] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:49,146] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:24:49,146] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:24:49,178] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:24:49,313] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:49,313] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:49,360] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:24:49,361] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:24:49,414] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:24:49,453] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:24:49,573] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:24:49,669] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:24:49,669] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:24:52,459] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:52,459] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:52,751] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:52,752] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:55,598] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:55,598] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:56,110] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:56,111] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:58,891] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:58,893] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:24:59,397] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:24:59,397] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:02,105] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:02,105] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:05,214] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:05,214] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:08,334] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:08,334] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:11,491] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:11,492] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:14,616] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:14,617] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:17,724] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:17,724] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:20,986] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:20,986] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:24,204] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:8965
+[2018-12-07 13:25:24,205] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:25:27,408] [INFO] [bogon][monkey.py - line:187] 当前monkey进程不存在
+[2018-12-07 13:25:27,408] [INFO] [bogon][monkey.py - line:80] ==========Monkey运行结束!==========
+[2018-12-07 13:25:27,411] [INFO] [bogon][monkey.py - line:167] /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log文件中未查询到activity列表
+[2018-12-07 13:25:27,411] [INFO] [bogon][common.py - line:108] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-07 13:25:27,411] [INFO] [bogon][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 13:25:27,541] [INFO] [bogon][run.py - line:27] kill进程42071
+[2018-12-07 13:25:27,547] [INFO] [bogon][run.py - line:27] kill进程42074
+[2018-12-07 13:25:30,948] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 13:25:30,950] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 13:25:30,989] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-07 13:25:30,989] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-07 13:26:00,550] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:26:00,550] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:26:00,587] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:26:00,703] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:26:00,703] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:26:00,743] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:26:00,776] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:26:00,848] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:26:00,900] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:26:00,900] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:26:03,936] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9217
+[2018-12-07 13:26:03,936] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:26:07,024] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9217
+[2018-12-07 13:26:07,025] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:26:10,127] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9217
+[2018-12-07 13:26:10,127] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:26:47,422] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:26:47,422] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:26:47,454] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:26:47,594] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:26:47,594] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:26:47,620] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:26:47,671] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:26:47,752] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:26:47,803] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:26:47,803] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:26:50,855] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9276
+[2018-12-07 13:26:50,855] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:26:54,029] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9276
+[2018-12-07 13:26:54,030] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:07,999] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:27:08,000] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:27:08,030] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:27:08,148] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:27:08,149] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:27:08,188] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:27:08,224] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:27:08,319] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:27:08,369] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:27:08,369] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:27:11,425] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:11,425] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:14,593] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:14,594] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:17,721] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:17,721] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:20,860] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:20,860] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:23,997] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:23,997] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:27,303] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:27,304] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:27:30,515] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9324
+[2018-12-07 13:27:30,516] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:06,566] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:28:06,567] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:28:06,615] [INFO] [bogon][monkey.py - line:136] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:28:06,732] [INFO] [bogon][monkey.py - line:250] 清除logcat日志
+[2018-12-07 13:28:06,732] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:28:06,755] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:28:06,814] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:28:06,899] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:28:06,948] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:28:06,948] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:28:09,995] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:09,995] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:13,127] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:13,128] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:16,310] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:16,311] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:19,553] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:19,553] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:22,928] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:22,928] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:26,097] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:26,098] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:29,253] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:29,253] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:32,404] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:32,404] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:35,585] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:35,586] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:38,778] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:38,779] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:41,955] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:41,956] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:45,248] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:45,248] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:28:48,439] [INFO] [bogon][monkey.py - line:191] 当前monkey进程pid:9476
+[2018-12-07 13:28:48,440] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:38:42,052] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:38:42,053] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:38:42,100] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:38:42,262] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 13:38:42,263] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:38:42,312] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:38:42,359] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:38:42,460] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:38:42,548] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:38:42,548] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:38:45,583] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9816
+[2018-12-07 13:38:45,583] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:38:45,663] [ERROR] [bogon][monkey.py - line:91] Monkey运行异常!global name 'pck_name' is not defined
+[2018-12-07 13:38:45,772] [INFO] [bogon][run.py - line:27] kill进程50750
+[2018-12-07 13:38:45,778] [INFO] [bogon][run.py - line:27] kill进程50753
+[2018-12-07 13:39:21,265] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:39:21,265] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:39:21,298] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:39:21,470] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 13:39:21,471] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:39:21,506] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:39:21,563] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:39:21,669] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:39:21,727] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:39:21,727] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:39:24,768] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:24,769] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:27,974] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:27,974] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:31,176] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:31,176] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:34,344] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:34,344] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:37,543] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:37,544] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:41,013] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:41,013] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:44,649] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:44,649] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:47,943] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:9849
+[2018-12-07 13:39:47,944] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:39:58,399] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:39:58,399] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:39:58,431] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:39:58,517] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 13:39:58,517] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:39:58,557] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:39:58,600] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:39:58,698] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:39:58,751] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:39:58,751] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:40:01,796] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:10071
+[2018-12-07 13:40:01,797] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:40:01,884] [ERROR] [bogon][getcpu.py - line:49] 获取cpu失败:GetCPU instance has no attribute 'pck_name'
+[2018-12-07 13:40:43,206] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:40:43,207] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:40:43,234] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:40:43,303] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 13:40:43,305] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:40:43,332] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:40:43,378] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:40:43,476] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:40:43,533] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:40:43,533] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:40:46,564] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:10116
+[2018-12-07 13:40:46,564] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:40:46,647] [ERROR] [bogon][getcpu.py - line:49] 获取cpu失败:GetCPU instance has no attribute 'pck_name'
+[2018-12-07 13:40:49,709] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:10116
+[2018-12-07 13:40:49,710] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:40:49,864] [ERROR] [bogon][getcpu.py - line:49] 获取cpu失败:GetCPU instance has no attribute 'pck_name'
+[2018-12-07 13:41:42,820] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:41:42,820] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:41:42,850] [INFO] [bogon][monkey.py - line:137] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:41:42,911] [INFO] [bogon][monkey.py - line:251] 清除logcat日志
+[2018-12-07 13:41:42,912] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:41:42,936] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:41:42,970] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:41:43,046] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:41:43,104] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:41:43,104] [INFO] [bogon][monkey.py - line:67] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:41:46,158] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:10169
+[2018-12-07 13:41:46,159] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:41:49,314] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:10169
+[2018-12-07 13:41:49,315] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:41:52,504] [INFO] [bogon][monkey.py - line:192] 当前monkey进程pid:10169
+[2018-12-07 13:41:52,505] [INFO] [bogon][monkey.py - line:73] ==========Monkey运行中...==========
+[2018-12-07 13:57:30,342] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:57:30,343] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:57:30,388] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:57:30,526] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 13:57:30,526] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:57:30,560] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:57:30,610] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:57:30,695] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:57:30,747] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:57:30,747] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:57:33,781] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10458
+[2018-12-07 13:57:33,782] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:57:33,832] [ERROR] [bogon][getcpu.py - line:48] 获取cpu失败:GetCPU instance has no attribute 'pid'
+[2018-12-07 13:57:33,833] [ERROR] [bogon][getmem.py - line:51] 获取内存失败:global name 'subprocess' is not defined
+[2018-12-07 13:57:36,917] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10458
+[2018-12-07 13:57:36,917] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:57:36,961] [ERROR] [bogon][getcpu.py - line:48] 获取cpu失败:GetCPU instance has no attribute 'pid'
+[2018-12-07 13:57:36,961] [ERROR] [bogon][getmem.py - line:51] 获取内存失败:global name 'subprocess' is not defined
+[2018-12-07 13:57:55,283] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:57:55,283] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:57:55,315] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:57:55,437] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 13:57:55,437] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:57:55,482] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:57:55,521] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:57:55,619] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:57:55,671] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:57:55,671] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:57:58,722] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10503
+[2018-12-07 13:57:58,722] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:57:58,775] [ERROR] [bogon][getmem.py - line:51] 获取内存失败:global name 'subprocess' is not defined
+[2018-12-07 13:58:01,827] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10503
+[2018-12-07 13:58:01,827] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:58:01,889] [ERROR] [bogon][getmem.py - line:51] 获取内存失败:global name 'subprocess' is not defined
+[2018-12-07 13:58:10,743] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:58:10,743] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:58:10,775] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:58:10,907] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 13:58:10,907] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:58:10,948] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:58:10,987] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:58:11,083] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:58:11,134] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:58:11,135] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:58:14,179] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10554
+[2018-12-07 13:58:14,179] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:58:17,547] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10554
+[2018-12-07 13:58:17,548] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:58:20,902] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10554
+[2018-12-07 13:58:20,902] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:58:24,333] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10554
+[2018-12-07 13:58:24,333] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:59:23,396] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:59:23,396] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 13:59:23,429] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 13:59:23,579] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 13:59:23,579] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 13:59:23,604] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 13:59:23,640] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 13:59:23,714] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:59:23,768] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 13:59:23,768] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 13:59:26,803] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10650
+[2018-12-07 13:59:26,803] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 13:59:30,099] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10650
+[2018-12-07 13:59:30,100] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:04:15,733] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:04:15,734] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:04:15,783] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:04:15,835] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:04:15,836] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:04:15,882] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:04:15,922] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:04:16,050] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:04:16,109] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:04:16,109] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:04:19,147] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10796
+[2018-12-07 14:04:19,148] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:04:22,467] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10796
+[2018-12-07 14:04:22,467] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:04:25,755] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10796
+[2018-12-07 14:04:25,757] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:04:39,113] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:04:39,114] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:04:39,144] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:04:39,196] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:04:39,196] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:04:39,238] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:04:39,284] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:04:39,388] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:04:39,450] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:04:39,450] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:04:42,494] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10864
+[2018-12-07 14:04:42,495] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:04:45,804] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10864
+[2018-12-07 14:04:45,804] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:04:49,360] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:10864
+[2018-12-07 14:04:49,362] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:07:17,768] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:07:17,769] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:07:17,808] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:07:17,926] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:07:17,926] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:07:17,971] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:07:18,009] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:07:18,107] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:07:18,168] [INFO] [bogon][common.py - line:58] 结束:logcat,进程号:60447
+[2018-12-07 14:07:18,168] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:07:21,207] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11009
+[2018-12-07 14:07:21,207] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:07:21,430] [ERROR] [bogon][getmem.py - line:52] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:07:24,521] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11009
+[2018-12-07 14:07:24,522] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:07:24,870] [ERROR] [bogon][getmem.py - line:52] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:07:41,140] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:07:41,140] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:07:41,169] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:07:41,325] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:07:41,325] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:07:41,372] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:07:41,417] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:07:41,511] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:07:41,566] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:07:41,566] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:07:44,613] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11063
+[2018-12-07 14:07:44,614] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:07:44,854] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:07:47,911] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11063
+[2018-12-07 14:07:47,911] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:07:48,161] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:07:51,241] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11063
+[2018-12-07 14:07:51,242] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:07:51,479] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:30,483] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:08:30,484] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:08:30,515] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:08:30,633] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:08:30,634] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:08:30,657] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:08:30,708] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:08:30,798] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:08:30,852] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:08:30,852] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:08:33,887] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:33,887] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:34,174] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:37,240] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:37,242] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:37,593] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:40,868] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:40,868] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:41,168] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:44,273] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:44,273] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:44,918] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:48,137] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:48,137] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:48,713] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:51,874] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:51,874] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:52,273] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:55,383] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:55,384] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:55,715] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:08:58,931] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:08:58,931] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:08:59,456] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:02,596] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:02,597] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:02,957] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:06,195] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:06,195] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:06,597] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:09,743] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:09,744] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:10,049] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:13,215] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:13,215] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:13,633] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:16,884] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:16,884] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:17,274] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:20,528] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:20,530] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:20,921] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:24,243] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:24,243] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:24,886] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:28,291] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:28,291] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:28,763] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:31,997] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:31,997] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:32,452] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:35,696] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11134
+[2018-12-07 14:09:35,696] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:35,937] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:09:39,121] [INFO] [bogon][monkey.py - line:189] 当前monkey进程不存在
+[2018-12-07 14:09:39,121] [INFO] [bogon][monkey.py - line:82] ==========Monkey运行结束!==========
+[2018-12-07 14:09:39,124] [INFO] [bogon][common.py - line:108] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-07 14:09:39,125] [INFO] [bogon][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 14:09:39,263] [INFO] [bogon][run.py - line:27] kill进程54088
+[2018-12-07 14:09:39,268] [INFO] [bogon][run.py - line:27] kill进程54091
+[2018-12-07 14:09:42,931] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:09:42,931] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:09:42,969] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:09:43,038] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:09:43,040] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:09:43,074] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:09:43,132] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:09:43,295] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:09:43,368] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:09:43,369] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:09:46,410] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11453
+[2018-12-07 14:09:46,410] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:09:46,667] [ERROR] [bogon][getmem.py - line:53] 获取内存失败:could not convert string to float: Heap
+[2018-12-07 14:10:09,804] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:10:09,804] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:10:09,835] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:10:09,939] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:10:09,939] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:10:09,977] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:10:10,011] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:10:10,111] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:10:10,164] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:10:10,165] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:10:13,227] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:13,227] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:16,506] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:16,506] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:19,802] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:19,802] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:23,127] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:23,128] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:26,529] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:26,529] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:30,287] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:30,288] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:33,680] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:33,680] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:37,887] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:37,888] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:41,549] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:41,550] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:45,897] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:45,897] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:50,513] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:50,513] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:53,868] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:53,869] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:10:57,240] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:10:57,240] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:11:00,836] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:11:00,836] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:11:04,390] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:11:04,390] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:11:07,959] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11494
+[2018-12-07 14:11:07,959] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:16:20,490] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:16:20,490] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:16:20,529] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:16:20,615] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:16:20,616] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:16:20,658] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:16:20,710] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:16:20,813] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:16:20,870] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:16:20,870] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:16:23,905] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11926
+[2018-12-07 14:16:23,905] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:16:27,222] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11926
+[2018-12-07 14:16:27,223] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:16:30,548] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:11926
+[2018-12-07 14:16:30,548] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:22:50,930] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:22:50,930] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:22:50,966] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:22:51,059] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:22:51,059] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:22:51,096] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:22:51,192] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:22:51,288] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:22:51,347] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:22:51,347] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:22:54,410] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12076
+[2018-12-07 14:22:54,410] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:22:54,491] [ERROR] [bogon][monkey.py - line:92] Monkey运行异常!global name 'mem_path' is not defined
+[2018-12-07 14:22:54,600] [INFO] [bogon][run.py - line:27] kill进程61475
+[2018-12-07 14:22:54,605] [INFO] [bogon][run.py - line:27] kill进程61478
+[2018-12-07 14:22:57,953] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 14:22:57,954] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 14:22:57,970] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-07 14:22:57,970] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-07 14:23:09,281] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:23:09,282] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:23:09,315] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:23:09,402] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:23:09,403] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:23:09,435] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:23:09,498] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:23:09,611] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:23:09,682] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:23:09,682] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:23:12,772] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12076
+[2018-12-07 14:23:12,773] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:23:12,845] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:23:13,086] [ERROR] [bogon][monkey.py - line:92] Monkey运行异常!cannot concatenate 'str' and 'float' objects
+[2018-12-07 14:23:13,203] [INFO] [bogon][run.py - line:27] kill进程64593
+[2018-12-07 14:23:13,210] [INFO] [bogon][run.py - line:27] kill进程64598
+[2018-12-07 14:23:16,486] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 14:23:16,487] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 14:23:16,506] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-07 14:23:16,506] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-07 14:23:33,677] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:23:33,677] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:23:33,705] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:23:33,825] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:23:33,825] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:23:33,911] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:23:33,975] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:23:34,084] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:23:34,145] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:23:34,145] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:23:37,258] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12076
+[2018-12-07 14:23:37,259] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:23:37,333] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:23:37,588] [ERROR] [bogon][monkey.py - line:92] Monkey运行异常!cannot concatenate 'str' and 'float' objects
+[2018-12-07 14:23:37,690] [INFO] [bogon][run.py - line:27] kill进程64721
+[2018-12-07 14:23:37,696] [INFO] [bogon][run.py - line:27] kill进程64724
+[2018-12-07 14:23:40,975] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 14:23:40,975] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 14:23:40,998] [INFO] [bogon][client.py - line:36] 服务端状态码:500
+[2018-12-07 14:23:40,998] [INFO] [bogon][client.py - line:44] 报告获取失败!服务端状态码500
+[2018-12-07 14:25:03,228] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:25:03,229] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:25:03,269] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:25:03,342] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:25:03,343] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:25:03,385] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:25:03,430] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:25:03,536] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:25:03,592] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:25:03,592] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:25:06,647] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12247
+[2018-12-07 14:25:06,647] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:06,730] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:06,896] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:09,968] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12247
+[2018-12-07 14:25:09,968] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:10,037] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:10,221] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:13,292] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12247
+[2018-12-07 14:25:13,296] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:13,360] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:13,574] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:33,327] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:25:33,327] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:25:33,357] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:25:33,442] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:25:33,443] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:25:33,487] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:25:33,531] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:25:33,637] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:25:33,695] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:25:33,695] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:25:36,750] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:36,751] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:36,851] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:37,037] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:40,114] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:40,115] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:40,181] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:40,371] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:43,430] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:43,433] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:43,522] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:43,724] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:46,804] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:46,804] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:46,936] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:47,373] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:50,555] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:50,555] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:50,682] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:51,017] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:54,124] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:54,125] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:54,361] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:54,699] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:25:57,812] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:25:57,812] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:25:57,886] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:25:58,189] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:26:01,466] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12323
+[2018-12-07 14:26:01,466] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:26:01,633] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:26:02,102] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:26:48,996] [INFO] [bogon][run.py - line:40] 删除缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:26:48,997] [INFO] [bogon][run.py - line:42] 创建缓存目录:/Users/xinxi/PycharmProjects/maxauto/report/tmp/
+[2018-12-07 14:26:49,038] [INFO] [bogon][monkey.py - line:138] 删除设备中crash命令:adb -s 192.168.56.101:5555 shell rm -rf /sdcard/crash-dump.log
+[2018-12-07 14:26:49,123] [INFO] [bogon][monkey.py - line:252] 清除logcat日志
+[2018-12-07 14:26:49,123] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/monkey.jar /sdcard/
+[2018-12-07 14:26:49,171] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/libs/framework.jar /sdcard/
+[2018-12-07 14:26:49,220] [INFO] [bogon][common.py - line:39] push本地文件到设备命令:adb -s 192.168.56.101:5555 push /Users/xinxi/PycharmProjects/maxauto/monkey/config/max.config /sdcard/
+[2018-12-07 14:26:49,312] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:26:49,368] [INFO] [bogon][common.py - line:54] 未查询到pid
+[2018-12-07 14:26:49,368] [INFO] [bogon][monkey.py - line:68] Monkey执行命令:adb -s 192.168.56.101:5555 shell CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey -p com.tencent.qqmusic --uiautomatordfs --imagepolling --running-minutes 1 --throttle 500 > /Users/xinxi/PycharmProjects/maxauto/report/tmp/monkey.log
+[2018-12-07 14:26:52,424] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:26:52,425] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:26:52,506] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:26:52,726] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:26:55,801] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:26:55,801] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:26:55,873] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:26:56,081] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:26:59,148] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:26:59,148] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:26:59,209] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:26:59,445] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:02,514] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:02,515] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:02,613] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:02,866] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:05,953] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:05,954] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:06,018] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:06,305] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:09,418] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:09,418] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:09,480] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:09,793] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:13,037] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:13,037] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:13,106] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:13,327] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:16,443] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:16,444] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:16,506] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:16,775] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:19,932] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:19,933] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:20,030] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:20,277] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:23,373] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:23,374] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:23,445] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:23,654] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:26,821] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:26,822] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:26,921] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:27,195] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:30,334] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:30,334] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:30,396] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:30,593] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:33,739] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:33,740] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:34,052] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:34,750] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:38,036] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:38,036] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:38,375] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:39,568] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:42,998] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:42,999] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:43,151] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:43,637] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:47,026] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:47,026] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:47,744] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:48,791] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:52,239] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:52,243] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:52,498] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:53,576] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:27:57,360] [INFO] [bogon][monkey.py - line:193] 当前monkey进程pid:12468
+[2018-12-07 14:27:57,360] [INFO] [bogon][monkey.py - line:74] ==========Monkey运行中...==========
+[2018-12-07 14:27:57,731] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 14:27:58,899] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log文件完成
+[2018-12-07 14:28:02,368] [INFO] [bogon][monkey.py - line:189] 当前monkey进程不存在
+[2018-12-07 14:28:02,369] [INFO] [bogon][monkey.py - line:82] ==========Monkey运行结束!==========
+[2018-12-07 14:28:02,372] [INFO] [bogon][common.py - line:108] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log文件完成
+[2018-12-07 14:28:02,373] [INFO] [bogon][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull /sdcard/crash-dump.log /Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log
+[2018-12-07 14:28:02,558] [INFO] [bogon][run.py - line:27] kill进程64871
+[2018-12-07 14:28:02,567] [INFO] [bogon][run.py - line:27] kill进程64874
+[2018-12-07 14:28:06,057] [INFO] [bogon][run.py - line:35] 启动gunicorn服务!
+[2018-12-07 14:28:06,058] [INFO] [bogon][client.py - line:31] 开始获取报告!
+[2018-12-07 14:28:06,589] [INFO] [bogon][client.py - line:36] 服务端状态码:200
+[2018-12-07 14:28:06,589] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181207142648.html

@@ -171,3 +171,5 @@ class GetBasic():
             logger.error('获取设备内存异常!{}'.format(e))
         finally:
             return mem
+
+

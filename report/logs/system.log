@@ -31,3 +31,105 @@
 [2018-12-07 01:14:50,715] [INFO] [xinxideMacBook-Pro.local][_internal.py - line:88] 127.0.0.1 - - [07/Dec/2018 01:14:50] "POST /getreport HTTP/1.1" 200 -
 [2018-12-07 01:14:50,721] [INFO] [xinxideMacBook-Pro.local][client.py - line:36] 服务端状态码:200
 [2018-12-07 01:14:50,722] [INFO] [xinxideMacBook-Pro.local][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181207011450.html
+[2018-12-07 12:42:09,289] [ERROR] [bogon][predata.py - line:68] 获取页面数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/page.log'
+[2018-12-07 12:42:09,319] [ERROR] [bogon][getdata.py - line:128] 获取运行的activity异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log'
+[2018-12-07 12:42:09,319] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-07 12:42:09,319] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-07 12:42:09,380] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log'
+[2018-12-07 12:42:09,380] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-07 12:42:09,381] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-07 12:42:09,381] [ERROR] [bogon][getdata.py - line:170] 获取遍历的页面列表异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/acts.log'
+[2018-12-07 12:42:09,382] [ERROR] [bogon][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'
+[2018-12-07 12:42:09,382] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log'
+[2018-12-07 12:42:52,748] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 55, in html
+    data = read_mem()
+  File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 41, in read_mem
+    with open(mem_path, 'r') as f:
+IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log'
+[2018-12-07 13:25:30,981] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 55, in html
+    data = read_mem()
+  File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 41, in read_mem
+    with open(mem_path, 'r') as f:
+IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log'
+[2018-12-07 14:22:57,965] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 55, in html
+    data = read_mem()
+  File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 41, in read_mem
+    with open(mem_path, 'r') as f:
+IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/mem.log'
+[2018-12-07 14:23:16,501] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 69, in html
+    data1 = read_cpu()
+  File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 25, in read_cpu
+    with open(cpu_path, 'r') as f:
+IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log'
+[2018-12-07 14:23:40,993] [ERROR] [bogon][app.py - line:1761] Exception on /getreport [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/xinxi/PycharmProjects/maxauto/report/server.py", line 69, in html
+    data1 = read_cpu()
+  File "/Users/xinxi/PycharmProjects/maxauto/report/predata.py", line 25, in read_cpu
+    with open(cpu_path, 'r') as f:
+IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log'
+[2018-12-07 14:28:06,150] [ERROR] [bogon][getdata.py - line:111] 获取activitys异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/allactivity.log'
+[2018-12-07 14:28:06,151] [ERROR] [bogon][getdata.py - line:146] 计算遍历覆盖率异常!float division by zero
+[2018-12-07 14:28:06,471] [ERROR] [bogon][getdata.py - line:45] 获取安装耗时数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/install_app.log'
+[2018-12-07 14:28:06,471] [INFO] [bogon][getdata.py - line:60] 获取冷启动数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/lanuch_app.log'
+[2018-12-07 14:28:06,471] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-07 14:28:06,480] [ERROR] [bogon][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'
+[2018-12-07 14:28:06,482] [ERROR] [bogon][getdata.py - line:30] 获取登录数据异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/login_app.log'

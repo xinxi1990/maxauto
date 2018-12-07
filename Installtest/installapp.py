@@ -46,6 +46,7 @@ class InstallApp():
                 find_cmd = 'adb -s {} shell pm list packages | grep {}'.format(self.device_name,self.pck_name)
                 #logger.info('查询app安装命令:{}'.format(find_cmd))
                 result = subprocess.Popen(find_cmd, shell=True,stdout=subprocess.PIPE).stdout.readlines()
+                time.sleep(1)
                 if re.findall(self.pck_name,str(result)):
                     logger.info('app安装成功!')
                     no_install = False

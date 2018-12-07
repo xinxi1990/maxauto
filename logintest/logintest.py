@@ -105,6 +105,7 @@ class LoginApp():
         self.lanuch_activity = lanuch_activity
         self.allow = "//*[@text='ALLOW']"
         self.allow_zn = "//*[@text='允许']"
+        self.sure = "//*[@text='确定']"
 
 
     def is_element_exist(self,driver, *loc):
@@ -141,6 +142,8 @@ class LoginApp():
                     self.driver.find_element(By.XPATH,self.allow).click()
                 elif self.driver.find_elements(By.XPATH,self.allow_zn):
                     self.driver.find_element(By.XPATH,self.allow_zn).click()
+                elif self.driver.find_elements(By.XPATH,self.sure):
+                    self.driver.find_element(By.XPATH,self.sure).click()
                 else:
                     flag = False
                     break

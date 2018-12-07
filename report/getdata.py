@@ -52,7 +52,7 @@ class GetData():
         获取冷启动数据
         :return:
         '''
-        result = "0s"
+        result = "0"
         try:
             with open(lanuch_app_log) as f:
                 result = f.readlines()[0].replace('\n','')

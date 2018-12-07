@@ -1,9 +1,4 @@
-com.luojilab.business.myself.setting.AboutActivity
-com.luojilab.business.webview.WebViewActivity
-com.luojilab.business.myself.setting.SettingActivity
-com.luojilab.business.HomeTabActivity
-com.luojilab.business.packageweb.CommonPackageWebActivity
-com.luojilab.business.goods.ui.RNEbookDetailActivity1
-com.luojilab.component.course.list.CourseListActivity
-com.luojilab.business.user.ui.PhoneInputActivity
-com.luojilab.business.user.ui.PhonePwdInputActivity
+com.tencent.qqmusic.activity.WebViewActivity
+com.tencent.qqmusic.activity.LoginActivity
+com.tencent.qqmusic.activity.AppStarterActivity
+com.tencent.qqmusic.activity.EditSongListActivity

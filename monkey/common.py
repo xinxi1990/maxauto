@@ -158,7 +158,33 @@ def format_time(time_str):
 
 
 
+def get_current_activity(device_name):
+    '''
+    获取当前的Activity
+    '''
+    activity = 'undefined'
+    try:
+        cmd = 'adb -s {} shell dumpsys activity | grep "mFocusedActivity"'.format(device_name)
+        activity = str(os.popen(cmd).readlines()).split('/')[1].split()[0]
+    except Exception, e:
+        logger.error("获取当前activity异常!{}".format(e))
+    finally:
+        return activity
 
 
+def get_app_pid(device_name,app_name):
+    '''
+    获取app的pid
+    '''
+    pid = ''
+    try:
+        cmd = 'adb -s {} shell ps | grep {}'.format(device_name,app_name)
+        pid = os.popen(cmd).readlines()[0].split()[1]
+    except Exception, e:
+        logger.error("获取当前activity异常!{}".format(e))
+    finally:
+        return pid
 
 
+if __name__ == '__main__':
+    print get_app_pid('192.168.56.101:5555','com.tencent.qqmusic')

@@ -12,6 +12,9 @@ sys.path.append('..')
 reload(sys)
 sys.setdefaultencoding("utf-8")
 import common
+from getcpu import GetCPU
+from getmem import GetMem
+from getbasic import GetBasic
 from tools.loggers import JFMlogging
 from config import *
 logger = JFMlogging().getloger()
@@ -22,7 +25,6 @@ class Monkey():
         self.device = device_name
         self.runtime = runtime
         self.pkg = app_name
-        self.platform = 'Android'
         self.throttle = throttle
         self.runmodel = run_model
         self.monkeyjar = monkey_jar
@@ -51,6 +53,7 @@ class Monkey():
         common.kill_pid("logcat")
 
 
+
     def start_monkey(self):
         '''
         启动monkey
@@ -69,7 +72,9 @@ class Monkey():
             while runing:
                 if self.find_monkey() != 1:
                     logger.info("="*10 + "Monkey运行中..." + "="*10)
-                    self.get_performance()
+                    current_activity = common.get_current_activity(self.device)
+                    GetCPU(self.device,current_activity,self.pkg).get_cpu()
+                    GetMem(self.device,current_activity,self.pkg).get_mem()
                     self.write_page()
                     time.sleep(self.sleep_time)
                 else:
@@ -197,7 +202,7 @@ class Monkey():
         :return:
         '''
         try:
-            cmd = "sh {} {} {}".format(get_performance_path, self.device,performance_folder)
+            cmd = "sh {} {} {}".format(get_performance_path, self.device,performance_folder,self.pkg)
             subprocess.call(cmd, shell=True)
         except Exception as e:
             logger.error("获取性能异常!{}".format(e))
@@ -283,12 +288,15 @@ class Monkey():
             return zip_path
 
 
-if __name__ == '__main__':
-    device = "192.168.56.101:5555"
-    common.pull_file(device, device_crash_path,crash_savepath)
-    crash_detail = common.read_file(crash_savepath)
-    if crash_detail != '':
-        image_path = Monkey(device,1,1).get_crash_images()
-        if image_path != '':
-            common.pull_file(device, image_path, local_images_path)
-            Monkey(device, 1, 1).rename_image()
+    def get_current_activity(self):
+        '''
+        获取当前的Activity
+        '''
+        activity = 'undefined'
+        try:
+            cmd = 'adb -s {} shell dumpsys activity | grep "mFocusedActivity"'.format(self.devices)
+            activity = str(os.popen(cmd).readlines()).split('/')[1].split()[0]
+        except Exception, e:
+            logger.error("获取当前activity异常!{}".format(e))
+        finally:
+            return activity

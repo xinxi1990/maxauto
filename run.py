@@ -6,8 +6,9 @@ from monkey.monkey import Monkey
 from lanuchtest.lanuchapp import LanuchApp
 from Installtest.installapp import InstallApp
 from logintest.logintest import LoginApp
-from config import *
 from report.client import get_html
+from config import *
+
 
 
 def kill_pid(port):
@@ -42,7 +43,7 @@ def make_env():
 
 
 def run(apk_path,device_name,runtime,mail_list):
-    # make_env()
+    make_env()
     gb = GetBasic(apk_path,device_name)
     lanuch_activity = gb.get_app_activity()
     app_name = gb.get_app_name()
@@ -50,15 +51,12 @@ def run(apk_path,device_name,runtime,mail_list):
     # InstallApp(device_name,app_name,apk_path,install_app_log,uninstall_app_log).install_app()
     # LanuchApp(device_name,app_name,lanuch_activity,lanuch_app_log).lanuch_app()
     # LoginApp(device_name, app_name, lanuch_activity).test_login()
-    #Monkey(device_name,runtime,app_name).start_monkey()
+    Monkey(device_name,runtime,app_name).start_monkey()
     start_gunicorn()
     get_html(apk_path,device_name,mail_list)
 
-
-
-
 if __name__ == '__main__':
-    apk_path = "/Users/xinxi/Downloads/app_debug_5.2.0_20181120201645.apk"
+    apk_path = "/Users/xinxi/Downloads/QQMusic72282.apk"
     device_name = "192.168.56.101:5555"
     run_time = 1
     mail_list = 'xxxx'

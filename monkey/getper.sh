@@ -8,7 +8,7 @@ getact(){
 
 # 获取app进程pid
 findapppid(){
-	pid=`adb -s ${adbdevices} shell ps | grep com.luojilab.player$ | awk '{print $2}'`
+	pid=`adb -s ${adbdevices} shell ps | grep ${app_name} | awk '{print $2}'`
 	echo "app pid is:"${pid}
 
 }
@@ -88,6 +88,7 @@ getmem(){
 task(){
 	adbdevices="$1" # 设备号
 	performancefolder="$2" # 性能保存文件夹
+	app_name="$3" # app包名
 	cpulog=${performancefolder}"/cpu.log" # cpu保存路径
 	memlog=${performancefolder}"/mem.log" # 内存保存路径
 	#echo "cpu数据保存路径:"${cpulog}

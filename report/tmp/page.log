@@ -1,57 +1,13 @@
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:52.144   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +918ms
-12-06 06:03:54.284   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +513ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:52.144   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +918ms
-12-06 06:03:54.284   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +513ms
-12-06 06:03:57.204   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.goods.ui.RNEbookDetailActivity1: +216ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:52.144   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +918ms
-12-06 06:03:54.284   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +513ms
-12-06 06:03:57.204   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.goods.ui.RNEbookDetailActivity1: +216ms
-12-06 06:04:01.187   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +367ms
-12-06 06:04:03.706   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.component.course.list.CourseListActivity: +663ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:52.144   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +918ms
-12-06 06:03:54.284   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +513ms
-12-06 06:03:57.204   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.goods.ui.RNEbookDetailActivity1: +216ms
-12-06 06:04:01.187   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +367ms
-12-06 06:04:03.706   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.component.course.list.CourseListActivity: +663ms
-12-06 06:04:07.364   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.user.ui.PhoneInputActivity: +185ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:52.144   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +918ms
-12-06 06:03:54.284   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +513ms
-12-06 06:03:57.204   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.goods.ui.RNEbookDetailActivity1: +216ms
-12-06 06:04:01.187   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +367ms
-12-06 06:04:03.706   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.component.course.list.CourseListActivity: +663ms
-12-06 06:04:07.364   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.user.ui.PhoneInputActivity: +185ms
-12-06 06:03:29.522   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.webview.WebViewActivity: +901ms
-12-06 06:03:39.820   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.myself.setting.AboutActivity: +1s623ms (total +1s740ms)
-12-06 06:03:48.781   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.HomeTabActivity: +2s231ms
-12-06 06:03:52.144   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +918ms
-12-06 06:03:54.284   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +513ms
-12-06 06:03:57.204   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.goods.ui.RNEbookDetailActivity1: +216ms
-12-06 06:04:01.187   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.packageweb.CommonPackageWebActivity: +367ms
-12-06 06:04:03.706   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.component.course.list.CourseListActivity: +663ms
-12-06 06:04:07.364   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.user.ui.PhoneInputActivity: +185ms
-12-06 06:04:17.075   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.user.ui.PhonePwdInputActivity: +378ms
-12-06 06:04:17.690   547   570 I ActivityManager: Displayed com.luojilab.player/com.luojilab.business.user.ui.PhoneInputActivity: +210ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:09:20.130   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.EditSongListActivity: +759ms
+12-07 01:08:47.323   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.WebViewActivity: +252ms
+12-07 01:09:20.130   529   550 I ActivityManager: Displayed com.tencent.qqmusic/.activity.EditSongListActivity: +759ms
