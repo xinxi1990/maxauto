@@ -89,3 +89,7 @@
 [2018-12-07 01:06:47,471] [INFO] [xinxideMacBook-Pro.local][common.py - line:25] 拉取文件命令:adb -s 192.168.56.101:5555 pull ./data/media/0/Crash_20181206060346
  /Users/xinxi/PycharmProjects/maxauto/monkey/images
 [2018-12-07 13:35:34,411] [ERROR] [bogon][common.py - line:186] 获取当前activity异常!list index out of range
+[2018-12-07 19:15:04,326] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 19:15:21,602] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 19:15:37,598] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成
+[2018-12-07 19:15:47,277] [INFO] [bogon][filetools.py - line:38] 写/Users/xinxi/PycharmProjects/maxauto/report/tmp/cpu.log文件完成

@@ -1,9 +1,8 @@
-.ui.GuideActivity
-.activity.SplashActivity
 .ui.NewsDetailActivity
-.audio.tingting.TingTingActivity
-com.sina.weibo.sdk.web.WeiboSdkWebActivity
 .map.LocationMapActivity
+undefined
+.ui.read24hours.Read24HoursActivity
+com.sina.weibo.sdk.web.WeiboSdkWebActivity
+.ui.imagedetail.GalleryDetailPreViewActivity
 .module.comment.ReplyContentListActivity
 oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity
-.ui.LoginActivity

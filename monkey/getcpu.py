@@ -42,17 +42,21 @@ class GetCPU():
             cmd = "adb -s {} shell dumpsys cpuinfo | grep {}".format(self.device_name,self.pck_name)
             result = subprocess.Popen(cmd, shell=True,
                                            stdout=subprocess.PIPE).stdout.readlines()
+            print result
             for line in result:
                 if re.findall(self.pck_name,line):
                     cpu = line.split()[0].replace('%', '')
+                    break
         except Exception, e:
             logger.error("获取cpu失败:{}".format(e))
         finally:
             current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-            current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
             info = current_time + ',' + str(cpu) + ',' + self.activity  + '\n'
             write_file(cpu_path, info, is_cover=False)
 
+
+if __name__ == '__main__':
+    GetCPU('192.168.56.101:5555','xxxx','com.tencent.news').get_cpu()
 
 
 

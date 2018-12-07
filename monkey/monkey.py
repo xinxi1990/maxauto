@@ -16,6 +16,7 @@ from getcpu import GetCPU
 from getmem import GetMem
 from getbasic import GetBasic
 from getnetwork import GetNetWork
+from getfps import GetFPS
 from tools.loggers import JFMlogging
 from config import *
 logger = JFMlogging().getloger()
@@ -68,20 +69,21 @@ class Monkey():
                    .format(self.device,self.pkg,self.runmodel,self.runtime,self.throttle,self.monkeylog))
             logger.info("Monkey执行命令:{}".format(cmd))
             subprocess.Popen(cmd,shell=True)
-            runing = True
+            is_runing = True
             time.sleep(self.sleep_time)
-            while runing:
+            while is_runing:
                 if self.find_monkey() != 1:
                     logger.info("="*10 + "Monkey运行中..." + "="*10)
                     current_activity = common.get_current_activity(self.device)
                     GetCPU(self.device,current_activity,self.pkg).get_cpu()
                     GetMem(self.device,current_activity,self.pkg).get_mem()
                     GetNetWork(self.device,current_activity,self.pkg).get_network()
-                    common.write_activity_back(current_activity)
+                    GetFPS(self.device,current_activity,self.pkg).getfps()
                     self.write_page()
+                    common.write_activity_back(current_activity)
                     time.sleep(self.sleep_time)
                 else:
-                    runing = False
+                    is_runing = False
                     logger.info("="*10 + "Monkey运行结束!" + "="*10)
             self.get_run_activitys()
             common.pull_file(self.device, self.device_crash_path, self.crash_savepath)
@@ -181,22 +183,22 @@ class Monkey():
         寻找Monkey的pid
         :return:
         '''
-        global e
-        global pid
+        pid = 1
         try:
             grep_cmd = "adb -s {} shell ps | grep monkey".format(self.device)
             pipe = os.popen(grep_cmd)
             pids = pipe.read()
             if pids == '':
                logger.info("当前monkey进程不存在")
-               return 1
             else:
                pid = pids.split()[1]
                logger.info("当前monkey进程pid:{}".format(pid))
-               return pid
         except Exception as e:
             logger.error("当前monkey进程查询异常!{}".format(e))
             return 1
+        finally:
+            return pid
+
 
     def get_performance(self):
         '''

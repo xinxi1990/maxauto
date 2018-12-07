@@ -39,6 +39,7 @@ cpu_path = os.path.join(project_path,'report/tmp/cpu.log')
 mem_path = os.path.join(project_path,'report/tmp/mem.log')
 page_path = os.path.join(project_path,"report/tmp/page.log")
 network_path = os.path.join(project_path,"report/tmp/network.log")
+fps_path = os.path.join(project_path,"report/tmp/fps.log")
 all_activity_path = os.path.join(project_path,'report/tmp/allactivity.log')
 run_model = "uiautomatordfs" #uiautomatormix
 throttle = 200

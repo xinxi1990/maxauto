@@ -92,6 +92,37 @@ def html():
     except Exception as e:
         logger.error(e)
     tuples2 = tuples2 + tuple(n)
+
+    tuples3 = ()
+    data3 = read_fps()
+    m = []
+    n = []
+    try:
+        for index in range(len(data3[0])):
+            m.append(data3[0][index])
+            m.append(float(data3[1][index]))
+            n.append(m)
+            m = []
+    except Exception as e:
+        logger.error(e)
+    tuples3 = tuples3 + tuple(n)
+
+
+    tuples4 = ()
+    data4 = read_network()
+    m = []
+    n = []
+    try:
+        for index in range(len(data4[0])):
+            m.append(data4[0][index])
+            m.append(float(data4[1][index]))
+            n.append(m)
+            m = []
+    except Exception as e:
+        logger.error(e)
+    tuples4 = tuples4 + tuple(n)
+    print tuples4
+
     params = json.loads(request.get_data())
     apkpath = params['apk_path']
     device_name = params['device_name']
@@ -112,6 +143,8 @@ def html():
                            data=tuples, memtime=data[0], meminfo=data[1], memactivity=data[2],
                            data1=tuples1, cputime=data1[0], cpuinfo=data1[1], cpuactivity=data1[2],
                            data2=tuples2,pagetime=data2[0], pageinfo=data2[1], pageactivity=data2[2],
+                           data3=tuples3, fpstime=data3[0], fpsinfo=data3[1], fpsactivity=data3[2],
+                           data4=tuples4, networktime=data4[0], networkinfo=data4[1], networkactivity=data4[2],
                            reporttime = time.strftime("%Y-%m-%d %H:%M:%S"),
                            runpages = gd.get_run_pages(),
                            runtime = gd.get_runtime(),

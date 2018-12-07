@@ -73,6 +73,10 @@
     <div id="cpuchart" style="min-width:1500px;height:400px"></div>
     <h4>内存使用率走势图</h4>
     <div id="memchart" style="min-width:1500px;height:400px"></div>
+    <h4>FPS走势图</h4>
+    <div id="fpschart" style="min-width:1500px;height:400px"></div>
+    <h4>流量消耗走势图</h4>
+    <div id="networkchart" style="min-width:1500px;height:400px"></div>
     <h4>页面加载使用率走势图</h4>
     <div id="pagechart" style="min-width:1500px;height:400px"></div>
 
@@ -113,6 +117,19 @@
 		//cpu数据
 
 
+        var fpstime = {{ fpstime|tojson }}
+		var fpsinfo = {{ fpsinfo|tojson }}
+		var fpsactivity = {{ fpsactivity|tojson }}
+		var data3= {{ data3|tojson }}
+		//fps数据
+
+        var networktime = {{ networktime|tojson }}
+		var networkinfo = {{ networkinfo |tojson }}
+		var networkactivity = {{ networkactivity|tojson }}
+		var data4= {{ data4|tojson }}
+		//network数据
+
+
 		//自己编写的js方法
 		function getActivity(yInfo, mInfo, info){
 			var i = yInfo.indexOf(info);
@@ -148,8 +165,8 @@
 	                month: '%Y-%m',
 	                year: '%Y'
 	            },formatter: function () {
-	            			var mInfo = {{memactivity|tojson}};
-		                	var yInfo = {{memtime|tojson}};
+	            			var mInfo = memactivity;
+		                	var yInfo = memtime
 		                	var point = this.points[0];
 							return '<b>' + "内存: </b>" + point.y + '<br/>' +
 								   '<b>' + "Time: </b>" + point.x + '<br/>' +
@@ -228,8 +245,8 @@
                         month: '%Y-%m',
                         year: '%Y'
                     },formatter: function () {
-                                var mInfo = {{cpuactivity|tojson}};
-                                var yInfo = {{cputime|tojson}};
+                                var mInfo = cpuactivity;
+                                var yInfo = cputime;
                                 var point = this.points[0];
                                 return '<b>' + "CPU: </b>" + point.y + '<br/>' +
                                        '<b>' + "Time: </b>" + point.x + '<br/>' +
@@ -281,9 +298,168 @@
                     turboThreshold: 5000
                     }]
                 });
+            $('#networkchart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: '流量'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: networktime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = networkactivity;
+                                var yInfo = networktime;
+                                var point = this.points[0];
+                                return '<b>' + "KB: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'KB'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'KB',
+                    data: data4,
+                    turboThreshold: 5000
+                    }]
+                });
+                $('#fpschart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'FPS'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: fpstime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = fpsactivity;
+                                var yInfo = fpstime;
+                                var point = this.points[0];
+                                return '<b>' + "帧: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
 
-
-            $('#pagechart').highcharts({
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'ms'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'FPS',
+                    data: data3,
+                    turboThreshold: 5000
+                    }]
+                });
+                $('#pagechart').highcharts({
                 chart: {
                     zoomType: 'x'
                 },
@@ -311,8 +487,8 @@
                         month: '%Y-%m',
                         year: '%Y'
                     },formatter: function () {
-                                var mInfo = {{pageactivity|tojson}};
-                                var yInfo = {{pagetime|tojson}};
+                                var mInfo = pageactivitya;
+                                var yInfo = pagetime;
                                 var point = this.points[0];
                                 return '<b>' + "耗时: </b>" + point.y + '<br/>' +
                                        '<b>' + "Time: </b>" + point.x + '<br/>' +
@@ -366,7 +542,6 @@
                 });
 
 
-
             $('#coverage_percent').highcharts({
                 chart: {
                     plotBackgroundColor: null,
@@ -415,7 +590,7 @@
 						}}},
                 series: [{
                         type: 'pie',
-                        name: '自动化遍历页面占比',
+                        name: '遍历页面占比',
                         data: [
                                 ['未遍历',{{ notcov }}],
                                 {

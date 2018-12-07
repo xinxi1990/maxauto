@@ -1,0 +1,728 @@
+<html>
+<meta charset="UTF-8">
+<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <h1 align="center">Android稳定性测试报告 2018-12-07 19:41:42</h1>
+    <hr>
+    <div class="panel">
+        <div class="panel_title">
+            <h4>应用信息</h4>
+        </div>
+        <div class="panel_main" id="appInfoDiv">
+            <table class="app_base_info" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+                <colgroup>
+                    <col style="width:92px;">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td rowspan="2">
+                    <img src="https://img-blog.csdn.net/20180312105203250" height="80" width="80" alt="" style="width:100%">
+                    </td>
+                    <th>应用名称</th>
+                    <td align="center"><span class="cut">com.tencent.news</span></td>
+                    <th>应用版本</th>
+                    <td align="center"><span class="cut">5.7.10</span></td>
+                    <th>应用大小</th>
+                    <td align="center"><span class="cut">23.71MB</span></td>
+                    <th>遍历时间</th>
+                    <td align="center"><span class="cut">180.9秒</span></td>
+                    <th>环境</th>
+                    <td align="center"><span class="cut">测试</span></td>
+                </tr>
+                <tr>
+                    <th>测试设备</th>
+                    <td align="center">Google</td>
+                    <th>系统版本</th>
+                    <td align="center">Android7.0</td>
+                    <th>安装耗时</th>
+                    <td align="center"><span class="cut">0秒</span></td>
+                    <th>元素点击</th>
+                    <td align="center"><span class="cut">1377
+次</span></td>
+                    <th>登录</th>
+                    <td align="center"><span class="cut">error</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>启动时间</h4>
+    <div id="start_time" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历占比统计</h4>
+    <div id="coverage_percent" style="min-width:500px;height:400px"></div>
+
+    <h4>自动化遍历结果列表</h4>
+    <div id="coverage_runpages" style="min-width:500px;">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+          <thead>
+          <tr>
+            <th>序号</th>
+            <th>页面名称</th>
+            <th>是否遍历</th>
+          </tr>
+          </thead>
+          
+                        <tr>
+                        <td align="center">0</td>
+                        <td align="center">com.tencent.news.ui.NewsDetailActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">1</td>
+                        <td align="center">com.tencent.news.map.LocationMapActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">2</td>
+                        <td align="center">com.tencent.news.activity.SplashActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">3</td>
+                        <td align="center">com.tencent.news.ui.read24hours.Read24HoursActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">4</td>
+                        <td align="center">com.tencent.news.share.sina.SinaShareActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">5</td>
+                        <td align="center">com.sina.weibo.sdk.share.WbShareTransActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">6</td>
+                        <td align="center">com.sina.weibo.sdk.web.WeiboSdkWebActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">7</td>
+                        <td align="center">com.tencent.news.ui.imagedetail.GalleryDetailPreViewActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">8</td>
+                        <td align="center">com.tencent.news.module.comment.ReplyContentListActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">9</td>
+                        <td align="center">com.tencent.news.ui.LoginActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+                        <tr>
+                        <td align="center">10</td>
+                        <td align="center">oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity
+</td>
+                        <td align="center"><font color="blue">已遍历</font></td>
+                        </tr>
+                        
+          </tbody>
+        </table>
+    </div>
+
+    <h4>CPU使用率走势图</h4>
+    <div id="cpuchart" style="min-width:1500px;height:400px"></div>
+    <h4>内存使用率走势图</h4>
+    <div id="memchart" style="min-width:1500px;height:400px"></div>
+    <h4>FPS走势图</h4>
+    <div id="fpschart" style="min-width:1500px;height:400px"></div>
+    <h4>流量消耗走势图</h4>
+    <div id="networkchart" style="min-width:1500px;height:400px"></div>
+    <h4>页面加载使用率走势图</h4>
+    <div id="pagechart" style="min-width:1500px;height:400px"></div>
+
+    <div class="task-result" style="clear:both;">
+        <h3 class="task-result-header">
+            <span class="task-result-title">崩溃信息: 0 次</span>
+        </h3>
+        <textarea rows="50" cols="200">
+        暂无数据!
+        </textarea>
+    </div>
+       <div class="crash-image" style="clear:both;">
+        <h3 class="crash-image-header">
+            <span class="crash-image-title">崩溃回溯:</span>
+        </h3>
+         
+    </div>
+
+    <script>
+
+        var chart = null;
+		var memtime = ["2018-12-07 19:07:21", "2018-12-07 19:07:24", "2018-12-07 19:07:28", "2018-12-07 19:07:31", "2018-12-07 19:07:35", "2018-12-07 19:07:39", "2018-12-07 19:07:43", "2018-12-07 19:07:46", "2018-12-07 19:07:50", "2018-12-07 19:07:53", "2018-12-07 19:07:57", "2018-12-07 19:08:01", "2018-12-07 19:08:05", "2018-12-07 19:08:08", "2018-12-07 19:08:12", "2018-12-07 19:08:16", "2018-12-07 19:08:19", "2018-12-07 19:08:23", "2018-12-07 19:08:27", "2018-12-07 19:08:30", "2018-12-07 19:08:34", "2018-12-07 19:08:38", "2018-12-07 19:08:41", "2018-12-07 19:08:45", "2018-12-07 19:08:48", "2018-12-07 19:08:52", "2018-12-07 19:08:55", "2018-12-07 19:08:59", "2018-12-07 19:09:02", "2018-12-07 19:09:06", "2018-12-07 19:09:10", "2018-12-07 19:09:14", "2018-12-07 19:09:18", "2018-12-07 19:09:22", "2018-12-07 19:09:25", "2018-12-07 19:09:28", "2018-12-07 19:09:32", "2018-12-07 19:09:36", "2018-12-07 19:09:40", "2018-12-07 19:09:43", "2018-12-07 19:09:47", "2018-12-07 19:09:51", "2018-12-07 19:09:55", "2018-12-07 19:09:58", "2018-12-07 19:10:02", "2018-12-07 19:10:06", "2018-12-07 19:10:10", "2018-12-07 19:10:13", "2018-12-07 19:10:17", "2018-12-07 19:10:21"]
+		var meminfo = ["97.25", "95.52", "96.58", "108.05", "110.26", "102.0", "100.85", "98.48", "103.51", "8.68", "40.24", "49.85", "46.66", "55.25", "53.42", "59.61", "57.87", "62.85", "64.8", "66.81", "66.8", "65.99", "63.95", "56.2", "56.23", "56.92", "59.25", "58.91", "69.94", "66.55", "67.68", "69.24", "68.95", "65.16", "66.26", "67.51", "66.78", "75.75", "75.32", "80.33", "80.77", "72.67", "72.55", "74.08", "75.61", "75.44", "87.4", "73.61", "76.31", "75.39"]
+		var memactivity = [".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".map.LocationMapActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "undefined", ".ui.read24hours.Read24HoursActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "com.sina.weibo.sdk.web.WeiboSdkWebActivity", ".ui.imagedetail.GalleryDetailPreViewActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity"]
+		var data= [["2018-12-07 19:07:21", 97.25], ["2018-12-07 19:07:24", 95.52], ["2018-12-07 19:07:28", 96.58], ["2018-12-07 19:07:31", 108.05], ["2018-12-07 19:07:35", 110.26], ["2018-12-07 19:07:39", 102.0], ["2018-12-07 19:07:43", 100.85], ["2018-12-07 19:07:46", 98.48], ["2018-12-07 19:07:50", 103.51], ["2018-12-07 19:07:53", 8.68], ["2018-12-07 19:07:57", 40.24], ["2018-12-07 19:08:01", 49.85], ["2018-12-07 19:08:05", 46.66], ["2018-12-07 19:08:08", 55.25], ["2018-12-07 19:08:12", 53.42], ["2018-12-07 19:08:16", 59.61], ["2018-12-07 19:08:19", 57.87], ["2018-12-07 19:08:23", 62.85], ["2018-12-07 19:08:27", 64.8], ["2018-12-07 19:08:30", 66.81], ["2018-12-07 19:08:34", 66.8], ["2018-12-07 19:08:38", 65.99], ["2018-12-07 19:08:41", 63.95], ["2018-12-07 19:08:45", 56.2], ["2018-12-07 19:08:48", 56.23], ["2018-12-07 19:08:52", 56.92], ["2018-12-07 19:08:55", 59.25], ["2018-12-07 19:08:59", 58.91], ["2018-12-07 19:09:02", 69.94], ["2018-12-07 19:09:06", 66.55], ["2018-12-07 19:09:10", 67.68], ["2018-12-07 19:09:14", 69.24], ["2018-12-07 19:09:18", 68.95], ["2018-12-07 19:09:22", 65.16], ["2018-12-07 19:09:25", 66.26], ["2018-12-07 19:09:28", 67.51], ["2018-12-07 19:09:32", 66.78], ["2018-12-07 19:09:36", 75.75], ["2018-12-07 19:09:40", 75.32], ["2018-12-07 19:09:43", 80.33], ["2018-12-07 19:09:47", 80.77], ["2018-12-07 19:09:51", 72.67], ["2018-12-07 19:09:55", 72.55], ["2018-12-07 19:09:58", 74.08], ["2018-12-07 19:10:02", 75.61], ["2018-12-07 19:10:06", 75.44], ["2018-12-07 19:10:10", 87.4], ["2018-12-07 19:10:13", 73.61], ["2018-12-07 19:10:17", 76.31], ["2018-12-07 19:10:21", 75.39]]
+		//内存数据
+
+		var cputime = ["2018-12-07 19:07:20", "2018-12-07 19:07:24", "2018-12-07 19:07:27", "2018-12-07 19:07:31", "2018-12-07 19:07:35", "2018-12-07 19:07:39", "2018-12-07 19:07:42", "2018-12-07 19:07:46", "2018-12-07 19:07:49", "2018-12-07 19:07:53", "2018-12-07 19:07:57", "2018-12-07 19:08:01", "2018-12-07 19:08:04", "2018-12-07 19:08:08", "2018-12-07 19:08:12", "2018-12-07 19:08:15", "2018-12-07 19:08:19", "2018-12-07 19:08:23", "2018-12-07 19:08:26", "2018-12-07 19:08:30", "2018-12-07 19:08:34", "2018-12-07 19:08:37", "2018-12-07 19:08:41", "2018-12-07 19:08:45", "2018-12-07 19:08:48", "2018-12-07 19:08:52", "2018-12-07 19:08:55", "2018-12-07 19:08:59", "2018-12-07 19:09:02", "2018-12-07 19:09:06", "2018-12-07 19:09:10", "2018-12-07 19:09:14", "2018-12-07 19:09:18", "2018-12-07 19:09:21", "2018-12-07 19:09:25", "2018-12-07 19:09:28", "2018-12-07 19:09:32", "2018-12-07 19:09:35", "2018-12-07 19:09:39", "2018-12-07 19:09:43", "2018-12-07 19:09:47", "2018-12-07 19:09:51", "2018-12-07 19:09:55", "2018-12-07 19:09:58", "2018-12-07 19:10:02", "2018-12-07 19:10:06", "2018-12-07 19:10:10", "2018-12-07 19:10:13", "2018-12-07 19:10:17", "2018-12-07 19:10:20", "2018-12-07 19:15:04", "2018-12-07 19:15:21", "2018-12-07 19:15:37", "2018-12-07 19:15:47"]
+		var cpuinfo = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "6.9", "6.9"]
+		var cpuactivity = [".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".map.LocationMapActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "undefined", ".ui.read24hours.Read24HoursActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "com.sina.weibo.sdk.web.WeiboSdkWebActivity", ".ui.imagedetail.GalleryDetailPreViewActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", "xxxx", "xxxx", "xxxx", "xxxx"]
+		var data1= [["2018-12-07 19:07:20", 0.0], ["2018-12-07 19:07:24", 0.0], ["2018-12-07 19:07:27", 0.0], ["2018-12-07 19:07:31", 0.0], ["2018-12-07 19:07:35", 0.0], ["2018-12-07 19:07:39", 0.0], ["2018-12-07 19:07:42", 0.0], ["2018-12-07 19:07:46", 0.0], ["2018-12-07 19:07:49", 0.0], ["2018-12-07 19:07:53", 0.0], ["2018-12-07 19:07:57", 0.0], ["2018-12-07 19:08:01", 0.0], ["2018-12-07 19:08:04", 0.0], ["2018-12-07 19:08:08", 0.0], ["2018-12-07 19:08:12", 0.0], ["2018-12-07 19:08:15", 0.0], ["2018-12-07 19:08:19", 0.0], ["2018-12-07 19:08:23", 0.0], ["2018-12-07 19:08:26", 0.0], ["2018-12-07 19:08:30", 0.0], ["2018-12-07 19:08:34", 0.0], ["2018-12-07 19:08:37", 0.0], ["2018-12-07 19:08:41", 0.0], ["2018-12-07 19:08:45", 0.0], ["2018-12-07 19:08:48", 0.0], ["2018-12-07 19:08:52", 0.0], ["2018-12-07 19:08:55", 0.0], ["2018-12-07 19:08:59", 0.0], ["2018-12-07 19:09:02", 0.0], ["2018-12-07 19:09:06", 0.0], ["2018-12-07 19:09:10", 0.0], ["2018-12-07 19:09:14", 0.0], ["2018-12-07 19:09:18", 0.0], ["2018-12-07 19:09:21", 0.0], ["2018-12-07 19:09:25", 0.0], ["2018-12-07 19:09:28", 0.0], ["2018-12-07 19:09:32", 0.0], ["2018-12-07 19:09:35", 0.0], ["2018-12-07 19:09:39", 0.0], ["2018-12-07 19:09:43", 0.0], ["2018-12-07 19:09:47", 0.0], ["2018-12-07 19:09:51", 0.0], ["2018-12-07 19:09:55", 0.0], ["2018-12-07 19:09:58", 0.0], ["2018-12-07 19:10:02", 0.0], ["2018-12-07 19:10:06", 0.0], ["2018-12-07 19:10:10", 0.0], ["2018-12-07 19:10:13", 0.0], ["2018-12-07 19:10:17", 0.0], ["2018-12-07 19:10:20", 0.0], ["2018-12-07 19:15:04", 0.0], ["2018-12-07 19:15:21", 0.0], ["2018-12-07 19:15:37", 6.9], ["2018-12-07 19:15:47", 6.9]]
+		//cpu数据
+
+        var pagetime = ["12-07 06:10:03.675", "12-07 06:08:29.660", "12-07 06:09:57.072", "12-07 06:07:28.254", "12-07 06:08:18.127", "12-07 06:08:40.039", "12-07 06:09:09.925", "12-07 06:07:57.350", "12-07 06:08:15.166", "12-07 06:08:35.523", "12-07 06:09:15.649", "12-07 06:09:05.982", "12-07 06:07:58.603", "12-07 06:08:25.731", "12-07 06:07:53.789", "12-07 06:09:00.376", "12-07 06:10:07.825", "12-07 06:10:16.838", "12-07 06:09:09.583", "12-07 06:08:21.666", "12-07 06:09:34.262", "12-07 06:10:15.001", "12-07 06:07:47.469"]
+		var pageinfo = ["109", "321", "709", "580", "638", "381", "266", "517", "491", "162", "169", "284", "530", "135", 1116, "234", "737", "189", "178", "644", "277", "338", "522"]
+		var pageactivity = [".module.comment.ReplyContentListActivity", ".ui.imagedetail.GalleryDetailPreViewActivity", ".module.comment.ReplyContentListActivity", ".map.LocationMapActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".ui.read24hours.Read24HoursActivity", ".ui.NewsDetailActivity", ".ui.imagedetail.GalleryDetailPreViewActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", "com.sina.weibo.sdk.web.WeiboSdkWebActivity", ".activity.SplashActivity", ".module.comment.ReplyContentListActivity", ".map.LocationMapActivity", ".ui.LoginActivity", ".ui.LoginActivity", ".map.LocationMapActivity", ".module.comment.ReplyContentListActivity", ".ui.LoginActivity", ".map.LocationMapActivity"]
+		var data2= [["12-07 06:10:03.675", 109.0], ["12-07 06:08:29.660", 321.0], ["12-07 06:09:57.072", 709.0], ["12-07 06:07:28.254", 580.0], ["12-07 06:08:18.127", 638.0], ["12-07 06:08:40.039", 381.0], ["12-07 06:09:09.925", 266.0], ["12-07 06:07:57.350", 517.0], ["12-07 06:08:15.166", 491.0], ["12-07 06:08:35.523", 162.0], ["12-07 06:09:15.649", 169.0], ["12-07 06:09:05.982", 284.0], ["12-07 06:07:58.603", 530.0], ["12-07 06:08:25.731", 135.0], ["12-07 06:07:53.789", 1116.0], ["12-07 06:09:00.376", 234.0], ["12-07 06:10:07.825", 737.0], ["12-07 06:10:16.838", 189.0], ["12-07 06:09:09.583", 178.0], ["12-07 06:08:21.666", 644.0], ["12-07 06:09:34.262", 277.0], ["12-07 06:10:15.001", 338.0], ["12-07 06:07:47.469", 522.0]]
+		//cpu数据
+
+
+        var fpstime = ["2018-12-07 19:07:21", "2018-12-07 19:07:24", "2018-12-07 19:07:28", "2018-12-07 19:07:32", "2018-12-07 19:07:36", "2018-12-07 19:07:39", "2018-12-07 19:07:43", "2018-12-07 19:07:46", "2018-12-07 19:07:50", "2018-12-07 19:07:54", "2018-12-07 19:07:58", "2018-12-07 19:08:01", "2018-12-07 19:08:05", "2018-12-07 19:08:09", "2018-12-07 19:08:12", "2018-12-07 19:08:16", "2018-12-07 19:08:20", "2018-12-07 19:08:23", "2018-12-07 19:08:27", "2018-12-07 19:08:30", "2018-12-07 19:08:34", "2018-12-07 19:08:38", "2018-12-07 19:08:41", "2018-12-07 19:08:45", "2018-12-07 19:08:48", "2018-12-07 19:08:52", "2018-12-07 19:08:56", "2018-12-07 19:08:59", "2018-12-07 19:09:03", "2018-12-07 19:09:06", "2018-12-07 19:09:11", "2018-12-07 19:09:14", "2018-12-07 19:09:18", "2018-12-07 19:09:22", "2018-12-07 19:09:25", "2018-12-07 19:09:28", "2018-12-07 19:09:32", "2018-12-07 19:09:36", "2018-12-07 19:09:40", "2018-12-07 19:09:44", "2018-12-07 19:09:47", "2018-12-07 19:09:51", "2018-12-07 19:09:55", "2018-12-07 19:09:59", "2018-12-07 19:10:03", "2018-12-07 19:10:06", "2018-12-07 19:10:10", "2018-12-07 19:10:13", "2018-12-07 19:10:17", "2018-12-07 19:10:21"]
+		var fpsinfo = ["60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60", "60"]
+		var fpsactivity = [".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".map.LocationMapActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "undefined", ".ui.read24hours.Read24HoursActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "com.sina.weibo.sdk.web.WeiboSdkWebActivity", ".ui.imagedetail.GalleryDetailPreViewActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity"]
+		var data3= [["2018-12-07 19:07:21", 60.0], ["2018-12-07 19:07:24", 60.0], ["2018-12-07 19:07:28", 60.0], ["2018-12-07 19:07:32", 60.0], ["2018-12-07 19:07:36", 60.0], ["2018-12-07 19:07:39", 60.0], ["2018-12-07 19:07:43", 60.0], ["2018-12-07 19:07:46", 60.0], ["2018-12-07 19:07:50", 60.0], ["2018-12-07 19:07:54", 60.0], ["2018-12-07 19:07:58", 60.0], ["2018-12-07 19:08:01", 60.0], ["2018-12-07 19:08:05", 60.0], ["2018-12-07 19:08:09", 60.0], ["2018-12-07 19:08:12", 60.0], ["2018-12-07 19:08:16", 60.0], ["2018-12-07 19:08:20", 60.0], ["2018-12-07 19:08:23", 60.0], ["2018-12-07 19:08:27", 60.0], ["2018-12-07 19:08:30", 60.0], ["2018-12-07 19:08:34", 60.0], ["2018-12-07 19:08:38", 60.0], ["2018-12-07 19:08:41", 60.0], ["2018-12-07 19:08:45", 60.0], ["2018-12-07 19:08:48", 60.0], ["2018-12-07 19:08:52", 60.0], ["2018-12-07 19:08:56", 60.0], ["2018-12-07 19:08:59", 60.0], ["2018-12-07 19:09:03", 60.0], ["2018-12-07 19:09:06", 60.0], ["2018-12-07 19:09:11", 60.0], ["2018-12-07 19:09:14", 60.0], ["2018-12-07 19:09:18", 60.0], ["2018-12-07 19:09:22", 60.0], ["2018-12-07 19:09:25", 60.0], ["2018-12-07 19:09:28", 60.0], ["2018-12-07 19:09:32", 60.0], ["2018-12-07 19:09:36", 60.0], ["2018-12-07 19:09:40", 60.0], ["2018-12-07 19:09:44", 60.0], ["2018-12-07 19:09:47", 60.0], ["2018-12-07 19:09:51", 60.0], ["2018-12-07 19:09:55", 60.0], ["2018-12-07 19:09:59", 60.0], ["2018-12-07 19:10:03", 60.0], ["2018-12-07 19:10:06", 60.0], ["2018-12-07 19:10:10", 60.0], ["2018-12-07 19:10:13", 60.0], ["2018-12-07 19:10:17", 60.0], ["2018-12-07 19:10:21", 60.0]]
+		//fps数据
+
+        var networktime = ["2018-12-07 19:07:21", "2018-12-07 19:07:24", "2018-12-07 19:07:28", "2018-12-07 19:07:32", "2018-12-07 19:07:36", "2018-12-07 19:07:39", "2018-12-07 19:07:43", "2018-12-07 19:07:46", "2018-12-07 19:07:50", "2018-12-07 19:07:53", "2018-12-07 19:07:57", "2018-12-07 19:08:01", "2018-12-07 19:08:05", "2018-12-07 19:08:09", "2018-12-07 19:08:12", "2018-12-07 19:08:16", "2018-12-07 19:08:20", "2018-12-07 19:08:23", "2018-12-07 19:08:27", "2018-12-07 19:08:30", "2018-12-07 19:08:34", "2018-12-07 19:08:38", "2018-12-07 19:08:41", "2018-12-07 19:08:45", "2018-12-07 19:08:48", "2018-12-07 19:08:52", "2018-12-07 19:08:55", "2018-12-07 19:08:59", "2018-12-07 19:09:03", "2018-12-07 19:09:06", "2018-12-07 19:09:10", "2018-12-07 19:09:14", "2018-12-07 19:09:18", "2018-12-07 19:09:22", "2018-12-07 19:09:25", "2018-12-07 19:09:28", "2018-12-07 19:09:32", "2018-12-07 19:09:36", "2018-12-07 19:09:40", "2018-12-07 19:09:43", "2018-12-07 19:09:47", "2018-12-07 19:09:51", "2018-12-07 19:09:55", "2018-12-07 19:09:59", "2018-12-07 19:10:02", "2018-12-07 19:10:06", "2018-12-07 19:10:10", "2018-12-07 19:10:13", "2018-12-07 19:10:17", "2018-12-07 19:10:21"]
+		var networkinfo = ["5461", "5461", "5464", "5488", "5498", "5500", "5503", "5506", "5530", "5556", "5576", "5597", "5599", "5603", "5604", "5626", "5649", "5673", "5676", "5697", "5707", "5732", "5737", "5738", "5740", "5752", "5754", "5766", "5787", "5791", "5804", "5823", "5827", "5829", "5830", "5842", "5843", "5858", "5860", "5867", "5869", "5871", "5873", "5885", "5893", "5899", "5989", "5990", "5993", "5996"]
+		var networkactivity = [".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".map.LocationMapActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "undefined", ".ui.read24hours.Read24HoursActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", "com.sina.weibo.sdk.web.WeiboSdkWebActivity", ".ui.imagedetail.GalleryDetailPreViewActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", "oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".ui.NewsDetailActivity", ".ui.NewsDetailActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity", ".module.comment.ReplyContentListActivity"]
+		var data4= [["2018-12-07 19:07:21", 60.0], ["2018-12-07 19:07:24", 60.0], ["2018-12-07 19:07:28", 60.0], ["2018-12-07 19:07:32", 60.0], ["2018-12-07 19:07:36", 60.0], ["2018-12-07 19:07:39", 60.0], ["2018-12-07 19:07:43", 60.0], ["2018-12-07 19:07:46", 60.0], ["2018-12-07 19:07:50", 60.0], ["2018-12-07 19:07:54", 60.0], ["2018-12-07 19:07:58", 60.0], ["2018-12-07 19:08:01", 60.0], ["2018-12-07 19:08:05", 60.0], ["2018-12-07 19:08:09", 60.0], ["2018-12-07 19:08:12", 60.0], ["2018-12-07 19:08:16", 60.0], ["2018-12-07 19:08:20", 60.0], ["2018-12-07 19:08:23", 60.0], ["2018-12-07 19:08:27", 60.0], ["2018-12-07 19:08:30", 60.0], ["2018-12-07 19:08:34", 60.0], ["2018-12-07 19:08:38", 60.0], ["2018-12-07 19:08:41", 60.0], ["2018-12-07 19:08:45", 60.0], ["2018-12-07 19:08:48", 60.0], ["2018-12-07 19:08:52", 60.0], ["2018-12-07 19:08:56", 60.0], ["2018-12-07 19:08:59", 60.0], ["2018-12-07 19:09:03", 60.0], ["2018-12-07 19:09:06", 60.0], ["2018-12-07 19:09:11", 60.0], ["2018-12-07 19:09:14", 60.0], ["2018-12-07 19:09:18", 60.0], ["2018-12-07 19:09:22", 60.0], ["2018-12-07 19:09:25", 60.0], ["2018-12-07 19:09:28", 60.0], ["2018-12-07 19:09:32", 60.0], ["2018-12-07 19:09:36", 60.0], ["2018-12-07 19:09:40", 60.0], ["2018-12-07 19:09:44", 60.0], ["2018-12-07 19:09:47", 60.0], ["2018-12-07 19:09:51", 60.0], ["2018-12-07 19:09:55", 60.0], ["2018-12-07 19:09:59", 60.0], ["2018-12-07 19:10:03", 60.0], ["2018-12-07 19:10:06", 60.0], ["2018-12-07 19:10:10", 60.0], ["2018-12-07 19:10:13", 60.0], ["2018-12-07 19:10:17", 60.0], ["2018-12-07 19:10:21", 60.0]]
+		//network数据
+
+
+		//自己编写的js方法
+		function getActivity(yInfo, mInfo, info){
+			var i = yInfo.indexOf(info);
+			return mInfo[i];
+		}
+
+        $(function () {
+           $('#memchart').highcharts({
+	        chart: {
+	            zoomType: 'x'
+	        },
+	        title: {
+	            text: '内存使用率'
+	        },
+	        xAxis: {
+	            type: 'datetime',
+	            crosshair: true,
+	            type: "datetime",
+	            categories: memtime
+	        },
+           //设置滚动条
+            scrollbar: {
+                enabled: true
+            },
+	        tooltip: {
+	            dateTimeLabelFormats: {
+	                millisecond: '%H:%M:%S.%L',
+	                second: '%H:%M:%S',
+	                minute: '%H:%M',
+	                hour: '%H:%M',
+	                day: '%Y-%m-%d',
+	                week: '%m-%d',
+	                month: '%Y-%m',
+	                year: '%Y'
+	            },formatter: function () {
+	            			var mInfo = memactivity;
+		                	var yInfo = memtime
+		                	var point = this.points[0];
+							return '<b>' + "内存: </b>" + point.y + '<br/>' +
+								   '<b>' + "Time: </b>" + point.x + '<br/>' +
+								   '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+	            },
+	            shared: true
+
+	        },
+	        yAxis: {
+	            min:0,
+	            title: {
+	                text: 'MB'
+	            }
+	        },
+	        legend: {
+	            enabled: false
+	        },
+	        plotOptions: {
+	            area: {
+	                fillColor: {
+	                    linearGradient: {
+	                        x1: 0,
+	                        y1: 0,
+	                        x2: 0,
+	                        y2: 1
+	                    },
+	                    stops: [
+	                        [0, Highcharts.getOptions().colors[0]],
+	                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                    ]
+	                },
+	                marker: {
+	                    radius: 2
+	                },
+	                lineWidth: 1,
+	                states: {
+	                    hover: {
+	                        lineWidth: 1
+	                    }
+	                },
+	                threshold: null
+	            }
+	        },
+	        series: [{
+	            type: 'area',
+	            name: '内存使用率',
+	            data: data,
+                turboThreshold: 5000
+	        }]
+	    });
+            $('#cpuchart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'CPU使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: cputime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = cpuactivity;
+                                var yInfo = cputime;
+                                var point = this.points[0];
+                                return '<b>' + "CPU: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    max:100,
+                    title: {
+                        text: '%'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'CPU使用率',
+                    data: data1,
+                    turboThreshold: 5000
+                    }]
+                });
+            $('#networkchart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: '流量'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: networktime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = networkactivity;
+                                var yInfo = networktime;
+                                var point = this.points[0];
+                                return '<b>' + "KB: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'KB'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'KB',
+                    data: data4,
+                    turboThreshold: 5000
+                    }]
+                });
+                $('#fpschart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'FPS'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: fpstime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = fpsactivity;
+                                var yInfo = fpstime;
+                                var point = this.points[0];
+                                return '<b>' + "帧: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'ms'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: 'FPS',
+                    data: data3,
+                    turboThreshold: 5000
+                    }]
+                });
+                $('#pagechart').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: '页面加载使用率'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    crosshair: true,
+                    type: "datetime",
+                    categories: pagetime
+                },
+                //设置滚动条
+                scrollbar: {
+                    enabled: true
+                },
+                tooltip: {
+                    dateTimeLabelFormats: {
+                        millisecond: '%H:%M:%S.%L',
+                        second: '%H:%M:%S',
+                        minute: '%H:%M',
+                        hour: '%H:%M',
+                        day: '%Y-%m-%d',
+                        week: '%m-%d',
+                        month: '%Y-%m',
+                        year: '%Y'
+                    },formatter: function () {
+                                var mInfo = pageactivitya;
+                                var yInfo = pagetime;
+                                var point = this.points[0];
+                                return '<b>' + "耗时: </b>" + point.y + '<br/>' +
+                                       '<b>' + "Time: </b>" + point.x + '<br/>' +
+                                       '<b>' + "Activity: </b>" + getActivity(yInfo, mInfo, point.x) ;
+                    },
+                    shared: true
+
+                },
+                yAxis: {
+                    min:0,
+                    //max:100,
+                    title: {
+                        text: 'ms'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                series: [{
+                    type: 'area',
+                    name: '页面加载耗时',
+                    data: data2,
+                    turboThreshold: 5000
+                    }]
+                });
+
+
+            $('#coverage_percent').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                        text: '自动化遍历占比'
+                },
+                tooltip: {
+                        headerFormat: '{series.name}<br>',
+                        pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                        pie: {
+						allowPointSelect: true,
+						cursor: 'pointer',
+						dataLabels: {
+								enabled: true,
+								format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+								style: {
+										color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+								}
+						},
+						states: {
+								hover: {
+										enabled: false
+								}
+						},
+						slicedOffset: 20,// 突出间距
+						point: {
+						    // 每个扇区是数据点对象，所以事件应该写在 point 下面
+								events: {
+										// 鼠标滑过是，突出当前扇区
+										mouseOver: function() {
+												this.slice();
+										},
+										// 鼠标移出时，收回突出显示
+										mouseOut: function() {
+												this.slice();
+										},
+										// 默认是点击突出，这里屏蔽掉
+										click: function() {
+												return false;
+										}}
+						}}},
+                series: [{
+                        type: 'pie',
+                        name: '遍历页面占比',
+                        data: [
+                                ['未遍历',98.6],
+                                {
+                                name: '已遍历',
+                                y: 1.4,
+                                sliced: true, // 突出显示这个点（扇区），用于强调。
+                                },
+                        ]}]
+                    });
+
+            $('#start_time').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                credits: {
+                    enabled:false
+                },
+                title: {
+                    text: 'App启动时间'
+                },
+                xAxis: {
+                    categories: [
+                        '冷启动'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '秒'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="font-size:10px;color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0;font-size:10px;">{point.y:.1f} 秒</td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: '启动时间',
+                    data: [0]
+                }]
+            });
+        })
+    </script>
+    <style type="text/css">
+    </style>
+</body>
+</html>
+

@@ -16,6 +16,7 @@ sys.setdefaultencoding("utf-8")
 from tools.loggers import JFMlogging
 from config import *
 from common import get_app_uid
+from common import get_app_pid
 logger = JFMlogging().getloger()
 from tools.filetools import write_file
 
@@ -64,8 +65,8 @@ class GetNetWork():
         '''
         total = ''
         try:
-            uid = get_app_uid(self.device_name,self.pck_name)
-            cmd = 'adb -s %s shell cat /proc/%s/net/dev' % (self.device_name, uid)
+            pid = get_app_pid(self.device_name,self.pck_name)
+            cmd = 'adb -s %s shell cat /proc/%s/net/dev' % (self.device_name, pid)
             # 获取流量命令
             pipe = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout
             for index in pipe.readlines():

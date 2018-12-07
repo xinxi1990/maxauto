@@ -16,7 +16,7 @@ from config import *
 
 def read_cpu():
     '''
-    读取CPUtxt文件的数据
+    读取cpu文件的数据
     :return:
     '''
     time = []
@@ -32,7 +32,7 @@ def read_cpu():
 
 def read_mem():
     '''
-    读取内存txt文件的数据
+    读取mem文件的数据
     :return:
     '''
     time = []
@@ -44,6 +44,38 @@ def read_mem():
             info.append(index.split(',')[1].replace('\n',''))
             activity.append(index.split(',')[2].replace('\n',''))
     return time, info, activity
+
+def read_fps():
+    '''
+    读取fps文件的数据
+    :return:
+    '''
+    time = []
+    info = []
+    activity = []
+    with open(fps_path, 'r') as f:
+        for index in f.readlines():
+            time.append(index.split(',')[0].replace('\n',''))
+            info.append(index.split(',')[1].replace('\n',''))
+            activity.append(index.split(',')[2].replace('\n',''))
+    return time, info, activity
+
+
+def read_network():
+    '''
+    读取network文件的数据
+    :return:
+    '''
+    time = []
+    info = []
+    activity = []
+    with open(network_path, 'r') as f:
+        for index in f.readlines():
+            time.append(index.split(',')[0].replace('\n',''))
+            info.append(index.split(',')[1].replace('\n',''))
+            activity.append(index.split(',')[2].replace('\n',''))
+    return time, info, activity
+
 
 def get_page():
     '''
