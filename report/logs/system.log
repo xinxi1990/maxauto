@@ -319,3 +319,5 @@ IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxa
 [2018-12-07 19:43:13,765] [INFO] [bogon][_internal.py - line:88] 127.0.0.1 - - [07/Dec/2018 19:43:13] "POST /getreport HTTP/1.1" 200 -
 [2018-12-07 19:43:13,766] [INFO] [bogon][client.py - line:36] 服务端状态码:200
 [2018-12-07 19:43:13,766] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181207194313.html
+[2018-12-07 19:50:41,464] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-07 19:50:41,478] [ERROR] [bogon][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'

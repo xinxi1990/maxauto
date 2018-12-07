@@ -1,8 +1,10 @@
+.ui.GuideActivity
+.webview.CustomWebBrowserForItemActivity
+.activity.SplashActivity
 .ui.NewsDetailActivity
-.map.LocationMapActivity
-undefined
-.ui.read24hours.Read24HoursActivity
-com.sina.weibo.sdk.web.WeiboSdkWebActivity
-.ui.imagedetail.GalleryDetailPreViewActivity
-.module.comment.ReplyContentListActivity
 oicq.wlogin_sdk.quicklogin.QuickLoginWebViewActivity
+.ui.LoginActivity
+.ui.cp.CpActivity
+undefined
+.kkvideo.darkmode.KkVideoDetailDarkModeActivity
+.map.LocationMapActivity

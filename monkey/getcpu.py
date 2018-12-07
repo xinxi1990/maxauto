@@ -42,7 +42,6 @@ class GetCPU():
             cmd = "adb -s {} shell dumpsys cpuinfo | grep {}".format(self.device_name,self.pck_name)
             result = subprocess.Popen(cmd, shell=True,
                                            stdout=subprocess.PIPE).stdout.readlines()
-            print result
             for line in result:
                 if re.findall(self.pck_name,line):
                     cpu = line.split()[0].replace('%', '')
