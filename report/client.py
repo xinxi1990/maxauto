@@ -38,13 +38,10 @@ def get_html(apk_path,device_name,mail_list):
             with open(report_path, 'wb+') as f:
                 f.write(r.content)
             logger.info('报告路径:{}'.format(report_path))
-            # SendMail(mail_list, report_path).send_mail()
-            # logger.info('发送完成报告!')
+            SendMail(mail_list, report_path).send_mail()
+            logger.info('发送完成报告!')
         else:
             logger.info('报告获取失败!服务端状态码{}'.format(r.status_code))
     except Exception as e:
         logger.error('报告获取失败!' + '\n' + str(e))
 
-
-if __name__ == '__main__':
-    get_html('/Users/xinxi/Downloads/TencentNews_63_v5710.apk','192.168.56.101:5555','xxx')

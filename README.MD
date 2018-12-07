@@ -1,5 +1,7 @@
 # 简介
 
+使用前请阅读https://testerhome.com/topics/16909<br>
+
 使用开源工具Maxim进行Monkey测试,包含如下功能:<br>
 1.安装测试<br>
 2.启动测试<br>
@@ -9,6 +11,16 @@
 6.崩溃日志及崩溃回溯图片<br>
 
 
+# 登录测试
+需要在lanuchtest/lanuchapp.py实现登录测试,
+使用appium进行元素定位即可
+```
+可以By.xpath、By.id,后面写元素的值.
+
+self.driver.find_element(By.XPATH,self.sure).click()
+```
+
+
 # 环境依赖
 1.adb环境<br>
 brew install adb<br>
@@ -16,6 +28,20 @@ brew install adb<br>
 npm install appium<br>
 3.python库<br>
 在根目录,执行python setup.py会安装有python需要的库
+
+
+# 邮件
+```angular2html
+需要在report/mailconfig.py中配置发件人相关信息
+
+# 设置服务器，用户名、口令以及邮箱的后缀
+mail_host = "smtp.exmail.qq.com"
+mail_user = "xxxxx@xxxxx.com"
+mail_pass = "xxxxx"
+mail_postfix = "xxxxxx"
+
+
+```
 
 
 # 运行

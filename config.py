@@ -17,7 +17,7 @@ logintest_app_log= os.path.join(project_path,'report/tmp/login_app.log')
 # 测试app登录log日志
 uninstall_app_log= os.path.join(project_path,'report/tmp/uninstall_app.log')
 # aappium的log日志
-appium_log= os.path.join(project_path,'report/tmp/appium_log')
+appium_log= os.path.join(project_path,'report/tmp/appium.log')
 sdcard_path = "/sdcard/"
 crash_savepath = os.path.join(project_path,"report/tmp/crash.log")
 monkey_log = os.path.join(project_path,"report/tmp/monkey.log")
