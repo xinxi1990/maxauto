@@ -40,7 +40,6 @@ mail_user = "xxxxx@xxxxx.com"
 mail_pass = "xxxxx"
 mail_postfix = "xxxxxx"
 
-
 ```
 
 

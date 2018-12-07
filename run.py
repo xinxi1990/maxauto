@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import subprocess
+import subprocess,sys
 from monkey.getbasic import GetBasic
 from monkey.monkey import Monkey
 from lanuchtest.lanuchapp import LanuchApp
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     params = (apk_path + '\n' +
               device_name + '\n' +
               run_time + '\n' +
-              mailist)
+              mail_list)
     logger.info('参数:' + '\n' + '{}'.format(params))
     run(apk_path,device_name,run_time,mail_list)
 
