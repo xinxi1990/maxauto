@@ -321,3 +321,10 @@ IOError: [Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxa
 [2018-12-07 19:43:13,766] [INFO] [bogon][client.py - line:40] 报告路径:/Users/xinxi/PycharmProjects/maxauto/report/reports/report_20181207194313.html
 [2018-12-07 19:50:41,464] [ERROR] [bogon][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
 [2018-12-07 19:50:41,478] [ERROR] [bogon][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'
+[2018-12-07 22:06:25,543] [ERROR] [xinxideMacBook-Pro.local][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-07 22:06:25,548] [ERROR] [xinxideMacBook-Pro.local][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'
+[2018-12-07 22:31:38,676] [ERROR] [xinxideMacBook-Pro.local][server.py - line:122] could not convert string to float: 
+[2018-12-07 22:31:38,791] [ERROR] [xinxideMacBook-Pro.local][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-07 22:31:38,811] [ERROR] [xinxideMacBook-Pro.local][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'
+[2018-12-07 22:46:44,621] [ERROR] [xinxideMacBook-Pro.local][getdata.py - line:93] 获取crash次数异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/report/tmp/crash.log'
+[2018-12-07 22:46:44,632] [ERROR] [xinxideMacBook-Pro.local][getdata.py - line:226] 获取崩溃图片异常![Errno 2] No such file or directory: '/Users/xinxi/PycharmProjects/maxauto/monkey/images'

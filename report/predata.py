@@ -25,7 +25,7 @@ def read_cpu():
     with open(cpu_path, 'r') as f:
         for index in f.readlines():
             time.append(index.split(',')[0].replace('\n',''))
-            info.append(index.split(',')[1].replace('\n',''))
+            info.append(index.split(',')[1].replace('+','').replace('\n',''))
             activity.append(index.split(',')[2].replace('\n',''))
     return time, info, activity
 

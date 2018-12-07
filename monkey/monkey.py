@@ -72,7 +72,7 @@ class Monkey():
             is_runing = True
             time.sleep(self.sleep_time)
             while is_runing:
-                if self.find_monkey() != 1:
+                if self.find_monkey() or self.find_device_monkey() :
                     logger.info("="*10 + "Monkey运行中..." + "="*10)
                     current_activity = common.get_current_activity(self.device)
                     GetCPU(self.device,current_activity,self.pkg).get_cpu()
@@ -178,12 +178,12 @@ class Monkey():
             return actlen, actlist
 
 
-    def find_monkey(self):
+    def find_device_monkey(self):
         '''
-        寻找Monkey的pid
+        查询设备monkey的pid
         :return:
         '''
-        pid = 1
+        is_alive = False
         try:
             grep_cmd = "adb -s {} shell ps | grep monkey".format(self.device)
             pipe = os.popen(grep_cmd)
@@ -192,12 +192,35 @@ class Monkey():
                logger.info("当前monkey进程不存在")
             else:
                pid = pids.split()[1]
+               is_alive = True
                logger.info("当前monkey进程pid:{}".format(pid))
+        except Exception as e:
+            logger.error("当前monkey进程查询异常!{}".format(e))
+        finally:
+            return is_alive
+
+
+    def find_monkey(self):
+        '''
+        查询设备monkey的pid
+        :return:
+        '''
+        is_alive = False
+        try:
+            grep_cmd = 'ps | grep tv.panda.test.monkey.Monkey | grep -v "grep"'
+            pipe = os.popen(grep_cmd)
+            pids = pipe.read()
+            if pids == '':
+               logger.info("当前monkey进程不存在")
+            else:
+               is_alive = True
         except Exception as e:
             logger.error("当前monkey进程查询异常!{}".format(e))
             return 1
         finally:
-            return pid
+            return is_alive
+
+
 
 
     def get_performance(self):

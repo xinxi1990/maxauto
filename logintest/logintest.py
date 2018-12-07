@@ -106,6 +106,7 @@ class LoginApp():
         self.allow = "//*[@text='ALLOW']"
         self.allow_zn = "//*[@text='允许']"
         self.sure = "//*[@text='确定']"
+        self.skip = "//*[@text='跳过']"
 
 
     def is_element_exist(self,driver, *loc):
@@ -134,25 +135,28 @@ class LoginApp():
         try:
             self.appium_driver = AppiumDriver(self.device_name, self.pck_name, self.lanuch_activity)
             self.driver = self.appium_driver.start_appium()
+            time.sleep(3)
             self.driver.implicitly_wait(5)
             logger.info("启动app中.....")
-            if self.driver.find_elements(By.XPATH,self.allow):
-                self.driver.find_element(By.XPATH,self.allow).click()
-            elif self.driver.find_elements(By.XPATH,self.allow_zn):
-                self.driver.find_element(By.XPATH,self.allow_zn).click()
-            elif self.driver.find_elements(By.XPATH,self.sure):
-                self.driver.find_element(By.XPATH,self.sure).click()
-            # flag = True
-            # while flag:
-            #     if self.driver.find_elements(By.XPATH,self.allow):
-            #         self.driver.find_element(By.XPATH,self.allow).click()
-            #     elif self.driver.find_elements(By.XPATH,self.allow_zn):
-            #         self.driver.find_element(By.XPATH,self.allow_zn).click()
-            #     elif self.driver.find_elements(By.XPATH,self.sure):
-            #         self.driver.find_element(By.XPATH,self.sure).click()
-            #     else:
-            #         flag = False
-            #         break
+            # if self.driver.find_elements(By.XPATH,self.allow):
+            #     self.driver.find_element(By.XPATH,self.allow).click()
+            # elif self.driver.find_elements(By.XPATH,self.allow_zn):
+            #     self.driver.find_element(By.XPATH,self.allow_zn).click()
+            # elif self.driver.find_elements(By.XPATH,self.sure):
+            #     self.driver.find_element(By.XPATH,self.sure).click()
+            flag = True
+            while flag:
+                if self.driver.find_elements(By.XPATH,self.allow):
+                    self.driver.find_element(By.XPATH,self.allow).click()
+                elif self.driver.find_elements(By.XPATH,self.allow_zn):
+                    self.driver.find_element(By.XPATH,self.allow_zn).click()
+                elif self.driver.find_elements(By.XPATH,self.sure):
+                    self.driver.find_element(By.XPATH,self.sure).click()
+                elif self.driver.find_elements(By.XPATH,self.skip):
+                    self.driver.find_element(By.XPATH,self.skip).click()
+                else:
+                    flag = False
+                    break
             login_result = 'success'
             logger.info('登录成功')
         except Exception as e:
