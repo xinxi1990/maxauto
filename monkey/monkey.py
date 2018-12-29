@@ -253,13 +253,14 @@ class Monkey():
         :return:
         '''
         image_path = ''
+        root_path = "./data/media/0"
         try:
-            cmd = 'adb -s {} shell find ./ -name {}'.format(self.device,image_key)
+            cmd = 'adb -s {} shell ls {}'.format(self.device,root_path)
             result = subprocess.Popen(cmd, shell=True,stdout=subprocess.PIPE).stdout.readlines()
             logger.info(cmd)
             for line in result:
-                if './data' in line:
-                    image_path = line
+                if 'Crash_' in line:
+                    image_path = os.path.join(root_path,line).replace("\n","")
                     logger.info('崩溃图片路径:{}'.format(image_path))
                     break
         except Exception as e:
@@ -290,7 +291,7 @@ class Monkey():
             class_path = os.path.abspath(os.path.dirname(__file__))
             for file_name in os.listdir(class_path):
                 if 'Crash_' in file_name:
-                    os.rename(file_name, local_image_folder)
+                    os.rename(file_name, local_images_path)
         except Exception as e:
             logger.error('重命名文件失败!{}'.format(e))
 

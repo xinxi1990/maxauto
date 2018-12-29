@@ -1,0 +1,65 @@
+{
+    "--apk": "/xxxx",
+    "--formatConfig": [
+        {
+            "group": [
+                {
+                    "name": "Android System",
+                    "package": "android"
+                },
+                {
+                    "name": "java system",
+                    "package": "java"
+                },
+                {
+                    "name": "com.test",
+                    "package": "com.test"
+                }
+            ],
+            "name": "-countMethod"
+        }
+    ],
+    "--format": "mm.html,mm.json",
+    "options": [
+        {
+            "name": "-manifest"
+        },
+        {
+            "--suffix": "png, jpg, jpeg, gif, arsc",
+            "--min": "10",
+            "name": "-fileSize",
+            "--order": "desc"
+        },
+        {
+            "--group": "package",
+            "name": "-countMethod"
+        },
+        {
+            "name": "-checkResProguard"
+        },
+        {
+            "--min": "10",
+            "name": "-findNonAlphaPng"
+        },
+        {
+            "name": "-checkMultiLibrary"
+        },
+        {
+            "--suffix": "png, jpg, jpeg, gif, arsc",
+            "name": "-uncompressedFile"
+        },
+        {
+            "name": "-countR"
+        },
+        {
+            "name": "-duplicatedFile"
+        },
+        {
+            "name": "-unusedAssets",
+            "--ignoreAssets": [
+                "*.so"
+            ]
+        }
+    ],
+    "--output": "/xxxx"
+}

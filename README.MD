@@ -10,6 +10,20 @@
 5.性能数据统计<br>
 6.崩溃日志及崩溃回溯图片<br>
 
+# 更新日志
+
+## 12月29日
+1.修改崩溃图片查询方式<br>
+2.新增apk包检查功能<br>
+
+使用命令如下:
+```angularjs
+cd checker
+python run.py apk_path mail_list(多个人逗号分隔)
+```
+
+
+
 
 # 登录测试
 需要在lanuchtest/lanuchapp.py实现登录测试,

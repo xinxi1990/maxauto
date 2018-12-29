@@ -1,0 +1,91 @@
+<html>
+<meta charset="UTF-8">
+<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <h1 align="center">Android端apk检查测试报告 {{ reporttime }}</h1>
+    <hr>
+    <div class="panel">
+        <div class="panel_title">
+            <h4>应用信息</h4>
+        </div>
+        <div class="panel_main" id="appInfoDiv">
+            <table class="app_base_info" border="1" cellspacing="0" bordercolor="#778899" width = "80%">
+                <colgroup>
+                    <col style="width:92px;">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td rowspan="2">
+                    <img src="https://img-blog.csdn.net/20180312105203250" height="80" width="80" alt="" style="width:100%">
+                    </td>
+                    <th>应用名称</th>
+                    <td align="center"><span class="cut">{{ appname }}</span></td>
+                    <th>应用版本</th>
+                    <td align="center"><span class="cut">{{ appversion }}</span></td>
+                    <th>应用大小</th>
+                    <td align="center"><span class="cut">{{ appsize }}</span></td>
+                </tr>
+                <tr>
+                    <th>minSdkVersion</th>
+                    <td align="center"><span class="cut">{{ minSdkVersion }}</span></td>
+                    <th>targetSdkVersion</th>
+                    <td align="center"><span class="cut">{{ targetSdkVersion }}</span></td>
+                    <th>环境</th>
+                    <td align="center"><span class="cut">测试</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>apk资源分布占比统计</h4>
+    <div id="apk_percent" style="min-width:500px;height:400px"></div>
+    <h4>apk资源详细信息</h4>
+    {{ appdetail|safe }}
+    <script>
+        $(function () {
+            $('#apk_percent').highcharts({
+             chart: {
+		plotBackgroundColor: null,
+		plotBorderWidth: null,
+		plotShadow: false,
+		type: 'pie'
+	},
+	title: {
+		text: 'apk资源分布占比统计'
+	},
+	tooltip: {
+		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	},
+	plotOptions: {
+		pie: {
+			allowPointSelect: true,
+			cursor: 'pointer',
+			dataLabels: {
+				enabled: true,
+				format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+				style: {
+					color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+				}
+			}
+		}
+	},
+	series: [
+	    {
+		name: 'Brands',
+		colorByPoint: true,
+		data: [
+            {{ appinfo|safe }}
+		]
+	}]
+});
+        })
+    </script>
+    <style type="text/css">
+    </style>
+</body>
+</html>
+
+
