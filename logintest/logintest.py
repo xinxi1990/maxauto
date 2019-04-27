@@ -7,6 +7,7 @@ from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
+from location import Location
 from tools.loggers import JFMlogging
 logger = JFMlogging().getloger()
 from config import logintest_app_log,appium_log
@@ -36,7 +37,7 @@ class AppiumDriver(object):
             "unicodeKeyboard": "true", # 使用appium的输入法，支持中文并隐藏键盘
             "resetKeyboard": "true", # 重置键盘
             #"newCommandTimeout": 120, # 设置driver超时时间
-            #"automationName": "uiautomator2"
+            "automationName": "uiautomator2"
         }
         desired_caps["deviceName"] = self.device_name
         desired_caps.update()
@@ -96,27 +97,14 @@ class AppiumDriver(object):
 
 class LoginApp():
 
-    def __init__(self,device_name,pck_name,lanuch_activity):
+    def __init__(self,device_name,pck_name,lanuch_activity,login_caseinfo):
         '''
         初始化外部入参数
         '''
         self.device_name = device_name
         self.pck_name = pck_name
         self.lanuch_activity = lanuch_activity
-        self.allow = "//*[@text='ALLOW']"
-        self.allow_zn = "//*[@text='允许']"
-        self.sure = "//*[@text='确定']"
-        self.skip = "//*[@text='跳过']"
-
-
-    def is_element_exist(self,driver, *loc):
-        try:
-            WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(loc))
-            self.driver.find_element(*loc)
-            return True
-        except Exception as e:
-            logger.warning(str(e))
-            return False
+        self.login_caseinfo = login_caseinfo
 
 
     def logcat(self,log_path,delay):
@@ -126,42 +114,34 @@ class LoginApp():
         logger.info('启动logcat')
 
 
+
     def test_login(self):
-        '''
-        登录测试
-        :return:
-        '''
         login_result = 'fail'
         try:
             self.appium_driver = AppiumDriver(self.device_name, self.pck_name, self.lanuch_activity)
             self.driver = self.appium_driver.start_appium()
-            time.sleep(3)
             self.driver.implicitly_wait(5)
-            logger.info("启动app中.....")
-            # if self.driver.find_elements(By.XPATH,self.allow):
-            #     self.driver.find_element(By.XPATH,self.allow).click()
-            # elif self.driver.find_elements(By.XPATH,self.allow_zn):
-            #     self.driver.find_element(By.XPATH,self.allow_zn).click()
-            # elif self.driver.find_elements(By.XPATH,self.sure):
-            #     self.driver.find_element(By.XPATH,self.sure).click()
-            flag = True
-            while flag:
-                if self.driver.find_elements(By.XPATH,self.allow):
-                    self.driver.find_element(By.XPATH,self.allow).click()
-                elif self.driver.find_elements(By.XPATH,self.allow_zn):
-                    self.driver.find_element(By.XPATH,self.allow_zn).click()
-                elif self.driver.find_elements(By.XPATH,self.sure):
-                    self.driver.find_element(By.XPATH,self.sure).click()
-                elif self.driver.find_elements(By.XPATH,self.skip):
-                    self.driver.find_element(By.XPATH,self.skip).click()
-                else:
-                    flag = False
-                    break
-            login_result = 'success'
-            logger.info('登录成功')
+            location = Location(self.driver)
+            for case_step in self.login_caseinfo:
+                try:
+                    print(case_step)
+                    if case_step['action'] == "click":
+                        element = location.create_location(case_step['location'])
+                        print(element)
+                        location.display_wait(case_step["time"], element).click()
+                    elif case_step['action'] == "send_keys":
+                        element = location.create_location(case_step['location'])
+                        location.display_wait(case_step["time"], element).send_keys(case_step['text'])
+                    elif case_step['action'] == "wait_sleep":
+                        location.wait_sleep(case_step["time"])
+                    elif case_step['action'] == "when_element_click":
+                        element = location.create_location(case_step['location'])
+                        location.when_element_click(case_step["time"], element)
+                except Exception as e:
+                    logger.error("登录异常:{}".format(e))
+                    login_result = 'fail'
         except Exception as e:
             logger.info('登录测试异常:{}'.format(e))
         finally:
             self.appium_driver.kill_appium()
             write_file(logintest_app_log, login_result, is_cover=True)
-

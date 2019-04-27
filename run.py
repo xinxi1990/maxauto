@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import subprocess,sys
+
+import subprocess,sys,yaml
 from monkey.getbasic import GetBasic
 from monkey.monkey import Monkey
 from lanuchtest.lanuchapp import LanuchApp
 from Installtest.installapp import InstallApp
 from logintest.logintest import LoginApp
-from report.client import get_html
+from report.create import Create
+from report.sendmail import *
 from config import *
+
+
 
 
 
@@ -42,7 +46,7 @@ def make_env():
     logger.info('创建缓存目录:{}'.format(android_tmp))
 
 
-def run(apk_path,device_name,runtime,mail_list):
+def run(apk_path,device_name,runtime,mail_info,login_caseinfo):
     make_env()
     gb = GetBasic(apk_path,device_name)
     lanuch_activity = gb.get_app_activity()
@@ -51,20 +55,40 @@ def run(apk_path,device_name,runtime,mail_list):
     gb.get_all_activitys()
     InstallApp(device_name,app_name,apk_path,install_app_log,uninstall_app_log).install_app()
     LanuchApp(device_name,app_name,lanuch_activity,lanuch_app_log).lanuch_app()
-    LoginApp(device_name, app_name, lanuch_activity).test_login()
-    Monkey(device_name,runtime,app_name).start_monkey()
-    start_gunicorn()
-    get_html(apk_path,device_name,mail_list)
+    LoginApp(device_name, app_name, lanuch_activity,login_caseinfo).test_login()
+    # Monkey(device_name,runtime,app_name).start_monkey()
+    # report_path = Create(apk_path,device_name).create_html()
+    # SendMail(mail_info, report_path).send_mail()
+
+
+def load_config(config_path):
+    with open(config_path,"r") as f_r:
+        yaml_info = yaml.load(f_r)
+        return yaml_info
+
+
+def load_mail_config():
+    return yaml_info['mailconfig']
+
+def load_login_case():
+    return yaml_info['logincase']
+
+
 
 if __name__ == '__main__':
-    apk_path = sys.argv[1]
-    device_name = sys.argv[2]
-    run_time = sys.argv[3]
-    mail_list = sys.argv[4]
+
+    config_path = sys.argv[1]
+    # 配置config路径
+    yaml_info = load_config(config_path)
+    apk_path = yaml_info['commonconfig']['apkapth']
+    device_name = yaml_info['commonconfig']['devicename']
+    run_time = yaml_info['commonconfig']['runtime']
+    mail_info  = load_mail_config()
+    login_caseinfo = load_login_case()
     params = (apk_path + '\n' +
               device_name + '\n' +
-              run_time + '\n' +
-              mail_list)
+              run_time )
     logger.info('参数:' + '\n' + '{}'.format(params))
-    run(apk_path,device_name,run_time,mail_list)
+    run(apk_path,device_name,run_time,mail_info,login_caseinfo)
+
 

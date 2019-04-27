@@ -1,5 +1,7 @@
-selenium==3.14.0
-requests==2.18.4
+requests==2.20.1
+setuptools==40.2.0
+selenium==3.141.0
 Flask==1.0.2
-Appium_Python_Client==0.31
-beautifulsoup4==4.6.3
+Appium_Python_Client==0.36
+beautifulsoup4==4.7.1
+upload==0.1.1

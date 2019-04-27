@@ -16,15 +16,18 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 from email.utils import parseaddr, formataddr
-from mailconfig import *
 reload(sys)
 sys.setdefaultencoding('utf8')
 
 
 class SendMail():
 
-    def __init__(self,mail_list,report_path):
-        self.mail_list = mail_list
+    def __init__(self,mail_info,report_path):
+        self.mail_info = mail_info
+        self.mail_list = mail_info['maillist']
+        self.mail_host = mail_info['mailhost']
+        self.mail_user = mail_info['mailuser']
+        self.mail_pass = mail_info['mailpass']
         self.report_path = report_path
 
     def _joincontent(self):
@@ -75,7 +78,7 @@ class SendMail():
         content = self._joincontent()
         message = MIMEMultipart()
         receivers = self._format_receivers(self.mail_list, message)
-        message['From'] = self._format_addr(u'发件人<%s>' % mail_user)
+        message['From'] = self._format_addr(u'发件人<%s>' %  self.mail_user)
         subject = 'Android稳定性测试报告'
         message['Subject'] = Header(subject, 'utf-8')
         message.attach(MIMEText(content, 'plain', 'utf-8'))
@@ -86,9 +89,9 @@ class SendMail():
         message.attach(att1)
         try:
             s = smtplib.SMTP()
-            s.connect(mail_host)
-            s.login(mail_user, mail_pass)
-            s.sendmail(mail_user, receivers, message.as_string())
+            s.connect(self.mail_host)
+            s.login(self.mail_user, self.mail_pass)
+            s.sendmail(self.mail_user, receivers, message.as_string())
             s.quit()
             logger.info("邮件发送成功!")
         except Exception, e:
