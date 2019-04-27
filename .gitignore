@@ -5,3 +5,10 @@ report/reports
 report/tmp
 report/logs
 logs/*
+maxauto.egg-info
+build
+dist
+config/config.yaml
+maxauto/*.pyc
+maxauto/logs/*
+maxauto/report/logs/*

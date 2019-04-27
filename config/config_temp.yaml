@@ -1,0 +1,44 @@
+commonconfig:
+  apkapth: "/Users/xinxi/Downloads/app_simul_6.1.0_20190425202227.apk"
+  devicename: "192.168.56.101:5555"
+  runtime: "1"
+
+mailconfig:
+  maillist: "xinxi1990@163.com"
+  mailhost: "xxxxx"
+  mailuser: "xxxxx"
+  mailpass:  "xxxx"
+  mailpostfix: "xxxx"
+
+logincase:
+  - action: "click"
+    location: "By.ID,com.android.packageinstaller:id/permission_allow_button"
+    time: 2
+  - action: "click"
+    location: "By.ID,com.android.packageinstaller:id/permission_allow_button"
+    time: 2
+  - action: "click"
+    location: "By.ID,com.luojilab.player:id/btn_agree"
+    time: 2
+  - action: "click"
+    location: "By.ID,com.luojilab.player:id/meLayout"
+    time: 2
+  - action: "click"
+    location: "By.ID,com.luojilab.player:id/nicknameTextView"
+    time: 2
+  - action: "click"
+    location: "By.ID,com.luojilab.player:id/tv_login_by_password"
+    time: 2
+  - action: "send_keys"
+    location: "By.ID,com.luojilab.player:id/et_num_input"
+    text: "18513571171"
+    time: 2
+  - action: "send_keys"
+    location: "By.ID,com.luojilab.player:id/et_password_input"
+    text: "123321"
+    time: 2
+  - action: "click"
+    location: "By.ID,com.luojilab.player:id/btn_login"
+    time: 2
+
+

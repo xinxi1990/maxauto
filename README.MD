@@ -23,8 +23,6 @@ python run.py apk_path mail_list(多个人逗号分隔)
 ```
 
 
-
-
 # 登录测试
 需要在lanuchtest/lanuchapp.py实现登录测试,
 使用appium进行元素定位即可
@@ -69,6 +67,47 @@ mail_list:报告邮件人,多人用逗号分隔
 python run.py apk_path device_name run_time mail_list
 
 ```
+
+# 本地调试
+```
+python main.py max --config_path /Users/xinxi/PycharmProjects/maxauto/config/config.yaml
+```
+
+# 运行
+```angularjs
+max --config_path /Users/xinxi/PycharmProjects/maxauto/config/config.yaml
+```
+
+# 打包
+
+建立setup.py
+python setup.py bdist_egg
+
+# 发布
+创建~.pypirc文件
+```angularjs
+[distutils]
+index-servers = pypi
+
+[pypi]
+username:你的PyPi用户名
+password:你的PyPi密码
+```
+
+
+
+# 安装上传功能
+```
+pip install twine
+```
+
+# 发布
+twine upload dist/*
+
+
+
+
+
 # 报告
 在report/reports目录下生成,效果展示如下
 

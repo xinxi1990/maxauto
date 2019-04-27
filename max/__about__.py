@@ -1,0 +1,6 @@
+__title__ = 'maxauto'
+__description__ = 'maxauto'
+__version__ = '1.0.0'
+__author__ = 'xinxi'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2019 xinxi'

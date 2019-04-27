@@ -1,0 +1,286 @@
+2019-04-27 15:23:14:763 - info: [Appium] Welcome to Appium v1.9.0 (REV 5dcf04f880cf8d4baa2c6367fdfb5b3d38a63853)
+2019-04-27 15:23:14:764 - info: [Appium] Non-default server args:
+2019-04-27 15:23:14:765 - info: [Appium]   address: 127.0.0.1
+2019-04-27 15:23:14:765 - info: [Appium]   port: 4725
+2019-04-27 15:23:14:765 - info: [Appium]   sessionOverride: true
+2019-04-27 15:23:14:765 - info: [Appium]   log: /Users/xinxi/PycharmProjects/maxauto/max/report/tmp/appium.log
+2019-04-27 15:23:14:765 - info: [Appium]   udid: 192.168.56.101:5555
+2019-04-27 15:23:14:765 - warn: [Appium] Deprecated server args:
+2019-04-27 15:23:14:766 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.101:5555"}'
+2019-04-27 15:23:14:766 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2019-04-27 15:23:14:766 - info: [Appium]   udid: 192.168.56.101:5555
+2019-04-27 15:23:14:801 - info: [Appium] Appium REST http interface listener started on 127.0.0.1:4725
+2019-04-27 15:23:15:813 - info: [HTTP] --> POST /wd/hub/session
+2019-04-27 15:23:15:813 - info: [HTTP] {"capabilities":{"firstMatch":[{"appium:unicodeKeyboard":"true","appium:resetKeyboard":"true","appium:autoLaunch":"true","appium:appActivity":"com.luojilab.business.welcome.SplashActivity","appium:automationName":"uiautomator2","appium:appPackage":"com.luojilab.player","appium:platformVersion ":"7.0","appium:deviceName":"192.168.56.101:5555","platformName":"Android"}]},"desiredCapabilities":{"unicodeKeyboard":"true","deviceName":"192.168.56.101:5555","automationName":"uiautomator2","autoLaunch":"true","platformVersion ":"7.0","resetKeyboard":"true","appPackage":"com.luojilab.player","platformName":"Android","appActivity":"com.luojilab.business.welcome.SplashActivity"}}
+2019-04-27 15:23:15:815 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"unicodeKeyboard":"true","deviceName":"192.168.56.101:5555","automationName":"uiautomator2","autoLaunch":"true","platformVersion ":"7.0","resetKeyboard":"true","appPackage":"com.luojilab.player","platformName":"Android","appActivity":"com.luojilab.business.welcome.SplashActivity"},null,{"firstMatch":[{"appium:unicodeKeyboard":"true","appium:resetKeyboard":"true","appium:autoLaunch":"true","appium:appActivity":"com.luojilab.business.welcome.SplashActivity","appium:automationName":"uiautomator2","appium:appPackage":"com.luojilab.player","appium:platformVersion ":"7.0","appium:deviceName":"192.168.56.101:5555","platformName":"Android"}]}]
+2019-04-27 15:23:15:816 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1556378595816 (23:23:15 GMT+0800 (CST))
+2019-04-27 15:23:15:819 - warn: [BaseDriver] The capabilities ["udid"] are not standard capabilities and should have an extension prefix
+2019-04-27 15:23:15:821 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2019-04-27 15:23:15:822 - info: [Appium] Creating new AndroidUiautomator2Driver (v1.16.0) session
+2019-04-27 15:23:15:822 - info: [Appium] Capabilities:
+2019-04-27 15:23:15:822 - info: [Appium]   udid: 192.168.56.101:5555
+2019-04-27 15:23:15:822 - info: [Appium]   platformName: Android
+2019-04-27 15:23:15:822 - info: [Appium]   unicodeKeyboard: true
+2019-04-27 15:23:15:822 - info: [Appium]   resetKeyboard: true
+2019-04-27 15:23:15:823 - info: [Appium]   autoLaunch: true
+2019-04-27 15:23:15:823 - info: [Appium]   appActivity: com.luojilab.business.welcome.SplashActivity
+2019-04-27 15:23:15:823 - info: [Appium]   automationName: uiautomator2
+2019-04-27 15:23:15:823 - info: [Appium]   appPackage: com.luojilab.player
+2019-04-27 15:23:15:823 - info: [Appium]   platformVersion : 7.0
+2019-04-27 15:23:15:823 - info: [Appium]   deviceName: 192.168.56.101:5555
+2019-04-27 15:23:15:828 - info: [debug] [BaseDriver] W3C capabilities {"alwaysMatch":{"appium:udi... and MJSONWP desired capabilities {"udid":"192.168.56.101:555... were provided
+2019-04-27 15:23:15:828 - info: [debug] [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"appium:udi...
+2019-04-27 15:23:15:829 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2019-04-27 15:23:15:836 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2019-04-27 15:23:15:837 - warn: [BaseDriver] Boolean capability passed in as string. Functionality may be compromised.
+2019-04-27 15:23:15:838 - warn: [BaseDriver] Capability 'autoLaunch' changed from string to boolean. This may cause unexpected behavior
+2019-04-27 15:23:15:839 - warn: [BaseDriver] Capability 'unicodeKeyboard' changed from string to boolean. This may cause unexpected behavior
+2019-04-27 15:23:15:839 - warn: [BaseDriver] Capability 'resetKeyboard' changed from string to boolean. This may cause unexpected behavior
+2019-04-27 15:23:15:841 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: platformVersion .
+2019-04-27 15:23:15:843 - info: [BaseDriver] Session created with session id: 76ff9f28-1dda-402b-ab0e-fdd2ad336ee8
+2019-04-27 15:23:16:140 - info: [AndroidDriver] Java version is: 1.8.0_161
+2019-04-27 15:23:16:145 - info: [ADB] Checking whether adb is present
+2019-04-27 15:23:16:159 - info: [ADB] Found 16 'build-tools' folders under '/Users/xinxi/Library/Android/sdk' (newest first):
+2019-04-27 15:23:16:159 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/28.0.3
+2019-04-27 15:23:16:159 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/28.0.2
+2019-04-27 15:23:16:159 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/27.0.3
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/27.0.1
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.2
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.1
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/26.0.0
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.2
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.1
+2019-04-27 15:23:16:160 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/25.0.0
+2019-04-27 15:23:16:161 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/24.0.2
+2019-04-27 15:23:16:161 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.3
+2019-04-27 15:23:16:161 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.2
+2019-04-27 15:23:16:161 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/23.0.1
+2019-04-27 15:23:16:161 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/22.0.1
+2019-04-27 15:23:16:161 - info: [ADB]     /Users/xinxi/Library/Android/sdk/build-tools/21.1.2
+2019-04-27 15:23:16:162 - info: [ADB] Using adb from /Users/xinxi/Library/Android/sdk/platform-tools/adb
+2019-04-27 15:23:16:163 - info: [AndroidDriver] Retrieving device list
+2019-04-27 15:23:16:163 - info: [debug] [ADB] Trying to find a connected android device
+2019-04-27 15:23:16:164 - info: [debug] [ADB] Getting connected devices...
+2019-04-27 15:23:16:185 - info: [debug] [ADB] 1 device(s) connected
+2019-04-27 15:23:16:185 - info: [AndroidDriver] Using device: 192.168.56.101:5555
+2019-04-27 15:23:16:186 - info: [debug] [ADB] Setting device id to 192.168.56.101:5555
+2019-04-27 15:23:16:188 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.sdk'
+2019-04-27 15:23:16:216 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 25
+2019-04-27 15:23:16:217 - info: [debug] [ADB] Device API level: 25
+2019-04-27 15:23:16:217 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2019-04-27 15:23:16:218 - info: [ADB] Getting device platform version
+2019-04-27 15:23:16:219 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.build.version.release'
+2019-04-27 15:23:16:252 - info: [debug] [ADB] Current device property 'ro.build.version.release': 7.1.1
+2019-04-27 15:23:16:254 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm size'
+2019-04-27 15:23:16:568 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell wm density'
+2019-04-27 15:23:16:811 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.model'
+2019-04-27 15:23:16:834 - info: [debug] [ADB] Current device property 'ro.product.model': Google Nexus 5X
+2019-04-27 15:23:16:834 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell getprop ro.product.manufacturer'
+2019-04-27 15:23:16:863 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Genymotion
+2019-04-27 15:23:16:863 - info: [debug] [ADB] Device API level: 25
+2019-04-27 15:23:16:864 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-27 15:23:17:151 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk
+2019-04-27 15:23:17:153 - info: [ADB] Using apksigner from /Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner
+2019-04-27 15:23:17:154 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk"]'
+2019-04-27 15:23:17:878 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-27 15:23:17:878 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-27 15:23:17:878 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-27 15:23:17:879 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-27 15:23:17:879 - info: [debug] [ADB] WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-27 15:23:17:879 - info: [debug] [ADB] WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+2019-04-27 15:23:17:879 - info: [debug] [ADB] 
+2019-04-27 15:23:17:879 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' is already signed.
+2019-04-27 15:23:17:880 - info: [debug] [ADB] Checking app cert for /usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-04-27 15:23:17:880 - info: [debug] [ADB] Starting '/Users/xinxi/Library/Android/sdk/build-tools/28.0.3/apksigner' with args '["verify","--print-certs","/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-04-27 15:23:18:443 - info: [debug] [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-04-27 15:23:18:443 - info: [debug] [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-04-27 15:23:18:443 - info: [debug] [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-04-27 15:23:18:444 - info: [debug] [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-04-27 15:23:18:444 - info: [debug] [ADB] 
+2019-04-27 15:23:18:444 - info: [debug] [ADB] '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-04-27 15:23:18:446 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server
+2019-04-27 15:23:18:446 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server'
+2019-04-27 15:23:18:922 - info: [debug] [ADB] App is installed
+2019-04-27 15:23:18:923 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-04-27 15:23:18:924 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server'
+2019-04-27 15:23:18:999 - info: [ADB] Checking whether aapt is present
+2019-04-27 15:23:19:000 - info: [ADB] Using aapt from /Users/xinxi/Library/Android/sdk/build-tools/28.0.3/aapt
+2019-04-27 15:23:19:030 - info: [debug] [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade (9 > 6)
+2019-04-27 15:23:19:031 - info: [debug] [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-04-27 15:23:19:031 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.uiautomator2.server.test'
+2019-04-27 15:23:19:330 - info: [debug] [ADB] App is installed
+2019-04-27 15:23:19:330 - info: [debug] [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-04-27 15:23:19:330 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.uiautomator2.server.test'
+2019-04-27 15:23:19:364 - warn: [ADB] Cannot read version codes of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-04-27 15:23:19:364 - warn: [ADB] Cannot read version names of '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-04-27 15:23:19:364 - info: [debug] [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-04-27 15:23:19:365 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list instrumentation'
+2019-04-27 15:23:19:638 - info: [debug] [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-04-27 15:23:19:639 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 wait-for-device'
+2019-04-27 15:23:19:653 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell echo ping'
+2019-04-27 15:23:19:673 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2019-04-27 15:23:19:673 - info: [debug] [ADB] Getting install status for io.appium.settings
+2019-04-27 15:23:19:673 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.settings'
+2019-04-27 15:23:19:965 - info: [debug] [ADB] App is installed
+2019-04-27 15:23:19:965 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2019-04-27 15:23:19:966 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.settings'
+2019-04-27 15:23:20:020 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2019-04-27 15:23:20:021 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-27 15:23:20:143 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2019-04-27 15:23:20:143 - info: [debug] [ADB] Device API level: 25
+2019-04-27 15:23:20:144 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell appops set io.appium.settings android\:mock_location allow'
+2019-04-27 15:23:20:274 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-04-27 15:23:20:275 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2019-04-27 15:23:20:278 - info: [debug] [Logcat] Starting logcat capture
+2019-04-27 15:23:20:335 - info: [debug] [AndroidDriver] Enabling Unicode keyboard support
+2019-04-27 15:23:20:335 - info: [debug] [AndroidDriver] Pushing unicode ime to device...
+2019-04-27 15:23:20:339 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 install /usr/local/lib/node_modules/appium/node_modules/appium-android-ime/bin/UnicodeIME-debug.apk'
+2019-04-27 15:23:20:554 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 install /usr/local/lib/node_modules/appium/node_modules/appium-android-ime/bin/UnicodeIME-debug.apk'
+2019-04-27 15:23:20:657 - info: [debug] [ADB] Application '/usr/local/lib/node_modules/appium/node_modules/appium-android-ime/bin/UnicodeIME-debug.apk' already installed. Continuing.
+2019-04-27 15:23:20:657 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell settings get secure default_input_method'
+2019-04-27 15:23:20:893 - info: [debug] [AndroidDriver] Unsetting previous IME io.appium.android.ime/.UnicodeIME
+2019-04-27 15:23:20:894 - info: [debug] [AndroidDriver] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2019-04-27 15:23:20:894 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ime enable io.appium.android.ime/.UnicodeIME'
+2019-04-27 15:23:21:137 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ime set io.appium.android.ime/.UnicodeIME'
+2019-04-27 15:23:21:431 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2019-04-27 15:23:21:432 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2019-04-27 15:23:21:432 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages io.appium.unlock'
+2019-04-27 15:23:21:685 - info: [debug] [ADB] App is installed
+2019-04-27 15:23:21:685 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2019-04-27 15:23:21:685 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys package io.appium.unlock'
+2019-04-27 15:23:21:723 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2019-04-27 15:23:21:724 - info: [debug] [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8203
+2019-04-27 15:23:21:724 - info: [debug] [ADB] Forwarding system: 8203 to device: 6790
+2019-04-27 15:23:21:724 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 forward tcp\:8203 tcp\:6790'
+2019-04-27 15:23:21:740 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell rm -rf /data/local/tmp/strings.json'
+2019-04-27 15:23:21:772 - info: [debug] [UiAutomator2] No app capability. Assuming it is already on the device
+2019-04-27 15:23:21:773 - info: [debug] [ADB] Getting install status for com.luojilab.player
+2019-04-27 15:23:21:773 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm list packages com.luojilab.player'
+2019-04-27 15:23:22:019 - info: [debug] [ADB] App is installed
+2019-04-27 15:23:22:019 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop com.luojilab.player'
+2019-04-27 15:23:22:349 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell pm clear com.luojilab.player'
+2019-04-27 15:23:22:905 - info: [debug] [AndroidDriver] Performed fast reset on the installed 'com.luojilab.player' application (stop and clear)
+2019-04-27 15:23:22:906 - info: [debug] [ADB] Checking app cert for null
+2019-04-27 15:23:22:912 - info: [debug] [ADB] 'null' doesn't exist
+2019-04-27 15:23:22:913 - info: [debug] [ADB] Getting all processes with uiautomator
+2019-04-27 15:23:22:914 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell ps'
+2019-04-27 15:23:22:956 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am force-stop io.appium.uiautomator2.server'
+2019-04-27 15:23:23:332 - info: [UiAutomator2] Starting uiautomator2 server 1.15.1
+2019-04-27 15:23:23:332 - info: [UiAutomator2] Using UIAutomator2 server from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v1.15.1.apk' and test from '/usr/local/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-04-27 15:23:23:332 - info: [UiAutomator2] Running command: 'adb -s 192.168.56.101:5555 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-04-27 15:23:23:334 - info: [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-04-27 15:23:23:337 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-27 15:23:23:338 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8203/wd/hub/status] with no body
+2019-04-27 15:23:24:363 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-27 15:23:24:365 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8203/wd/hub/status] with no body
+2019-04-27 15:23:25:379 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-27 15:23:25:380 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8203/wd/hub/status] with no body
+2019-04-27 15:23:26:396 - info: [debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-04-27 15:23:26:396 - info: [debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8203/wd/hub/status] with no body
+2019-04-27 15:23:26:412 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-04-27 15:23:26:413 - info: [debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-04-27 15:23:26:413 - info: [debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8203/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","udid":"192.168.56.101:5555","unicodeKeyboard":true,"resetKeyboard":true,"autoLaunch":true,"appActivity":"com.luojilab.business.welcome.SplashActivity","automationName":"uiautomator2","appPackage":"com.luojilab.player","platformVersion ":"7.0","deviceName":"192.168.56.101:5555"},"platformName":"Android","udid":"192.168.56.101:5555","unicodeKeyboard":true,"resetKeyboard":true,"autoLaunch":true,"appActivity":"com.luojilab.business.welcome.SplashActivity","automationName":"uiautomator2","appPackage":"com.luojilab.player","platformVersion ":"7.0","deviceName":"192.168.56.101:5555","deviceUDID":"192.168.56.101:5555","platformVersion":"7.1.1","deviceScreenSize":"480x800","deviceScreenDensity":120,"deviceModel":"Google Nexus 5X","deviceManufacturer":"Genymotion","...
+2019-04-27 15:23:26:421 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"bbdeda80-6e0b-46fa-a462-b8786c3537e7","status":0,"value":"Created Session"}
+2019-04-27 15:23:26:422 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell dumpsys window'
+2019-04-27 15:23:26:450 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2019-04-27 15:23:26:450 - info: [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.luojilab.player/com.luojilab.business.welcome.SplashActivity'. Starting it ourselves
+2019-04-27 15:23:26:451 - info: [debug] [ADB] Device API level: 25
+2019-04-27 15:23:26:451 - info: [debug] [ADB] Running '/Users/xinxi/Library/Android/sdk/platform-tools/adb -P 5037 -s 192.168.56.101\:5555 shell am start -W -n com.luojilab.player/com.luojilab.business.welcome.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-04-27 15:23:28:760 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/appium/device/pixel_ratio] with body: {}
+2019-04-27 15:23:28:777 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bbdeda80-6e0b-46fa-a462-b8786c3537e7\",\"status\":0,\"value\":0.75}"
+2019-04-27 15:23:28:780 - info: [debug] [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-04-27 15:23:28:780 - info: [debug] [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/appium/device/system_bars] with body: {}
+2019-04-27 15:23:28:790 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bbdeda80-6e0b-46fa-a462-b8786c3537e7\",\"status\":0,\"value\":{\"statusBar\":18}}"
+2019-04-27 15:23:28:791 - info: [debug] [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-04-27 15:23:28:791 - info: [debug] [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/window/current/size] with body: {}
+2019-04-27 15:23:28:824 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bbdeda80-6e0b-46fa-a462-b8786c3537e7\",\"status\":0,\"value\":{\"height\":764,\"width\":480}}"
+2019-04-27 15:23:28:826 - info: [Appium] New AndroidUiautomator2Driver session created successfully, session 76ff9f28-1dda-402b-ab0e-fdd2ad336ee8 added to master session list
+2019-04-27 15:23:28:827 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1556378608827 (23:23:28 GMT+0800 (CST))
+2019-04-27 15:23:28:829 - info: [debug] [W3C] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","udid":"192.168.56.101:5555","unicodeKeyboard":true,"resetKeyboard":true,"autoLaunch":true,"appActivity":"com.luojilab.business.welcome.SplashActivity","automationName":"uiautomator2","appPackage":"com.luojilab.player","platformVersion ":"7.0","deviceName":"192.168.56.101:5555"},"platformName":"Android","udid":"192.168.56.101:5555","unicodeKeyboard":true,"resetKeyboard":true,"autoLaunch":true,"appActivity":"com.luojilab.business.welcome.SplashActivity","automationName":"uiautomator2","appPackage":"com.luojilab.player","platformVersion ":"7.0","deviceName":"192.168.56.101:5555","deviceUDID":"192.168.56.101:5555","platformVersion":"7.1.1","deviceScreenSize":"480x800","deviceScreenDensity":120,"deviceModel":"Google Nexus 5X","deviceManufacturer":"Genymotion","deviceA...
+2019-04-27 15:23:28:834 - info: [HTTP] <-- POST /wd/hub/session 200 13019 ms - 1192
+2019-04-27 15:23:28:834 - info: [HTTP] 
+2019-04-27 15:23:28:847 - info: [HTTP] --> POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/timeouts
+2019-04-27 15:23:28:847 - info: [HTTP] {"sessionId":"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8","implicit":5000}
+2019-04-27 15:23:28:849 - info: [debug] [W3C] Calling AppiumDriver.timeouts() with args: [null,null,null,null,5000,"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:28:862 - info: [debug] [BaseDriver] W3C timeout argument: {"implicit":5000}}
+2019-04-27 15:23:28:863 - info: [debug] [BaseDriver] Set implicit wait to 5000ms
+2019-04-27 15:23:28:864 - info: [debug] [W3C] Responding to client with driver.timeouts() result: null
+2019-04-27 15:23:28:865 - info: [HTTP] <-- POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/timeouts 200 18 ms - 14
+2019-04-27 15:23:28:865 - info: [HTTP] 
+2019-04-27 15:23:28:867 - info: [HTTP] --> POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element
+2019-04-27 15:23:28:868 - info: [HTTP] {"using":"id","sessionId":"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8","value":"com.android.packageinstaller:id/permission_allow_button"}
+2019-04-27 15:23:28:868 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","com.android.packageinstaller:id/permission_allow_button","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:28:870 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-27 15:23:28:871 - info: [debug] [BaseDriver] Waiting up to 5000 ms for condition
+2019-04-27 15:23:28:872 - info: [debug] [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-04-27 15:23:28:872 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element] with body: {"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}
+2019-04-27 15:23:29:242 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"bbdeda80-6e0b-46fa-a462-b8786c3537e7","status":0,"value":{"ELEMENT":"755f14b4-daaf-4897-a438-66de9066ad59"}}
+2019-04-27 15:23:29:244 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"755f14b4-daaf-4897-a438-66de9066ad59"}
+2019-04-27 15:23:29:246 - info: [HTTP] <-- POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element 200 377 ms - 88
+2019-04-27 15:23:29:246 - info: [HTTP] 
+2019-04-27 15:23:29:252 - info: [HTTP] --> GET /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/755f14b4-daaf-4897-a438-66de9066ad59/displayed
+2019-04-27 15:23:29:252 - info: [HTTP] {}
+2019-04-27 15:23:29:253 - info: [debug] [W3C] Calling AppiumDriver.elementDisplayed() with args: ["755f14b4-daaf-4897-a438-66de9066ad59","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:29:256 - info: [debug] [JSONWP Proxy] Matched '/element/755f14b4-daaf-4897-a438-66de9066ad59/attribute/displayed' to command name 'getAttribute'
+2019-04-27 15:23:29:256 - info: [debug] [JSONWP Proxy] Proxying [GET /element/755f14b4-daaf-4897-a438-66de9066ad59/attribute/displayed] to [GET http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element/755f14b4-daaf-4897-a438-66de9066ad59/attribute/displayed] with body: {}
+2019-04-27 15:23:29:284 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bbdeda80-6e0b-46fa-a462-b8786c3537e7\",\"status\":0,\"value\":\"true\"}"
+2019-04-27 15:23:29:285 - info: [debug] [W3C] Responding to client with driver.elementDisplayed() result: true
+2019-04-27 15:23:29:286 - info: [HTTP] <-- GET /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/755f14b4-daaf-4897-a438-66de9066ad59/displayed 200 34 ms - 14
+2019-04-27 15:23:29:286 - info: [HTTP] 
+2019-04-27 15:23:29:288 - info: [HTTP] --> POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/755f14b4-daaf-4897-a438-66de9066ad59/click
+2019-04-27 15:23:29:289 - info: [HTTP] {"sessionId":"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8","id":"755f14b4-daaf-4897-a438-66de9066ad59"}
+2019-04-27 15:23:29:289 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["755f14b4-daaf-4897-a438-66de9066ad59","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:29:291 - info: [debug] [JSONWP Proxy] Matched '/element/755f14b4-daaf-4897-a438-66de9066ad59/click' to command name 'click'
+2019-04-27 15:23:29:291 - info: [debug] [JSONWP Proxy] Proxying [POST /element/755f14b4-daaf-4897-a438-66de9066ad59/click] to [POST http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element/755f14b4-daaf-4897-a438-66de9066ad59/click] with body: {"element":"755f14b4-daaf-4897-a438-66de9066ad59"}
+2019-04-27 15:23:29:310 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"bbdeda80-6e0b-46fa-a462-b8786c3537e7","status":0,"value":true}
+2019-04-27 15:23:29:311 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2019-04-27 15:23:29:311 - info: [HTTP] <-- POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/755f14b4-daaf-4897-a438-66de9066ad59/click 200 23 ms - 14
+2019-04-27 15:23:29:312 - info: [HTTP] 
+2019-04-27 15:23:29:314 - info: [HTTP] --> POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element
+2019-04-27 15:23:29:314 - info: [HTTP] {"using":"id","sessionId":"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8","value":"com.android.packageinstaller:id/permission_allow_button"}
+2019-04-27 15:23:29:314 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","com.android.packageinstaller:id/permission_allow_button","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:29:316 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-27 15:23:29:316 - info: [debug] [BaseDriver] Waiting up to 5000 ms for condition
+2019-04-27 15:23:29:317 - info: [debug] [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-04-27 15:23:29:317 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element] with body: {"strategy":"id","selector":"com.android.packageinstaller:id/permission_allow_button","context":"","multiple":false}
+2019-04-27 15:23:30:367 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"bbdeda80-6e0b-46fa-a462-b8786c3537e7","status":0,"value":{"ELEMENT":"a29e52b2-c204-4cb2-8065-4565221e2d2f"}}
+2019-04-27 15:23:30:368 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a29e52b2-c204-4cb2-8065-4565221e2d2f"}
+2019-04-27 15:23:30:370 - info: [HTTP] <-- POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element 200 1055 ms - 88
+2019-04-27 15:23:30:370 - info: [HTTP] 
+2019-04-27 15:23:30:372 - info: [HTTP] --> GET /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/displayed
+2019-04-27 15:23:30:373 - info: [HTTP] {}
+2019-04-27 15:23:30:373 - info: [debug] [W3C] Calling AppiumDriver.elementDisplayed() with args: ["a29e52b2-c204-4cb2-8065-4565221e2d2f","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:30:376 - info: [debug] [JSONWP Proxy] Matched '/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/attribute/displayed' to command name 'getAttribute'
+2019-04-27 15:23:30:376 - info: [debug] [JSONWP Proxy] Proxying [GET /element/a29e52b2-c204-4cb2-8065-4565221e2d2f/attribute/displayed] to [GET http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/attribute/displayed] with body: {}
+2019-04-27 15:23:30:418 - info: [debug] [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bbdeda80-6e0b-46fa-a462-b8786c3537e7\",\"status\":0,\"value\":\"true\"}"
+2019-04-27 15:23:30:419 - info: [debug] [W3C] Responding to client with driver.elementDisplayed() result: true
+2019-04-27 15:23:30:419 - info: [HTTP] <-- GET /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/displayed 200 47 ms - 14
+2019-04-27 15:23:30:420 - info: [HTTP] 
+2019-04-27 15:23:30:421 - info: [HTTP] --> POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/click
+2019-04-27 15:23:30:422 - info: [HTTP] {"sessionId":"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8","id":"a29e52b2-c204-4cb2-8065-4565221e2d2f"}
+2019-04-27 15:23:30:422 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["a29e52b2-c204-4cb2-8065-4565221e2d2f","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:30:424 - info: [debug] [JSONWP Proxy] Matched '/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/click' to command name 'click'
+2019-04-27 15:23:30:424 - info: [debug] [JSONWP Proxy] Proxying [POST /element/a29e52b2-c204-4cb2-8065-4565221e2d2f/click] to [POST http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/click] with body: {"element":"a29e52b2-c204-4cb2-8065-4565221e2d2f"}
+2019-04-27 15:23:30:481 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"bbdeda80-6e0b-46fa-a462-b8786c3537e7","status":0,"value":true}
+2019-04-27 15:23:30:482 - info: [debug] [W3C] Responding to client with driver.click() result: true
+2019-04-27 15:23:30:483 - info: [HTTP] <-- POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element/a29e52b2-c204-4cb2-8065-4565221e2d2f/click 200 61 ms - 14
+2019-04-27 15:23:30:483 - info: [HTTP] 
+2019-04-27 15:23:30:484 - info: [HTTP] --> POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element
+2019-04-27 15:23:30:485 - info: [HTTP] {"using":"id","sessionId":"76ff9f28-1dda-402b-ab0e-fdd2ad336ee8","value":"com.luojilab.player:id/btn_agree"}
+2019-04-27 15:23:30:486 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","com.luojilab.player:id/btn_agree","76ff9f28-1dda-402b-ab0e-fdd2ad336ee8"]
+2019-04-27 15:23:30:488 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-04-27 15:23:30:489 - info: [debug] [BaseDriver] Waiting up to 5000 ms for condition
+2019-04-27 15:23:30:489 - info: [debug] [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-04-27 15:23:30:490 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element] with body: {"strategy":"id","selector":"com.luojilab.player:id/btn_agree","context":"","multiple":false}
+2019-04-27 15:23:31:403 - info: [debug] [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-04-27 15:23:31:403 - info: [debug] [BaseDriver] Waited for 914 ms so far
+2019-04-27 15:23:31:906 - info: [debug] [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-04-27 15:23:31:906 - info: [debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8203/wd/hub/session/bbdeda80-6e0b-46fa-a462-b8786c3537e7/element] with body: {"strategy":"id","selector":"com.luojilab.player:id/btn_agree","context":"","multiple":false}
+2019-04-27 15:23:31:950 - info: [Appium] Received SIGINT - shutting down
+2019-04-27 15:23:31:953 - info: [HTTP] <-- POST /wd/hub/session/76ff9f28-1dda-402b-ab0e-fdd2ad336ee8/element - - ms - -
+2019-04-27 15:23:31:953 - info: [HTTP] 
+2019-04-27 15:23:31:954 - error: [Logcat] Logcat terminated with code null, signal SIGINT
+2019-04-27 15:23:33:385 - info: [debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"bbdeda80-6e0b-46fa-a462-b8786c3537e7","status":0,"value":{"ELEMENT":"a2edd20a-cbaf-4082-bfc3-0c80ef0e03d1"}}
+2019-04-27 15:23:33:390 - error: uncaughtException: write EPIPE date=Sat Apr 27 2019 23:23:33 GMT+0800 (CST), pid=63476, uid=501, gid=20, cwd=/Users/xinxi/PycharmProjects/maxauto, execPath=/usr/local/bin/node, version=v8.12.0, argv=[/usr/local/bin/node, /usr/local/bin/appium, --log, /Users/xinxi/PycharmProjects/maxauto/max/report/tmp/appium.log, --session-override, --udid, 192.168.56.101:5555, -a, 127.0.0.1, -p, 4725], rss=93839360, heapTotal=94425088, heapUsed=86118000, external=188898, loadavg=[6.150390625, 3.49560546875, 2.88623046875], uptime=206209, trace=[column=14, file=net.js, function=WriteWrap.afterWrite, line=868, method=afterWrite, native=false], stack=[Error: write EPIPE,     at WriteWrap.afterWrite (net.js:868:14)]
+2019-04-27 15:23:33:391 - info: [debug] [W3C] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a2edd20a-cbaf-4082-bfc3-0c80ef0e03d1"}
+2019-04-27 15:23:33:392 - error: uncaughtException: write EPIPE date=Sat Apr 27 2019 23:23:33 GMT+0800 (CST), pid=63476, uid=501, gid=20, cwd=/Users/xinxi/PycharmProjects/maxauto, execPath=/usr/local/bin/node, version=v8.12.0, argv=[/usr/local/bin/node, /usr/local/bin/appium, --log, /Users/xinxi/PycharmProjects/maxauto/max/report/tmp/appium.log, --session-override, --udid, 192.168.56.101:5555, -a, 127.0.0.1, -p, 4725], rss=94015488, heapTotal=94425088, heapUsed=86338624, external=197114, loadavg=[6.150390625, 3.49560546875, 2.88623046875], uptime=206209, trace=[column=14, file=net.js, function=WriteWrap.afterWrite, line=868, method=afterWrite, native=false], stack=[Error: write EPIPE,     at WriteWrap.afterWrite (net.js:868:14)]
