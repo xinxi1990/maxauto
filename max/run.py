@@ -8,7 +8,7 @@ from monkey.monkey import Monkey
 from lanuchtest.lanuchapp import LanuchApp
 from Installtest.installapp import InstallApp
 from logintest.logintest import LoginApp
-from report.create import Create
+from create import Create
 from report.sendmail import *
 from config import *
 
@@ -79,6 +79,7 @@ def main_run():
     device_name = yaml_info['commonconfig']['devicename']
     run_time = yaml_info['commonconfig']['runtime']
     report_path = yaml_info['commonconfig']['reportpath']
+
     mail_info = load_mail_config(yaml_info)
     login_caseinfo = load_login_case(yaml_info)
     params = (apk_path + '\n' +
@@ -87,7 +88,6 @@ def main_run():
     logger.info('参数:' + '\n' + '{}'.format(params))
     run(apk_path, device_name, run_time, mail_info, login_caseinfo,report_path)
     logger.debug("*****************************************************************")
-
 
 
 

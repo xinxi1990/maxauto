@@ -11,14 +11,11 @@ import os,re,time,subprocess,sys,json
 sys.path.append('..')
 import jinja2
 from jinja2 import Environment, PackageLoader
-from ..tools.loggers import JFMlogging
+from tools.loggers import JFMlogging
 logger = JFMlogging().getloger()
-from flask import Flask, request
-from flask import render_template
-from threading import Thread
-from predata import *
-from ..monkey.getbasic import GetBasic
-from getdata import GetData
+from report.predata import *
+from monkey.getbasic import GetBasic
+from report.getdata import GetData
 
 
 
@@ -116,8 +113,8 @@ class Create():
            logger.info("创建报告存储文件夹:{}".format(report_folder))
         report_path = os.path.join(report_folder, "report_{}.html".format(time.strftime("%Y%m%d%H%M%S")))
         try:
-            env = Environment(loader=PackageLoader('max', 'template'))
-            template = env.get_template("report_template.html")
+            env = Environment(loader=PackageLoader('max', 'templates'))
+            template = env.get_template("template.html")
             html_content = template.render( appname=gb.get_app_name(),
                                appversion=gb.get_app_version(),
                                appsize=gb.get_app_size(),

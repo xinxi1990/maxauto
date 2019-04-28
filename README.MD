@@ -9,28 +9,9 @@
 4.Monkey测试<br>
 5.性能数据统计<br>
 6.崩溃日志及崩溃回溯图片<br>
-
-# 更新日志
-
-## 12月29日
-1.修改崩溃图片查询方式<br>
-2.新增apk包检查功能<br>
-
-使用命令如下:
-```angularjs
-cd checker
-python run.py apk_path mail_list(多个人逗号分隔)
-```
+7.apk包检查功能
 
 
-# 登录测试
-需要在lanuchtest/lanuchapp.py实现登录测试,
-使用appium进行元素定位即可
-```
-可以By.xpath、By.id,后面写元素的值.
-
-self.driver.find_element(By.XPATH,self.sure).click()
-```
 
 
 # 环境依赖
@@ -39,51 +20,72 @@ brew install adb<br>
 2.appium环境<br>
 npm install appium<br>
 3.python库<br>
-在根目录,执行python setup.py会安装有python需要的库
+在根目录,执行python install.py,会安装依赖项目的库
 
 
-# 邮件
-```angular2html
-需要在report/mailconfig.py中配置发件人相关信息
+# 配置文件
 
-# 设置服务器，用户名、口令以及邮箱的后缀
-mail_host = "smtp.exmail.qq.com"
-mail_user = "xxxxx@xxxxx.com"
-mail_pass = "xxxxx"
-mail_postfix = "xxxxxx"
+参考在config文件下的config_temp.yaml文件格式
 
+## commonconfig
 ```
-
-
-# 运行
-```
-cd到根目录下
-
 apk_path:本地apk路径
 device_name:设备号,使用adb devices查看
 run_time:运行时间,单位分钟
-mail_list:报告邮件人,多人用逗号分隔
+```
+## mailconfig
+```
+maillist: 报告邮件人,多人用逗号分隔
+mailhost: 邮箱host
+mailuser: 发件人邮箱地址
+mailpass:  邮箱密码
+mailpostfix: 邮箱后缀
+```
 
-python run.py apk_path device_name run_time mail_list
+## logincase
+
+可配置登录测试用例或者其他前置脚本,支持click、sendkeys多种操作
+
+eg：
 
 ```
+logincase:
+  - action: "click"
+    location: "By.ID,xxxxx"
+    time: 2
+  - action: "click"
+    location: "By.ID,xxxxx"
+    time: 2
+  - action: "send_keys"
+    location: "By.ID,xxxx"
+    text: "123321"
+    time: 2
+```
+
 
 # 本地调试
 ```
 python main.py max --config_path /Users/xinxi/PycharmProjects/maxauto/config/config.yaml
 ```
 
-# 运行
-```angularjs
-max --config_path /Users/xinxi/PycharmProjects/maxauto/config/config.yaml
-```
 
 # 打包
-
+```angularjs
 建立setup.py
+
 python setup.py bdist_egg
 
+easy_install maxauto-1.0.0-py2.7.egg
+```
+
 # 发布
+## 发布工具安装
+```
+pip install twine
+```
+
+## 发布文件配置
+
 创建~.pypirc文件
 ```angularjs
 [distutils]
@@ -94,18 +96,23 @@ username:你的PyPi用户名
 password:你的PyPi密码
 ```
 
-
-
-# 安装上传功能
+## 发布到pypi
 ```
-pip install twine
-```
-
-# 发布
 twine upload dist/*
+```
+# pip安装
 
+```
+pip install maxauto
+```
 
+# 运行
+```angularjs
 
+sudo chmod -R 777 /usr/local/lib/python2.7/site-packages/maxauto-1.0.0-py2.7.egg (赋予读写权限)
+
+max --config_path /Users/xinxi/PycharmProjects/maxauto/config/config.yaml
+```
 
 
 # 报告
@@ -117,3 +124,12 @@ twine upload dist/*
 ![report2.png](./report2.jpg)
 
 ![report3.png](./report3.jpg)
+
+
+# 其他
+
+## app包检查使用命令如下:
+```angularjs
+cd checker
+python run.py apk_path mail_list(多个人逗号分隔)
+```

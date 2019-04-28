@@ -69,7 +69,10 @@ setup(
     url = "https://github.com/xinxi1990/maxauto",     #项目相关文件地址，一般是github
     author = "xinxi",
     author_email = "xinxi1990@163.com",
-
+    package_data={
+        '': ["README.rst"],
+        'max': ["templates/template.html","monkey/libs/*","monkey/config/*"],
+    },
     packages = find_packages(),
     include_package_data = True,
     platforms = "any",
